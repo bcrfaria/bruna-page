@@ -121,8 +121,8 @@ const jsonLd = {
               <img
                 class="esp"
                 src={url(`/img/esp/${q.esp}.jpg`)}
-                width="640"
-                height="480"
+                width="700"
+                height="280"
                 alt=""
                 loading="lazy"
                 decoding="async"
@@ -426,13 +426,10 @@ const jsonLd = {
         height: auto;
         /* Faixa baixa: a ilustração é detalhe, não protagonista. */
         aspect-ratio: 5 / 2;
+        /* A imagem já vem na proporção certa, com o objeto inteiro
+           sobre fundo branco — funde no cartão sem precisar de borda. */
         object-fit: cover;
-        /* Faixa baixa corta o espécime: enquadra em cima, onde está
-           a parte que identifica (flor, coroa da cápsula, ponta da folha). */
-        object-position: center 32%;
-        /* Sem raio próprio: o overflow:hidden do cartão já arredonda o topo. */
-        border-bottom: 1px solid var(--linha);
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
       }
 
       .prosa p {
