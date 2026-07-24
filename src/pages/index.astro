@@ -85,6 +85,15 @@ const jsonLd = {
 
     <main id="conteudo">
       <section class="wrap secao">
+        <img
+          class="capa"
+          src={url('/img/capa-1-trabalho.jpg')}
+          width="1400"
+          height="467"
+          alt=""
+          loading="lazy"
+          decoding="async"
+        />
         <h2>Como eu trabalho</h2>
         <div class="prosa">
           <p>
@@ -114,6 +123,15 @@ const jsonLd = {
       </section>
 
       <section class="wrap secao">
+        <img
+          class="capa"
+          src={url('/img/capa-2-ajudar.jpg')}
+          width="1400"
+          height="467"
+          alt=""
+          loading="lazy"
+          decoding="async"
+        />
         <h2>Com o que posso te ajudar</h2>
         <ul class="grade">
           {queixas.map((q) => (
@@ -138,6 +156,15 @@ const jsonLd = {
       </section>
 
       <section class="wrap secao" id="agendar">
+        <img
+          class="capa"
+          src={url('/img/capa-3-agendar.jpg')}
+          width="1400"
+          height="467"
+          alt=""
+          loading="lazy"
+          decoding="async"
+        />
         <h2>Agendar</h2>
         {site.calLink ? (
           <>
@@ -408,6 +435,17 @@ const jsonLd = {
       h2 {
         margin: 0 0 2rem;
         font-size: clamp(1.5rem, 3.5vw, 1.875rem);
+      }
+
+      /* Capa decorativa no topo da seção. */
+      .capa {
+        display: block;
+        width: 100%;
+        height: clamp(5rem, 11vw, 7rem);
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        border: 1px solid var(--linha);
       }
 
       .prosa p {
