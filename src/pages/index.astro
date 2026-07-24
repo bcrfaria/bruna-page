@@ -85,15 +85,6 @@ const jsonLd = {
 
     <main id="conteudo">
       <section class="wrap secao">
-        <img
-          class="capa"
-          src={url('/img/capa-1-trabalho.jpg')}
-          width="1400"
-          height="467"
-          alt=""
-          loading="lazy"
-          decoding="async"
-        />
         <h2>Como eu trabalho</h2>
         <div class="prosa">
           <p>
@@ -122,20 +113,20 @@ const jsonLd = {
         </div>
       </section>
 
-      <section class="wrap secao">
-        <img
-          class="capa"
-          src={url('/img/capa-2-ajudar.jpg')}
-          width="1400"
-          height="467"
-          alt=""
-          loading="lazy"
-          decoding="async"
-        />
+      <section class="wrap secao larga">
         <h2>Com o que posso te ajudar</h2>
         <ul class="grade">
           {queixas.map((q) => (
             <li class="card">
+              <img
+                class="esp"
+                src={url(`/img/esp/${q.esp}.jpg`)}
+                width="640"
+                height="480"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
               <h3>{q.titulo}</h3>
               <p>{q.texto}</p>
             </li>
@@ -156,15 +147,6 @@ const jsonLd = {
       </section>
 
       <section class="wrap secao" id="agendar">
-        <img
-          class="capa"
-          src={url('/img/capa-3-agendar.jpg')}
-          width="1400"
-          height="467"
-          alt=""
-          loading="lazy"
-          decoding="async"
-        />
         <h2>Agendar</h2>
         {site.calLink ? (
           <>
@@ -437,15 +419,15 @@ const jsonLd = {
         font-size: clamp(1.5rem, 3.5vw, 1.875rem);
       }
 
-      /* Capa decorativa no topo da seção. */
-      .capa {
+      /* Espécime botânico que ilustra o tema de cada cartão. */
+      .esp {
         display: block;
         width: 100%;
-        height: clamp(5rem, 11vw, 7rem);
+        height: auto;
+        aspect-ratio: 4 / 3;
         object-fit: cover;
-        border-radius: 10px;
-        margin-bottom: 2rem;
-        border: 1px solid var(--linha);
+        border-radius: 12px;
+        margin-bottom: 1.125rem;
       }
 
       .prosa p {
@@ -458,25 +440,23 @@ const jsonLd = {
          sumiria no fundo verde do botão. */
       .prosa a:not(.btn) { color: var(--verde-escuro); }
 
+      /* A grade de cartões respira melhor que a coluna de leitura. */
+      .larga { max-width: 54rem; }
+
       /* Cards */
       .grade {
         list-style: none;
         margin: 0;
         padding: 0;
         display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 2.5rem 1.75rem;
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
       }
 
-      .card {
-        background: #fff;
-        border: 1px solid var(--linha);
-        border-radius: 12px;
-        padding: 1.5rem;
-      }
+      /* Card de post: imagem no topo, texto embaixo, sem moldura. */
       .card h3 {
         margin: 0 0 0.5rem;
-        font-size: 1.0625rem;
+        font-size: 1.125rem;
       }
       .card p {
         margin: 0;

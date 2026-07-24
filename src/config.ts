@@ -27,15 +27,16 @@ export const whatsappUrl = `https://wa.me/${site.whatsapp}?text=${encodeURICompo
   'Olá, Bruna! Vim pelo seu site e gostaria de saber mais sobre as sessões.',
 )}`;
 
+// `esp` é o espécime da prancha botânica que ilustra cada tema.
 export const queixas = [
-  { titulo: 'Ansiedade', texto: 'Preocupação que não desliga, crises, tensão no corpo e a sensação de estar sempre em alerta.' },
-  { titulo: 'Depressão', texto: 'Desânimo que se arrasta, perda de sentido, cansaço e dificuldade de fazer o que antes era simples.' },
-  { titulo: 'Regulação emocional', texto: 'Emoções intensas ou difíceis de nomear, e a impressão de reagir mais do que você gostaria.' },
-  { titulo: 'Autocrítica e autovalidação', texto: 'Aquela voz interna que diz "isso não é pra você" ou "foi sorte", e a sensação de precisar provar o próprio valor o tempo todo.' },
-  { titulo: 'Comida e corpo', texto: 'Compulsão, restrição, culpa e o peso da cultura da dieta. Um espaço livre de gordofobia, onde comer não é sobre disciplina.' },
-  { titulo: 'Relacionamentos', texto: 'Conflitos que se repetem, dificuldade de pôr limites e padrões que atravessam vários vínculos.' },
-  { titulo: 'Vivência LGBTQIA+', texto: 'Espaço afirmativo para identidade, orientação, família e as datas que costumam pesar mais.' },
-  { titulo: 'Neurodivergências', texto: 'TDAH e autismo, inclusive como isso afeta a alimentação e a rotina. Não é frescura nem falta de esforço.' },
+  { titulo: 'Ansiedade', esp: 'pedra', texto: 'Preocupação que não desliga, crises, tensão no corpo e a sensação de estar sempre em alerta.' },
+  { titulo: 'Depressão', esp: 'liquen', texto: 'Desânimo que se arrasta, perda de sentido, cansaço e dificuldade de fazer o que antes era simples.' },
+  { titulo: 'Regulação emocional', esp: 'espiral', texto: 'Emoções intensas ou difíceis de nomear, e a impressão de reagir mais do que você gostaria.' },
+  { titulo: 'Autocrítica e autovalidação', esp: 'capsula', texto: 'Aquela voz interna que diz "isso não é pra você" ou "foi sorte", e a sensação de precisar provar o próprio valor o tempo todo.' },
+  { titulo: 'Comida e corpo', esp: 'frutos', texto: 'Compulsão, restrição, culpa e o peso da cultura da dieta. Um espaço livre de gordofobia, onde comer não é sobre disciplina.' },
+  { titulo: 'Relacionamentos', esp: 'gramas', texto: 'Conflitos que se repetem, dificuldade de pôr limites e padrões que atravessam vários vínculos.' },
+  { titulo: 'Vivência LGBTQIA+', esp: 'flor', texto: 'Espaço afirmativo para identidade, orientação, família e as datas que costumam pesar mais.' },
+  { titulo: 'Neurodivergências', esp: 'samambaia', texto: 'TDAH e autismo, inclusive como isso afeta a alimentação e a rotina. Não é frescura nem falta de esforço.' },
 ];
 
 export const formacao = [
