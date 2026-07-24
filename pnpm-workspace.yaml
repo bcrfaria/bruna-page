@@ -1,0 +1,4 @@
+# O esbuild (dependência do Astro) precisa rodar o build script dele. Sem isso o
+# pnpm 11 falha com ERR_PNPM_IGNORED_BUILDS numa instalação limpa, como a do CI.
+allowBuilds:
+  esbuild: true
