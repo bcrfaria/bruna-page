@@ -424,10 +424,15 @@ const jsonLd = {
         display: block;
         width: 100%;
         height: auto;
-        aspect-ratio: 4 / 3;
+        /* Faixa baixa: a ilustração é detalhe, não protagonista. */
+        aspect-ratio: 5 / 2;
         object-fit: cover;
-        border-radius: 12px;
-        margin-bottom: 1.125rem;
+        /* Faixa baixa corta o espécime: enquadra em cima, onde está
+           a parte que identifica (flor, coroa da cápsula, ponta da folha). */
+        object-position: center 32%;
+        /* Sem raio próprio: o overflow:hidden do cartão já arredonda o topo. */
+        border-bottom: 1px solid var(--linha);
+        margin-bottom: 1rem;
       }
 
       .prosa p {
@@ -449,7 +454,7 @@ const jsonLd = {
         margin: 0;
         padding: 0;
         display: grid;
-        gap: 2.5rem 1.5rem;
+        gap: 1.25rem;
         /* 1 col no celular, 2 no tablet, 4 no desktop. */
         grid-template-columns: 1fr;
       }
@@ -460,13 +465,22 @@ const jsonLd = {
         .grade { grid-template-columns: repeat(4, 1fr); }
       }
 
-      /* Card de post: imagem no topo, texto embaixo, sem moldura. */
+      .card {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        border: 1px solid var(--linha);
+        border-radius: 12px;
+        overflow: hidden;
+      }
       .card h3 {
         margin: 0 0 0.4375rem;
+        padding: 0 1.25rem;
         font-size: 1.0625rem;
       }
       .card p {
         margin: 0;
+        padding: 0 1.25rem 1.375rem;
         font-size: 0.9375rem;
         line-height: 1.65;
         color: var(--tinta-suave);
