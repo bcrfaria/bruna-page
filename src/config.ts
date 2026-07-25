@@ -17,7 +17,7 @@ export const site = {
   // Deixe null enquanto a conta não existir: o site mostra o botão de WhatsApp no lugar.
   calLink: null as string | null,
 
-  whatsapp: '5541999999999', // só números, com DDI e DDD
+  whatsapp: '5541995156609', // só números, com DDI e DDD
   instagram: 'brunapsic',
   email: null as string | null,
   doctoralia: 'https://www.doctoralia.com.br/bruna-faria/psicologo/curitiba',
