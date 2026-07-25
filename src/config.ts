@@ -7,7 +7,7 @@ export const site = {
   tagline: 'Se entender e se aceitar é revolucionário.',
   descricao:
     'Psicóloga (CRP 08/34202) com atendimento online em Terapia Cognitivo Comportamental para adultos no Brasil e no exterior. Espaço afirmativo para pessoas LGBTQIA+ e neurodivergentes.',
-  foto: '/img/bruna.jpg',
+  foto: '/img/bruna-colagem.webp',
 
   // Endereço público atual. Ao apontar o domínio próprio, trocar aqui e também
   // o `site`/`base` no astro.config.mjs.

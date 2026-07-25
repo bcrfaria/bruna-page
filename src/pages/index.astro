@@ -75,8 +75,8 @@ const jsonLd = {
         <img
           class="retrato"
           src={url(site.foto)}
-          width="901"
-          height="901"
+          width="760"
+          height="923"
           alt={`Retrato de ${site.nome}`}
           fetchpriority="high"
         />
@@ -340,21 +340,29 @@ const jsonLd = {
         align-items: center;
       }
 
+      /* A colagem tem fundo transparente e forma própria: sem recorte
+         circular nem moldura, ela assenta direto no papel da página. */
       .retrato {
         width: 100%;
-        max-width: 15rem;
+        max-width: 20rem;
         height: auto;
-        aspect-ratio: 1;
-        object-fit: cover;
-        border-radius: 50%;
         justify-self: center;
         order: -1;
-        border: 1px solid var(--linha);
       }
 
       @media (min-width: 46rem) {
-        .hero-grid { grid-template-columns: 1fr minmax(0, 19rem); }
-        .retrato { max-width: none; order: 0; justify-self: end; }
+        .hero-grid { grid-template-columns: 1fr minmax(0, 24rem); }
+        .retrato {
+          max-width: none;
+          order: 0;
+          justify-self: end;
+          /* Avança sobre a coluna de texto: a sobreposição é parte da
+             linguagem de colagem. O texto continua legível porque a
+             margem esquerda da imagem é fundo transparente. */
+          width: calc(100% + 2rem);
+          margin-left: -2rem;
+          position: relative;
+        }
       }
 
       .eyebrow {
@@ -376,7 +384,7 @@ const jsonLd = {
         margin: 0;
         font-size: 1.125rem;
         color: var(--tinta-suave);
-        max-width: 58ch;
+        max-width: 46ch;
       }
 
       .acoes {
