@@ -121,8 +121,8 @@ const jsonLd = {
               <img
                 class="esp"
                 src={url(`/img/esp/${q.esp}.jpg`)}
-                width="700"
-                height="280"
+                width="600"
+                height="450"
                 alt=""
                 loading="lazy"
                 decoding="async"
@@ -424,12 +424,11 @@ const jsonLd = {
         display: block;
         width: 100%;
         height: auto;
-        /* Faixa baixa: a ilustração é detalhe, não protagonista. */
-        aspect-ratio: 5 / 2;
-        /* A imagem já vem na proporção certa, com o objeto inteiro
-           sobre fundo branco — funde no cartão sem precisar de borda. */
-        object-fit: cover;
-        margin-bottom: 0.5rem;
+        /* 4:3, a proporção em que as colagens foram compostas: cortar
+           mais que isso perde os elementos pequenos (figuras em escala). */
+        aspect-ratio: 4 / 3;
+        object-fit: contain;
+        margin-bottom: 0.75rem;
       }
 
       .prosa p {
