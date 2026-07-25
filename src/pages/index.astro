@@ -76,7 +76,7 @@ const jsonLd = {
           class="retrato"
           src={url(site.foto)}
           width="760"
-          height="923"
+          height="1020"
           alt={`Retrato de ${site.nome}`}
           fetchpriority="high"
         />
@@ -204,7 +204,9 @@ const jsonLd = {
             <Icone nome="instagram" /> Instagram
           </a>
           {site.doctoralia && (
-            <a href={site.doctoralia} target="_blank" rel="noopener">Doctoralia</a>
+            <a href={site.doctoralia} target="_blank" rel="noopener">
+              <Icone nome="doctoralia" /> Doctoralia
+            </a>
           )}
           {site.email && <a href={`mailto:${site.email}`}>E-mail</a>}
         </nav>
