@@ -41,9 +41,11 @@ export const queixas = [
 
 export const formacao = [
   { titulo: 'Graduação em Psicologia', instituicao: 'Universidade Federal do Paraná (UFPR)' },
-  { titulo: 'Especialização em Terapia Cognitivo Comportamental', instituicao: 'PUCRS' },
-  { titulo: 'Pós-graduação em Transtornos Alimentares e Comportamento Alimentar em Saúde LGBTQIA+', instituicao: '' },
-  { titulo: 'Pós-graduanda em Neuropsicologia', instituicao: 'Em andamento' },
+  { titulo: 'Especialização em Terapia Cognitivo-Comportamental', instituicao: 'PUCRS' },
+  { titulo: 'Pós-graduação em Transtornos Alimentares', instituicao: 'Ambulim — HCFMUSP' },
+  { titulo: 'Pós-graduação em Comportamento Alimentar', instituicao: 'IPGS' },
+  { titulo: 'Pós-graduação em Saúde LGBTQIA+', instituicao: 'Saudiversidade' },
+  { titulo: 'Pós-graduanda em Neuropsicologia', instituicao: 'Incantato' },
 ];
 
 export const faq = [

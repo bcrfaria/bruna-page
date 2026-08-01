@@ -117,18 +117,20 @@ const jsonLd = {
         <div class="terapia-grid">
           <div>
             <p class="eyebrow">Um espaço para compreender o que você vive</p>
-            <h2>Por que fazer terapia?</h2>
+            <h2>Por que fazer <span class="pincelada">terapia?</span></h2>
             <div class="prosa">
               <p>
                 Nem sempre buscamos terapia porque aconteceu algo extraordinário. Às vezes, o que pesa
-                é justamente aquilo que se repete: a ansiedade que não descansa, a autocrítica, relações
-                que machucam, a dificuldade de colocar limites ou a sensação de estar distante de si.
+                é justamente <strong>aquilo que se repete</strong>: a ansiedade que não descansa, a autocrítica,
+                relações que machucam, a dificuldade de colocar limites ou a sensação de estar distante de si.
               </p>
               <p>
-                A psicoterapia oferece um tempo protegido para olhar essas experiências com cuidado,
-                dar nome ao que parece confuso e compreender como sua história participa do presente.
-                Não é receber uma receita pronta: é construir, com acompanhamento profissional, novas
-                possibilidades de perceber, escolher e agir.
+                A psicoterapia oferece um <strong>tempo protegido</strong> para olhar essas experiências com
+                cuidado, dar nome ao que parece confuso e compreender como sua história participa do presente.
+              </p>
+              <p>
+                Não é receber uma receita pronta. É construir, com acompanhamento profissional,
+                <strong>novas possibilidades de perceber, escolher e agir</strong>.
               </p>
             </div>
           </div>
@@ -138,6 +140,8 @@ const jsonLd = {
         <div class="oferece">
           <h3>O que a psicoterapia pode oferecer</h3>
           <ul>
+            <li><strong>Escuta empática e qualificada</strong><span>Ser ouvida com atenção, sensibilidade e conhecimento profissional.</span></li>
+            <li><strong>Espaço seguro</strong><span>Falar sobre o que você vive com liberdade, acolhimento e sem julgamentos.</span></li>
             <li><strong>Compreensão</strong><span>Reconhecer padrões, necessidades e emoções com mais clareza.</span></li>
             <li><strong>Recursos</strong><span>Desenvolver maneiras possíveis de lidar com desafios do cotidiano.</span></li>
             <li><strong>Autonomia</strong><span>Fazer escolhas mais conscientes e coerentes com quem você é.</span></li>
@@ -149,7 +153,8 @@ const jsonLd = {
         <div class="wrap secao abordagem-grid">
           <div>
             <p class="eyebrow">Como eu trabalho</p>
-            <h2>Uma terapia ativa, colaborativa e sem fórmulas prontas.</h2>
+            <h2>Uma terapia <span class="pincelada">ativa e colaborativa</span>, sem fórmulas prontas.</h2>
+            <img class="imagem-editorial imagem-escuta" src={url('/img/escuta-segura-collage.png')} width="1536" height="1152" alt="Colagem em tons de outono com duas figuras conectadas, representando escuta empática e espaço seguro" loading="lazy" decoding="async" />
           </div>
           <div class="prosa">
             <p>
@@ -159,8 +164,8 @@ const jsonLd = {
             </p>
             <p>
               Nas sessões, investigamos juntas o seu contexto e construímos estratégias que possam
-              ser levadas para a vida real. Às vezes há algo para observar ou experimentar entre os
-              encontros, sempre respeitando seus limites e seu ritmo.
+              ser levadas para a vida real. O processo acontece <strong>respeitando seus limites,
+              sua história e o seu ritmo</strong>.
             </p>
             <p>
               Pessoas LGBTQIA+, gordas e neurodivergentes encontram aqui um espaço afirmativo,
@@ -218,24 +223,27 @@ const jsonLd = {
         </div>
       </section>
 
-      <section class="wrap secao">
-        <p class="eyebrow">Percurso profissional</p>
-        <h2>Formação</h2>
-        <ul class="formacao">
-          {formacao.map((f) => (
-            <li>
-              <strong>{f.titulo}</strong>
-              {f.instituicao && <span>{f.instituicao}</span>}
-            </li>
-          ))}
-        </ul>
+      <section class="wrap secao formacao-grid">
+        <div>
+          <p class="eyebrow">Percurso profissional</p>
+          <h2>Formação e <span class="pincelada">estudo contínuo</span></h2>
+          <ul class="formacao">
+            {formacao.map((f) => (
+              <li>
+                <strong>{f.titulo}</strong>
+                {f.instituicao && <span>{f.instituicao}</span>}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <img class="imagem-editorial" src={url('/img/formacao-estudo-collage.png')} width="1536" height="1152" alt="Colagem com livros, plantas e um pequeno gato, representando formação e estudo contínuo" loading="lazy" decoding="async" />
       </section>
 
       <section class="etica">
         <div class="wrap secao etica-grid">
           <div>
             <p class="eyebrow">Cuidado responsável</p>
-            <h2>Ética, formação e estudo contínuo fazem parte de cada atendimento.</h2>
+            <h2>Ética, formação e <span class="pincelada pincelada-clara">estudo contínuo</span> fazem parte de cada atendimento.</h2>
           </div>
           <div class="prosa">
             <p>
@@ -258,16 +266,16 @@ const jsonLd = {
           <img class="imagem-editorial" src={url('/img/online-therapy-collage.webp')} width="960" height="720" alt="Colagem de um ambiente reservado e acolhedor para terapia online" loading="lazy" decoding="async" />
           <div>
             <p class="eyebrow">Terapia online, de onde você estiver</p>
-            <h2>Um encontro possível dentro da sua rotina.</h2>
-            <p>
-              A terapia online permite cuidar de si sem deslocamento, com maior flexibilidade e
-              continuidade mesmo em viagens ou mudanças de cidade. As sessões acontecem por
-              videochamada, em ambiente seguro; você só precisa de internet estável e um espaço
-              reservado para falar com privacidade.
-            </p>
-            <div class="informacoes-praticas">
-              <p><strong>Atendimento particular</strong>Não trabalho diretamente com convênios, mas emito nota fiscal para que você solicite reembolso ao seu plano de saúde, conforme as regras do seu contrato.</p>
-              <p><strong>Valor da sessão</strong>A informação é apresentada com clareza em nosso primeiro contato, junto com disponibilidade, frequência e demais combinados.</p>
+            <h2>Um encontro possível <span class="pincelada">dentro da sua rotina.</span></h2>
+            <div class="prosa">
+              <p>
+                A terapia online permite cuidar de si <strong>sem deslocamento</strong>, com maior flexibilidade
+                e continuidade mesmo em viagens ou mudanças de cidade.
+              </p>
+              <p>
+                As sessões acontecem por videochamada, em ambiente seguro. Você só precisa de internet
+                estável e de um espaço reservado para falar com privacidade.
+              </p>
             </div>
             <div class="acoes">
               <a class="btn" href={whatsappUrl} target="_blank" rel="noopener">
@@ -603,25 +611,39 @@ const jsonLd = {
       .imagem-editorial { width: 100%; height: auto; border-radius: 18px; box-shadow: 0 18px 50px rgba(66, 55, 45, .10); }
       .oferece { margin-top: clamp(2.5rem, 7vw, 4rem); padding-top: 2rem; border-top: 1px solid var(--linha); }
       .oferece h3 { font-size: 1.35rem; margin: 0 0 1.25rem; }
-      .oferece ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+      .oferece ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; }
       .oferece li { padding: 1.25rem; background: var(--papel-fundo); border-radius: 12px; }
-      .oferece strong, .informacoes-praticas strong { display: block; font-family: Fraunces, serif; font-weight: 400; color: var(--tinta); margin-bottom: .35rem; }
+      .oferece strong { display: block; font-family: Fraunces, serif; font-weight: 500; color: var(--tinta); margin-bottom: .35rem; }
       .oferece span { display: block; color: var(--tinta-suave); font-size: .9rem; line-height: 1.6; }
       .abordagem { background: #eee9df; border-block: 1px solid var(--linha); }
       .abordagem .wrap, .etica .wrap, .atendimento .wrap { max-width: 68rem; }
       .abordagem h2, .etica h2, .atendimento h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
+      .imagem-escuta { margin-top: 2rem; }
+      .formacao-grid { max-width: 68rem; display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(2rem, 7vw, 5rem); align-items: center; }
+      .pincelada {
+        position: relative;
+        z-index: 0;
+        display: inline;
+        padding: 0 .08em;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+        background: linear-gradient(176deg, transparent 54%, rgba(192, 133, 101, .34) 54%, rgba(192, 133, 101, .34) 88%, transparent 88%);
+      }
+      .pincelada-clara {
+        background: linear-gradient(176deg, transparent 54%, rgba(237, 199, 168, .38) 54%, rgba(237, 199, 168, .38) 88%, transparent 88%);
+      }
+      .prosa strong { color: var(--tinta); font-weight: 500; }
       .etica { background: var(--vinho); }
       .etica :is(h2, .eyebrow) { color: #fffaf3; }
       .etica .prosa p { color: #f0e5dc; }
       .atendimento { background: var(--papel-fundo); }
       .atendimento-grid { grid-template-columns: .9fr 1.1fr; }
       .atendimento-grid > div > p { color: var(--tinta-suave); }
-      .informacoes-praticas { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }
-      .informacoes-praticas p { margin: 0; padding: 1.1rem; border: 1px solid var(--linha); background: var(--papel); border-radius: 12px; font-size: .85rem; line-height: 1.55; color: var(--tinta-suave); }
+      @media (max-width: 64rem) { .oferece ul { grid-template-columns: repeat(2, 1fr); } }
       @media (max-width: 46rem) {
-        .terapia-grid, .abordagem-grid, .etica-grid, .atendimento-grid { grid-template-columns: 1fr; }
+        .terapia-grid, .abordagem-grid, .etica-grid, .atendimento-grid, .formacao-grid { grid-template-columns: 1fr; }
         .terapia-grid .imagem-editorial { order: -1; }
-        .oferece ul, .informacoes-praticas { grid-template-columns: 1fr; }
+        .oferece ul { grid-template-columns: 1fr; }
       }
 
       .instagram-bloco { max-width: 64rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; border-top: 1px solid var(--linha); }
