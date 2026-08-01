@@ -20,7 +20,7 @@ export const site = {
   whatsapp: '5541995156609', // só números, com DDI e DDD
   instagram: 'brunapsic',
   email: null as string | null,
-  doctoralia: 'https://www.doctoralia.com.br/bruna-faria/psicologo/curitiba',
+  doctoralia: 'https://www.doctoralia.com.br/bruna-faria-2/psicologo/curitiba',
 };
 
 export const whatsappUrl = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(
