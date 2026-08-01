@@ -64,6 +64,14 @@ export const faq = [
     r: 'A TCC é uma abordagem com forte respaldo científico que trabalha a relação entre pensamentos, emoções e comportamentos. Na prática, é uma terapia ativa e colaborativa: além de entender o que acontece com você, construímos juntos estratégias aplicáveis no dia a dia.',
   },
   {
+    p: 'Qual é o valor da sessão?',
+    r: 'O valor é informado com clareza no nosso primeiro contato, junto com disponibilidade, frequência e demais combinados do atendimento.',
+  },
+  {
+    p: 'Você atende por plano de saúde?',
+    r: 'Meu atendimento é exclusivamente particular. Emito nota fiscal para que você possa solicitar reembolso ao seu plano de saúde, conforme as condições previstas no seu contrato. A confirmação do valor reembolsado deve ser feita diretamente com a operadora.',
+  },
+  {
     p: 'O que conversamos fica em sigilo?',
     r: 'Sim. O sigilo profissional é um compromisso ético fundamental. Existem situações excepcionais previstas pelas normas profissionais, especialmente quando há risco à vida; esses limites são explicados com clareza no início do acompanhamento.',
   },

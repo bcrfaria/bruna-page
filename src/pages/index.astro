@@ -113,32 +113,60 @@ const jsonLd = {
         </div>
       </section>
 
-      <section class="wrap secao" id="sobre">
-        <p class="eyebrow">Um cuidado construído com você</p>
-        <h2>Como eu trabalho</h2>
-        <div class="prosa">
-          <p>
-            Muita gente chega aqui achando que precisa provar o próprio valor o tempo todo, como se
-            merecimento fosse algo a ser conquistado por esforço exaustivo, perfeição ou validação de
-            fora. Com o tempo, essa lógica cria uma sensação de insuficiência que não passa.
-          </p>
-          <p>
-            Meu trabalho começa por entender o seu contexto: o que você sente, o que se repete e o
-            que você gostaria que fosse diferente. Uso a Terapia Cognitivo Comportamental, que
-            investiga como pensamentos, emoções e comportamentos se sustentam entre si. É uma
-            abordagem ativa: você sai da sessão com algo para observar, testar ou praticar. Mas nada
-            acontece na marra. O ritmo é seu.
-          </p>
-          <p>
-            Aquela voz interna que diz “isso não é para você” ou “foi sorte” não surgiu do nada.
-            Ela pode carregar experiências passadas, comparações e padrões rígidos. Em terapia,
-            podemos compreender de onde ela vem e construir outras maneiras de se relacionar consigo.
-          </p>
-          <p>
-            Aqui é um espaço afirmativo. Pessoas LGBTQIA+, gordas e neurodivergentes são bem-vindas
-            exatamente como são, sem precisar justificar sua existência antes de começar. Você não
-            precisa atravessar tudo isso sem companhia.
-          </p>
+      <section class="wrap secao terapia-intro" id="sobre">
+        <div class="terapia-grid">
+          <div>
+            <p class="eyebrow">Um espaço para compreender o que você vive</p>
+            <h2>Por que fazer terapia?</h2>
+            <div class="prosa">
+              <p>
+                Nem sempre buscamos terapia porque aconteceu algo extraordinário. Às vezes, o que pesa
+                é justamente aquilo que se repete: a ansiedade que não descansa, a autocrítica, relações
+                que machucam, a dificuldade de colocar limites ou a sensação de estar distante de si.
+              </p>
+              <p>
+                A psicoterapia oferece um tempo protegido para olhar essas experiências com cuidado,
+                dar nome ao que parece confuso e compreender como sua história participa do presente.
+                Não é receber uma receita pronta: é construir, com acompanhamento profissional, novas
+                possibilidades de perceber, escolher e agir.
+              </p>
+            </div>
+          </div>
+          <img class="imagem-editorial" src={url('/img/therapy-collage.webp')} width="960" height="720" alt="Colagem com caderno, caminho e elementos botânicos, representando o percurso da psicoterapia" loading="lazy" decoding="async" />
+        </div>
+
+        <div class="oferece">
+          <h3>O que a psicoterapia pode oferecer</h3>
+          <ul>
+            <li><strong>Compreensão</strong><span>Reconhecer padrões, necessidades e emoções com mais clareza.</span></li>
+            <li><strong>Recursos</strong><span>Desenvolver maneiras possíveis de lidar com desafios do cotidiano.</span></li>
+            <li><strong>Autonomia</strong><span>Fazer escolhas mais conscientes e coerentes com quem você é.</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="abordagem">
+        <div class="wrap secao abordagem-grid">
+          <div>
+            <p class="eyebrow">Como eu trabalho</p>
+            <h2>Uma terapia ativa, colaborativa e sem fórmulas prontas.</h2>
+          </div>
+          <div class="prosa">
+            <p>
+              Minha abordagem é a Terapia Cognitivo-Comportamental, ou TCC. Em linguagem simples,
+              ela nos ajuda a observar a relação entre aquilo que você pensa, sente e faz — e como
+              essa relação pode manter sofrimentos e padrões que já não fazem sentido.
+            </p>
+            <p>
+              Nas sessões, investigamos juntas o seu contexto e construímos estratégias que possam
+              ser levadas para a vida real. Às vezes há algo para observar ou experimentar entre os
+              encontros, sempre respeitando seus limites e seu ritmo.
+            </p>
+            <p>
+              Pessoas LGBTQIA+, gordas e neurodivergentes encontram aqui um espaço afirmativo,
+              acolhedor e comprometido com uma escuta sem patologização ou julgamento.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -166,49 +194,57 @@ const jsonLd = {
       <section class="processo" id="como-comecar">
         <div class="wrap secao larga">
           <p class="eyebrow">Seu primeiro passo pode ser simples</p>
-          <h2>Como começar</h2>
-          <ol class="passos">
-            <li>
-              <span>01</span>
-              <h3>Você me chama</h3>
-              <p>Envie uma mensagem pelo WhatsApp. Pode contar brevemente o que está buscando ou apenas dizer que gostaria de saber mais.</p>
-            </li>
-            <li>
-              <span>02</span>
-              <h3>Combinamos os detalhes</h3>
-              <p>Conversamos sobre disponibilidade, valor, frequência e a plataforma da videochamada, sem compromisso de continuar.</p>
-            </li>
-            <li>
-              <span>03</span>
-              <h3>Nos conhecemos</h3>
-              <p>Na primeira sessão, você traz o que for possível. Eu explico meu modo de trabalhar e avaliamos se faz sentido seguirmos juntas.</p>
-            </li>
-          </ol>
-          <a class="texto-link" href={whatsappUrl} target="_blank" rel="noopener">
-            Quero conversar sobre terapia <span aria-hidden="true">→</span>
-          </a>
+              <section class="etica">
+        <div class="wrap secao etica-grid">
+          <div>
+            <p class="eyebrow">Cuidado responsável</p>
+            <h2>Ética, formação e estudo contínuo fazem parte de cada atendimento.</h2>
+          </div>
+          <div class="prosa">
+            <p>
+              Meu trabalho é orientado pelo Código de Ética Profissional da Psicologia e pelo
+              compromisso com uma prática tecnicamente fundamentada. Sou psicóloga registrada no
+              CRP 08 sob o número 34202, com formação em Psicologia pela UFPR e especializações que
+              dialogam diretamente com as pessoas que acompanho.
+            </p>
+            <p>
+              A formação não termina com um diploma. Supervisão, estudo e atualização constante
+              sustentam um cuidado responsável, atento à singularidade de cada pessoa e às mudanças
+              do conhecimento em Psicologia.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section class="wrap secao">
-        <p class="eyebrow">Percurso profissional</p>
-        <h2>Formação</h2>
-        <ul class="formacao">
-          {formacao.map((f) => (
-            <li>
-              <strong>{f.titulo}</strong>
-              {f.instituicao && <span>{f.instituicao}</span>}
-            </li>
-          ))}
-        </ul>
+      <section class="atendimento" id="agendar">
+        <div class="wrap secao atendimento-grid">
+          <img class="imagem-editorial" src={url('/img/online-therapy-collage.webp')} width="960" height="720" alt="Colagem de um ambiente reservado e acolhedor para terapia online" loading="lazy" decoding="async" />
+          <div>
+            <p class="eyebrow">Terapia online, de onde você estiver</p>
+            <h2>Um encontro possível dentro da sua rotina.</h2>
+            <p>
+              A terapia online permite cuidar de si sem deslocamento, com maior flexibilidade e
+              continuidade mesmo em viagens ou mudanças de cidade. As sessões acontecem por
+              videochamada, em ambiente seguro; você só precisa de internet estável e um espaço
+              reservado para falar com privacidade.
+            </p>
+            <div class="informacoes-praticas">
+              <p><strong>Atendimento particular</strong>Não trabalho diretamente com convênios, mas emito nota fiscal para que você solicite reembolso ao seu plano de saúde, conforme as regras do seu contrato.</p>
+              <p><strong>Valor da sessão</strong>A informação é apresentada com clareza em nosso primeiro contato, junto com disponibilidade, frequência e demais combinados.</p>
+            </div>
+            <div class="acoes">
+              <a class="btn" href={whatsappUrl} target="_blank" rel="noopener">
+                <Icone nome="whatsapp" /> Conversar pelo WhatsApp
+              </a>
+              <a class="btn secundario" href={instagramUrl} target="_blank" rel="noopener">
+                <Icone nome="instagram" /> @{site.instagram}
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="convite" id="agendar">
-        <div class="wrap convite-grid">
-          <div>
-            <p class="eyebrow">Quando fizer sentido para você</p>
-            <h2>Podemos começar com uma conversa.</h2>
-            <p>Não é preciso saber explicar tudo, nem ter certeza de como a terapia funciona. Sua mensagem pode ser simples — eu te ajudo com os próximos passos.</p>
+      <section class="wrap secao" id="faq">r simples — eu te ajudo com os próximos passos.</p>
           </div>
           <div>
         {site.calLink ? (
@@ -560,6 +596,32 @@ const jsonLd = {
       .convite p { color: var(--tinta-suave); max-width: 48ch; }
       .convite .acoes { margin-top: 1.5rem; }
       @media (max-width: 46rem) { .convite-grid { grid-template-columns: 1fr; } }
+
+      .terapia-intro { max-width: 68rem; }
+      .terapia-grid, .abordagem-grid, .etica-grid, .atendimento-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: clamp(2rem, 7vw, 5rem); align-items: center; }
+      .imagem-editorial { width: 100%; height: auto; border-radius: 18px; box-shadow: 0 18px 50px rgba(66, 55, 45, .10); }
+      .oferece { margin-top: clamp(2.5rem, 7vw, 4rem); padding-top: 2rem; border-top: 1px solid var(--linha); }
+      .oferece h3 { font-size: 1.35rem; margin: 0 0 1.25rem; }
+      .oferece ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+      .oferece li { padding: 1.25rem; background: var(--papel-fundo); border-radius: 12px; }
+      .oferece strong, .informacoes-praticas strong { display: block; font-family: Fraunces, serif; font-weight: 400; color: var(--tinta); margin-bottom: .35rem; }
+      .oferece span { display: block; color: var(--tinta-suave); font-size: .9rem; line-height: 1.6; }
+      .abordagem { background: #eee9df; border-block: 1px solid var(--linha); }
+      .abordagem .wrap, .etica .wrap, .atendimento .wrap { max-width: 68rem; }
+      .abordagem h2, .etica h2, .atendimento h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
+      .etica { background: var(--vinho); }
+      .etica :is(h2, .eyebrow) { color: #fffaf3; }
+      .etica .prosa p { color: #f0e5dc; }
+      .atendimento { background: var(--papel-fundo); }
+      .atendimento-grid { grid-template-columns: .9fr 1.1fr; }
+      .atendimento-grid > div > p { color: var(--tinta-suave); }
+      .informacoes-praticas { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }
+      .informacoes-praticas p { margin: 0; padding: 1.1rem; border: 1px solid var(--linha); background: var(--papel); border-radius: 12px; font-size: .85rem; line-height: 1.55; color: var(--tinta-suave); }
+      @media (max-width: 46rem) {
+        .terapia-grid, .abordagem-grid, .etica-grid, .atendimento-grid { grid-template-columns: 1fr; }
+        .terapia-grid .imagem-editorial { order: -1; }
+        .oferece ul, .informacoes-praticas { grid-template-columns: 1fr; }
+      }
 
       .instagram-bloco { max-width: 64rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; border-top: 1px solid var(--linha); }
       .instagram-bloco h2 { margin-bottom: .75rem; }
