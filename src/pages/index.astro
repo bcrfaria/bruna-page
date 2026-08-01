@@ -194,7 +194,44 @@ const jsonLd = {
       <section class="processo" id="como-comecar">
         <div class="wrap secao larga">
           <p class="eyebrow">Seu primeiro passo pode ser simples</p>
-              <section class="etica">
+          <h2>Como começar</h2>
+          <ol class="passos">
+            <li>
+              <span>01</span>
+              <h3>Você me chama</h3>
+              <p>Envie uma mensagem pelo WhatsApp. Pode contar brevemente o que está buscando ou apenas dizer que gostaria de saber mais.</p>
+            </li>
+            <li>
+              <span>02</span>
+              <h3>Combinamos os detalhes</h3>
+              <p>Conversamos sobre disponibilidade, valor, frequência e a plataforma da videochamada, sem compromisso de continuar.</p>
+            </li>
+            <li>
+              <span>03</span>
+              <h3>Nos conhecemos</h3>
+              <p>Na primeira sessão, você traz o que for possível. Eu explico meu modo de trabalhar e avaliamos se faz sentido seguirmos juntas.</p>
+            </li>
+          </ol>
+          <a class="texto-link" href={whatsappUrl} target="_blank" rel="noopener">
+            Quero conversar sobre terapia <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="wrap secao">
+        <p class="eyebrow">Percurso profissional</p>
+        <h2>Formação</h2>
+        <ul class="formacao">
+          {formacao.map((f) => (
+            <li>
+              <strong>{f.titulo}</strong>
+              {f.instituicao && <span>{f.instituicao}</span>}
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section class="etica">
         <div class="wrap secao etica-grid">
           <div>
             <p class="eyebrow">Cuidado responsável</p>
@@ -240,42 +277,6 @@ const jsonLd = {
                 <Icone nome="instagram" /> @{site.instagram}
               </a>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="wrap secao" id="faq">r simples — eu te ajudo com os próximos passos.</p>
-          </div>
-          <div>
-        {site.calLink ? (
-          <>
-            <p class="prosa">
-              Escolha abaixo um horário livre na minha agenda. Os horários aparecem já convertidos
-              para o seu fuso e você recebe o link da videochamada por e-mail.
-            </p>
-            <div id="cal-booking" class="cal"></div>
-            <noscript>
-              <p class="prosa">
-                Para agendar, <a href={whatsappUrl} target="_blank" rel="noopener">fale comigo no WhatsApp</a>.
-              </p>
-            </noscript>
-          </>
-        ) : (
-          <div class="prosa">
-            <p>
-              O agendamento online está sendo preparado. Por enquanto, me chame no WhatsApp ou no
-              Instagram e combinamos um horário. Respondo assim que possível.
-            </p>
-            <div class="acoes">
-              <a class="btn" href={whatsappUrl} target="_blank" rel="noopener">
-                <Icone nome="whatsapp" /> Falar no WhatsApp
-              </a>
-              <a class="btn secundario" href={instagramUrl} target="_blank" rel="noopener">
-                <Icone nome="instagram" /> @{site.instagram}
-              </a>
-            </div>
-          </div>
-        )}
           </div>
         </div>
       </section>
