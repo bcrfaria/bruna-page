@@ -55,16 +55,36 @@ const jsonLd = {
   <body>
     <a href="#conteudo" class="skip">Pular para o conteúdo</a>
 
+    <nav class="topo" aria-label="Navegação principal">
+      <div class="wrap topo-inner">
+        <a class="marca" href="#conteudo" aria-label="Página inicial de Bruna Faria">
+          <span>Bruna Faria</span>
+          <small>Psicóloga · {site.crp}</small>
+        </a>
+        <div class="menu">
+          <a href="#sobre">Sobre</a>
+          <a href="#como-comecar">Como começar</a>
+          <a href="#faq">Dúvidas</a>
+          <a class="menu-cta" href="#agendar">Agendar</a>
+        </div>
+      </div>
+    </nav>
+
     <header class="hero">
       <div class="wrap hero-grid">
         <div>
           <p class="eyebrow">Psicóloga &middot; {site.crp}</p>
           <h1>Se entender e se aceitar é <em>revolucionário</em>.</h1>
           <p class="lead">
-            Sou {site.nome}, psicóloga formada pela UFPR. Atendo adultos online, no Brasil e no
-            exterior, em Terapia Cognitivo Comportamental. Sem receita pronta, sem julgamento e no
-            seu ritmo.
+            Sou {site.nome}, psicóloga clínica. Acompanho adultos no Brasil e no exterior em um
+            espaço online, acolhedor e afirmativo — para compreender o que pesa, construir novas
+            possibilidades e viver com mais coerência com quem você é.
           </p>
+          <ul class="selos" aria-label="Características do atendimento">
+            <li>Atendimento online</li>
+            <li>Adultos</li>
+            <li>Brasil e exterior</li>
+          </ul>
           <div class="acoes">
             <a class="btn" href="#agendar">
               <Icone nome="calendario" /> Agendar uma conversa
@@ -86,7 +106,15 @@ const jsonLd = {
     </header>
 
     <main id="conteudo">
-      <section class="wrap secao">
+      <section class="frase-destaque" aria-label="Mensagem de acolhimento">
+        <div class="wrap">
+          <span class="asterisco" aria-hidden="true">✦</span>
+          <p>Você não precisa ter tudo organizado para começar. A terapia também pode ser o lugar onde, aos poucos, as coisas ganham nome.</p>
+        </div>
+      </section>
+
+      <section class="wrap secao" id="sobre">
+        <p class="eyebrow">Um cuidado construído com você</p>
         <h2>Como eu trabalho</h2>
         <div class="prosa">
           <p>
@@ -102,15 +130,14 @@ const jsonLd = {
             acontece na marra. O ritmo é seu.
           </p>
           <p>
-            Aquela voz interna que diz “isso não é pra você” ou “foi sorte” existe por algum motivo e
-            surgiu em algum contexto. Quase nunca é um retrato da realidade: é memória de
-            experiências passadas, comparações e padrões rígidos. Você não precisa acreditar nela
-            sempre, e a gente pode olhar junto de onde ela veio.
+            Aquela voz interna que diz “isso não é para você” ou “foi sorte” não surgiu do nada.
+            Ela pode carregar experiências passadas, comparações e padrões rígidos. Em terapia,
+            podemos compreender de onde ela vem e construir outras maneiras de se relacionar consigo.
           </p>
           <p>
             Aqui é um espaço afirmativo. Pessoas LGBTQIA+, gordas e neurodivergentes são bem-vindas
-            exatamente como são, sem precisar justificar quem são antes de começar. Você não precisa
-            passar por isso sozinhe.
+            exatamente como são, sem precisar justificar sua existência antes de começar. Você não
+            precisa atravessar tudo isso sem companhia.
           </p>
         </div>
       </section>
@@ -136,7 +163,35 @@ const jsonLd = {
         </ul>
       </section>
 
+      <section class="processo" id="como-comecar">
+        <div class="wrap secao larga">
+          <p class="eyebrow">Seu primeiro passo pode ser simples</p>
+          <h2>Como começar</h2>
+          <ol class="passos">
+            <li>
+              <span>01</span>
+              <h3>Você me chama</h3>
+              <p>Envie uma mensagem pelo WhatsApp. Pode contar brevemente o que está buscando ou apenas dizer que gostaria de saber mais.</p>
+            </li>
+            <li>
+              <span>02</span>
+              <h3>Combinamos os detalhes</h3>
+              <p>Conversamos sobre disponibilidade, valor, frequência e a plataforma da videochamada, sem compromisso de continuar.</p>
+            </li>
+            <li>
+              <span>03</span>
+              <h3>Nos conhecemos</h3>
+              <p>Na primeira sessão, você traz o que for possível. Eu explico meu modo de trabalhar e avaliamos se faz sentido seguirmos juntas.</p>
+            </li>
+          </ol>
+          <a class="texto-link" href={whatsappUrl} target="_blank" rel="noopener">
+            Quero conversar sobre terapia <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+
       <section class="wrap secao">
+        <p class="eyebrow">Percurso profissional</p>
         <h2>Formação</h2>
         <ul class="formacao">
           {formacao.map((f) => (
@@ -148,8 +203,14 @@ const jsonLd = {
         </ul>
       </section>
 
-      <section class="wrap secao" id="agendar">
-        <h2>Agendar</h2>
+      <section class="convite" id="agendar">
+        <div class="wrap convite-grid">
+          <div>
+            <p class="eyebrow">Quando fizer sentido para você</p>
+            <h2>Podemos começar com uma conversa.</h2>
+            <p>Não é preciso saber explicar tudo, nem ter certeza de como a terapia funciona. Sua mensagem pode ser simples — eu te ajudo com os próximos passos.</p>
+          </div>
+          <div>
         {site.calLink ? (
           <>
             <p class="prosa">
@@ -179,9 +240,12 @@ const jsonLd = {
             </div>
           </div>
         )}
+          </div>
+        </div>
       </section>
 
-      <section class="wrap secao">
+      <section class="wrap secao" id="faq">
+        <p class="eyebrow">Para você se sentir mais segura antes de começar</p>
         <h2>Perguntas frequentes</h2>
         <div class="faq">
           {faq.map((item) => (
@@ -191,6 +255,17 @@ const jsonLd = {
             </details>
           ))}
         </div>
+      </section>
+
+      <section class="wrap secao instagram-bloco">
+        <div>
+          <p class="eyebrow">Psicologia também no cotidiano</p>
+          <h2>Textos para pensar e sentir sem pressa.</h2>
+          <p>No Instagram, compartilho reflexões sobre emoções, autocobrança, relações, corpo, comida e formas mais gentis de existir.</p>
+        </div>
+        <a class="btn secundario" href={instagramUrl} target="_blank" rel="noopener">
+          <Icone nome="instagram" /> Acompanhar @{site.instagram}
+        </a>
       </section>
     </main>
 
@@ -212,6 +287,7 @@ const jsonLd = {
           )}
           {site.email && <a href={`mailto:${site.email}`}>E-mail</a>}
         </nav>
+        <p class="aviso-crise">Este site não oferece atendimento de urgência. Em situação de crise ou risco imediato, procure um serviço de emergência da sua região. No Brasil, o CVV oferece apoio emocional pelo telefone 188.</p>
       </div>
     </footer>
 
@@ -287,6 +363,9 @@ const jsonLd = {
         --linha: #e4ddd0;
         --verde: #6b7f6e;
         --verde-escuro: #55684f;
+        --terracota: #a6634b;
+        --vinho: #744b4b;
+        --oliva-claro: #dfe3d8;
         --largura: 46rem;
       }
 
@@ -328,6 +407,25 @@ const jsonLd = {
         line-height: 1.2;
         color: var(--tinta);
       }
+
+      /* Navegação */
+      .topo {
+        position: sticky;
+        top: 0;
+        z-index: 9;
+        background: color-mix(in srgb, var(--papel) 92%, transparent);
+        border-bottom: 1px solid var(--linha);
+        backdrop-filter: blur(12px);
+      }
+      .topo-inner { min-height: 4.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; max-width: 76rem; }
+      .marca { color: var(--tinta); text-decoration: none; line-height: 1.2; }
+      .marca span { display: block; font-family: Fraunces, serif; font-size: 1.125rem; }
+      .marca small { color: var(--tinta-suave); font-size: 0.6875rem; letter-spacing: .05em; }
+      .menu { display: flex; align-items: center; gap: 1.5rem; }
+      .menu a { color: var(--tinta-suave); text-decoration: none; font-size: .8125rem; }
+      .menu a:hover { color: var(--verde-escuro); }
+      .menu .menu-cta { padding: .55rem 1rem; border: 1px solid var(--verde); border-radius: 999px; color: var(--verde-escuro); }
+      @media (max-width: 40rem) { .menu a:not(.menu-cta) { display: none; } }
 
       /* Hero */
       .hero {
@@ -391,6 +489,23 @@ const jsonLd = {
         max-width: 46ch;
       }
 
+      .selos {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        padding: 0;
+        margin: 1.5rem 0 0;
+      }
+      .selos li {
+        border: 1px solid var(--linha);
+        border-radius: 999px;
+        padding: .35rem .75rem;
+        color: var(--tinta-suave);
+        background: rgba(255,255,255,.55);
+        font-size: .75rem;
+      }
+
       .acoes {
         display: flex;
         flex-wrap: wrap;
@@ -424,7 +539,33 @@ const jsonLd = {
       a.btn.secundario:hover { background: #fff; border-color: var(--verde); }
 
       /* Seções */
-      .secao { padding: clamp(3rem, 8vw, 4.5rem) 1.5rem; }
+      .secao { padding: clamp(3rem, 8vw, 4.5rem) 1.5rem; scroll-margin-top: 5rem; }
+      .frase-destaque { background: var(--vinho); color: #fffaf3; }
+      .frase-destaque .wrap { max-width: 58rem; padding-top: 2.25rem; padding-bottom: 2.25rem; display: flex; gap: 1rem; align-items: flex-start; }
+      .frase-destaque p { margin: 0; font-family: Fraunces, serif; font-size: clamp(1.25rem, 3vw, 1.7rem); line-height: 1.4; }
+      .asterisco { color: #edc7a8; font-size: 1.1rem; padding-top: .25rem; }
+
+      .processo { background: var(--papel-fundo); border-block: 1px solid var(--linha); }
+      .passos { list-style: none; margin: 0 0 2rem; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; counter-reset: passos; }
+      .passos li { background: var(--papel); border: 1px solid var(--linha); border-radius: 14px; padding: 1.5rem; }
+      .passos li > span { color: var(--terracota); font-family: Fraunces, serif; font-size: .875rem; }
+      .passos h3 { margin: .75rem 0 .5rem; font-size: 1.15rem; }
+      .passos p { margin: 0; color: var(--tinta-suave); font-size: .9rem; line-height: 1.65; }
+      .texto-link { color: var(--verde-escuro); text-underline-offset: .25rem; font-weight: 400; }
+      @media (max-width: 46rem) { .passos { grid-template-columns: 1fr; } }
+
+      .convite { background: var(--oliva-claro); padding: clamp(3.5rem, 8vw, 5rem) 0; scroll-margin-top: 5rem; }
+      .convite-grid { max-width: 64rem; display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(2rem, 7vw, 5rem); align-items: center; }
+      .convite h2 { font-size: clamp(2rem, 4vw, 3rem); max-width: 15ch; }
+      .convite p { color: var(--tinta-suave); max-width: 48ch; }
+      .convite .acoes { margin-top: 1.5rem; }
+      @media (max-width: 46rem) { .convite-grid { grid-template-columns: 1fr; } }
+
+      .instagram-bloco { max-width: 64rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; border-top: 1px solid var(--linha); }
+      .instagram-bloco h2 { margin-bottom: .75rem; }
+      .instagram-bloco p:not(.eyebrow) { margin: 0; color: var(--tinta-suave); max-width: 48ch; }
+      .instagram-bloco .btn { flex-shrink: 0; }
+      @media (max-width: 40rem) { .instagram-bloco { align-items: flex-start; flex-direction: column; } }
 
       h2 {
         margin: 0 0 2rem;
@@ -588,6 +729,7 @@ const jsonLd = {
         border-bottom: 1px solid transparent;
       }
       .links a:hover { border-bottom-color: currentColor; }
+      .aviso-crise { max-width: 62ch; margin: 2rem 0 0; padding-top: 1.5rem; border-top: 1px solid var(--linha); color: var(--tinta-suave); font-size: .75rem; line-height: 1.6; }
 
       :where(a, summary, .btn):focus-visible {
         outline: 2px solid var(--verde);
