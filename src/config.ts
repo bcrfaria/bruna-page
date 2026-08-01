@@ -6,7 +6,7 @@ export const site = {
   // Frase da bio do Instagram dela.
   tagline: 'Se entender e se aceitar é revolucionário.',
   descricao:
-    'Psicóloga (CRP 08/34202) com atendimento online em Terapia Cognitivo Comportamental para adultos no Brasil e no exterior. Espaço afirmativo para pessoas LGBTQIA+ e neurodivergentes.',
+    'Psicóloga (CRP 08/34202) com atendimento clínico online para adultos no Brasil e no exterior. Psicoterapia em Terapia Cognitivo-Comportamental, com escuta acolhedora e espaço afirmativo para pessoas LGBTQIA+, gordas e neurodivergentes.',
   foto: '/img/bruna-colagem.webp',
 
   // Endereço público atual. Ao apontar o domínio próprio, trocar aqui e também
@@ -29,14 +29,14 @@ export const whatsappUrl = `https://wa.me/${site.whatsapp}?text=${encodeURICompo
 
 // `esp` é a colagem que ilustra cada tema (fotomontagem surrealista).
 export const queixas = [
-  { titulo: 'Ansiedade', esp: 'ansiedade', texto: 'Preocupação que não desliga, crises, tensão no corpo e a sensação de estar sempre em alerta.' },
-  { titulo: 'Depressão', esp: 'depressao', texto: 'Desânimo que se arrasta, perda de sentido, cansaço e dificuldade de fazer o que antes era simples.' },
+  { titulo: 'Ansiedade', esp: 'ansiedade', texto: 'Quando a preocupação não desliga, o corpo vive em tensão e descansar parece mais difícil do que deveria.' },
+  { titulo: 'Depressão', esp: 'depressao', texto: 'Quando o desânimo se prolonga, falta sentido e até aquilo que antes era simples passa a exigir muito.' },
   { titulo: 'Regulação emocional', esp: 'regulacao', texto: 'Emoções intensas ou difíceis de nomear, e a impressão de reagir mais do que você gostaria.' },
   { titulo: 'Autocrítica e autovalidação', esp: 'autocritica', texto: 'Aquela voz interna que diz "isso não é pra você" ou "foi sorte", e a sensação de precisar provar o próprio valor o tempo todo.' },
-  { titulo: 'Comida e corpo', esp: 'comida', texto: 'Compulsão, restrição, culpa e o peso da cultura da dieta. Um espaço livre de gordofobia, onde comer não é sobre disciplina.' },
+  { titulo: 'Comida e corpo', esp: 'comida', texto: 'Compulsão, restrição, culpa e os efeitos da cultura da dieta. Um cuidado sem gordofobia e sem reduzir a alimentação à “força de vontade”.' },
   { titulo: 'Relacionamentos', esp: 'relacionamentos', texto: 'Conflitos que se repetem, dificuldade de pôr limites e padrões que atravessam vários vínculos.' },
   { titulo: 'Vivência LGBTQIA+', esp: 'lgbtqia', texto: 'Espaço afirmativo para identidade, orientação, família e as datas que costumam pesar mais.' },
-  { titulo: 'Neurodivergências', esp: 'neuro', texto: 'TDAH e autismo, inclusive como isso afeta a alimentação e a rotina. Não é frescura nem falta de esforço.' },
+  { titulo: 'Neurodivergências', esp: 'neuro', texto: 'TDAH e autismo na vida adulta, inclusive seus efeitos na rotina, na alimentação e na forma de se relacionar com o mundo.' },
 ];
 
 export const formacao = [
@@ -49,7 +49,7 @@ export const formacao = [
 export const faq = [
   {
     p: 'Como funciona a terapia online?',
-    r: 'As sessões acontecem por videochamada, no Google Meet ou no WhatsApp, como você preferir. Você só precisa de internet estável e de um lugar reservado onde possa falar à vontade. A eficácia é equivalente à do atendimento presencial, segundo pesquisas da área, e é regulamentada pelo Conselho Federal de Psicologia.',
+    r: 'As sessões acontecem por videochamada, em uma plataforma combinada previamente. Você precisa de internet estável e de um lugar reservado onde possa falar com privacidade. O atendimento psicológico online é regulamentado pelo Conselho Federal de Psicologia.',
   },
   {
     p: 'Quanto tempo dura cada sessão e com que frequência?',
@@ -57,7 +57,7 @@ export const faq = [
   },
   {
     p: 'Atende quem mora fora do Brasil?',
-    r: 'Sim. Boa parte dos meus pacientes mora no exterior. Ajustamos o horário ao seu fuso, e o agendamento converte os horários automaticamente para o seu relógio.',
+    r: 'Sim. Atendo brasileiros que vivem no exterior e combinamos os horários considerando o seu fuso. Se você estiver fora do Brasil, também verificamos juntos os critérios aplicáveis ao atendimento no país em que vive.',
   },
   {
     p: 'O que é Terapia Cognitivo Comportamental?',
@@ -65,7 +65,7 @@ export const faq = [
   },
   {
     p: 'O que conversamos fica em sigilo?',
-    r: 'Sim. O sigilo é garantido pelo Código de Ética Profissional do Psicólogo, com pouquíssimas exceções previstas em lei, como situações de risco à vida. Tudo isso é explicado com clareza na primeira sessão.',
+    r: 'Sim. O sigilo profissional é um compromisso ético fundamental. Existem situações excepcionais previstas pelas normas profissionais, especialmente quando há risco à vida; esses limites são explicados com clareza no início do acompanhamento.',
   },
   {
     p: 'Como funciona a primeira sessão?',
