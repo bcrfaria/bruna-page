@@ -21,6 +21,7 @@ export const site = {
   instagram: 'brunapsic',
   email: null as string | null,
   doctoralia: 'https://www.doctoralia.com.br/bruna-faria-2/psicologo/curitiba',
+  agendamento: 'https://calendar.app.google/F9oxfmbRS1y652Ri9',
 };
 
 export const whatsappUrl = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(
@@ -51,11 +52,11 @@ export const formacao = [
 export const faq = [
   {
     p: 'Como funciona a terapia online?',
-    r: 'As sessões acontecem por videochamada, em uma plataforma combinada previamente. Você precisa de internet estável e de um lugar reservado onde possa falar com privacidade. O atendimento psicológico online é regulamentado pelo Conselho Federal de Psicologia.',
+    r: 'As sessões acontecem por videochamada, em uma plataforma combinada previamente. Você precisa de internet estável, fones de ouvido e de um lugar reservado onde possa falar com privacidade. Os fones ajudam a preservar o sigilo e fazem a sessão funcionar melhor. O atendimento psicológico online é regulamentado pelo Conselho Federal de Psicologia.',
   },
   {
     p: 'Quanto tempo dura cada sessão e com que frequência?',
-    r: 'Cada sessão dura cerca de 50 minutos. A frequência mais comum é semanal, principalmente no início, mas isso é combinado entre nós de acordo com o seu momento e os seus objetivos.',
+    r: 'Cada sessão dura em torno de 1 hora. A frequência pode ser semanal ou quinzenal e é combinada entre nós de acordo com o seu momento e os seus objetivos.',
   },
   {
     p: 'Atende quem mora fora do Brasil?',
