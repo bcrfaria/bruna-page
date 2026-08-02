@@ -9,9 +9,8 @@ export const site = {
     'Psicóloga (CRP 08/34202) com atendimento clínico online para adultos no Brasil e no exterior. Psicoterapia em Terapia Cognitivo-Comportamental, com escuta acolhedora e espaço afirmativo para pessoas LGBTQIA+, gordas e neurodivergentes.',
   foto: '/img/bruna-colagem.webp',
 
-  // Endereço público atual. Ao apontar o domínio próprio, trocar aqui e também
-  // o `site`/`base` no astro.config.mjs.
-  url: 'https://julia-script.github.io/bruna-page',
+  // Endereço público atual.
+  url: 'https://brunafaria.com.br',
 
   // Só o usuário do Cal.com + o slug do evento. Ex.: 'brunapsic/sessao'
   // Deixe null enquanto a conta não existir: o site mostra o botão de WhatsApp no lugar.
