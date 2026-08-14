@@ -17,6 +17,7 @@ const jsonLd = {
   description: site.descricao,
   url: site.url,
   telephone: `+${site.whatsapp}`,
+  email: site.email,
   sameAs: [instagramUrl, site.doctoralia].filter(Boolean),
   availableService: {
     '@type': 'MedicalTherapy',
@@ -65,6 +66,7 @@ const jsonLd = {
           <a href="#sobre">Sobre</a>
           <a href="#como-comecar">Como começar</a>
           <a href="#faq">Dúvidas</a>
+          <a href={url('/contato/')}>Contato</a>
           <a class="menu-cta" href={site.agendamento} target="_blank" rel="noopener">Agendar</a>
         </div>
       </div>
@@ -325,6 +327,7 @@ const jsonLd = {
           <Icone nome="instagram" /> Acompanhar @{site.instagram}
         </a>
       </section>
+
     </main>
 
     <a
