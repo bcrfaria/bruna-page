@@ -21,7 +21,9 @@ export const site = {
   instagram: 'brunapsic',
   email: 'psibrunafaria@gmail.com',
   doctoralia: 'https://www.doctoralia.com.br/bruna-faria-2/psicologo/curitiba',
-  agendamento: 'https://calendar.app.google/F9oxfmbRS1y652Ri9',
+  agendamento: `https://wa.me/5541995156609?text=${encodeURIComponent(
+    'Olá, Bruna! Vim pelo seu site e gostaria de agendar uma conversa.',
+  )}`,
 };
 
 export const whatsappUrl = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(
