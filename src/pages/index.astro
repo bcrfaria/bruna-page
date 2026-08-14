@@ -17,6 +17,7 @@ const jsonLd = {
   description: site.descricao,
   url: site.url,
   telephone: `+${site.whatsapp}`,
+  email: site.email,
   sameAs: [instagramUrl, site.doctoralia].filter(Boolean),
   availableService: {
     '@type': 'MedicalTherapy',
@@ -65,6 +66,7 @@ const jsonLd = {
           <a href="#sobre">Sobre</a>
           <a href="#como-comecar">Como começar</a>
           <a href="#faq">Dúvidas</a>
+          <a href="#contato">Contato</a>
           <a class="menu-cta" href={site.agendamento} target="_blank" rel="noopener">Agendar</a>
         </div>
       </div>
@@ -324,6 +326,51 @@ const jsonLd = {
         <a class="btn secundario" href={instagramUrl} target="_blank" rel="noopener">
           <Icone nome="instagram" /> Acompanhar @{site.instagram}
         </a>
+      </section>
+
+      <section class="contato" id="contato">
+        <div class="wrap contato-grid">
+          <div>
+            <p class="eyebrow">Vamos conversar?</p>
+            <h2>O primeiro contato pode ser simples.</h2>
+            <p class="contato-intro">
+              Está pensando em iniciar a psicoterapia ou quer tirar uma dúvida? Escolha a forma de
+              contato que for mais confortável para você. Atendo adultos online, no Brasil e no exterior.
+            </p>
+            <div class="acoes">
+              <a class="btn" href={whatsappUrl} target="_blank" rel="noopener">
+                <Icone nome="whatsapp" /> Falar no WhatsApp
+              </a>
+              <a class="btn secundario" href={site.agendamento} target="_blank" rel="noopener">
+                <Icone nome="calendario" /> Agendar uma conversa
+              </a>
+            </div>
+          </div>
+
+          <nav class="contato-canais" aria-label="Canais de contato">
+            <a href={`tel:+${site.whatsapp}`}>
+              <span>Telefone</span>
+              <strong>{site.telefoneFormatado}</strong>
+              <small>O mesmo número do WhatsApp</small>
+            </a>
+            {site.email && (
+              <a href={`mailto:${site.email}`}>
+                <span>E-mail</span>
+                <strong>{site.email}</strong>
+              </a>
+            )}
+            <a href={instagramUrl} target="_blank" rel="noopener">
+              <span>Instagram</span>
+              <strong>@{site.instagram}</strong>
+            </a>
+            {site.doctoralia && (
+              <a href={site.doctoralia} target="_blank" rel="noopener">
+                <span>Doctoralia</span>
+                <strong>Ver perfil profissional</strong>
+              </a>
+            )}
+          </nav>
+        </div>
       </section>
     </main>
 
@@ -679,6 +726,45 @@ const jsonLd = {
       .instagram-bloco p:not(.eyebrow) { margin: 0; color: var(--tinta-suave); max-width: 48ch; }
       .instagram-bloco .btn { flex-shrink: 0; }
       @media (max-width: 40rem) { .instagram-bloco { align-items: flex-start; flex-direction: column; } }
+
+      .contato {
+        padding: clamp(3.5rem, 8vw, 5rem) 0;
+        background: var(--papel-fundo);
+        border-top: 1px solid var(--linha);
+        scroll-margin-top: 5rem;
+      }
+      .contato-grid {
+        max-width: 68rem;
+        display: grid;
+        grid-template-columns: 1.05fr .95fr;
+        gap: clamp(2.5rem, 7vw, 5rem);
+        align-items: start;
+      }
+      .contato h2 { margin-bottom: 1rem; font-size: clamp(2rem, 4vw, 3rem); max-width: 16ch; }
+      .contato-intro { margin: 0; color: var(--tinta-suave); max-width: 48ch; }
+      .contato .acoes { margin-top: 1.75rem; }
+      .contato-canais { display: grid; border-top: 1px solid var(--linha); }
+      .contato-canais a {
+        display: grid;
+        gap: .2rem;
+        padding: 1.1rem .25rem;
+        border-bottom: 1px solid var(--linha);
+        color: var(--tinta);
+        text-decoration: none;
+      }
+      .contato-canais a:hover strong { color: var(--verde-escuro); }
+      .contato-canais span {
+        color: var(--verde);
+        font-size: .72rem;
+        font-weight: 500;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+      }
+      .contato-canais strong { font-family: Fraunces, serif; font-size: 1.08rem; font-weight: 400; transition: color .2s ease; }
+      .contato-canais small { color: var(--tinta-suave); font-size: .75rem; }
+      @media (max-width: 46rem) {
+        .contato-grid { grid-template-columns: 1fr; }
+      }
 
       h2 {
         margin: 0 0 2rem;

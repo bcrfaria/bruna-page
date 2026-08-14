@@ -17,8 +17,9 @@ export const site = {
   calLink: null as string | null,
 
   whatsapp: '5541995156609', // só números, com DDI e DDD
+  telefoneFormatado: '+55 (41) 99515-6609',
   instagram: 'brunapsic',
-  email: null as string | null,
+  email: 'psibrunafaria@gmail.com',
   doctoralia: 'https://www.doctoralia.com.br/bruna-faria-2/psicologo/curitiba',
   agendamento: 'https://calendar.app.google/F9oxfmbRS1y652Ri9',
 };
