@@ -1,0 +1,212 @@
+---
+import { site, whatsappUrl } from '../config';
+import Icone from '../components/Icone.astro';
+
+const instagramUrl = `https://instagram.com/${site.instagram}`;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const url = (caminho) => `${base}${caminho}`;
+const canonical = `${site.url}/contato/`;
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contato | {site.nome}</title>
+    <meta
+      name="description"
+      content="Entre em contato com Bruna Faria para saber mais sobre psicoterapia online ou agendar uma conversa."
+    />
+    <link rel="icon" href={url('/favicon.svg')} type="image/svg+xml" />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={`Contato | ${site.nome}`} />
+    <meta
+      property="og:description"
+      content="Escolha a forma de contato mais confortável para você."
+    />
+    <meta property="og:locale" content="pt_BR" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <a href="#conteudo" class="skip">Pular para o conteúdo</a>
+
+    <nav class="topo" aria-label="Navegação principal">
+      <div class="wrap topo-inner">
+        <a class="marca" href={url('/')} aria-label="Página inicial de Bruna Faria">
+          <span>Bruna Faria</span>
+          <small>Psicóloga · {site.crp}</small>
+        </a>
+        <div class="menu">
+          <a href={url('/#sobre')}>Sobre</a>
+          <a href={url('/#como-comecar')}>Como começar</a>
+          <a href={url('/#faq')}>Dúvidas</a>
+          <a class="ativo" href={url('/contato/')} aria-current="page">Contato</a>
+          <a class="menu-cta" href={site.agendamento} target="_blank" rel="noopener">Agendar</a>
+        </div>
+      </div>
+    </nav>
+
+    <main id="conteudo">
+      <section class="contato">
+        <div class="wrap contato-grid">
+          <div class="apresentacao">
+            <p class="eyebrow">Vamos conversar?</p>
+            <h1>O primeiro contato pode ser simples.</h1>
+            <p class="intro">
+              Está pensando em iniciar a psicoterapia ou quer tirar uma dúvida? Escolha a forma de
+              contato que for mais confortável para você. Atendo adultos online, no Brasil e no exterior.
+            </p>
+
+            <div class="acoes">
+              <a class="btn" href={whatsappUrl} target="_blank" rel="noopener">
+                <Icone nome="whatsapp" /> Falar no WhatsApp
+              </a>
+              <a class="btn secundario" href={site.agendamento} target="_blank" rel="noopener">
+                <Icone nome="calendario" /> Agendar uma conversa
+              </a>
+            </div>
+
+            <p class="retorno">
+              Respondo assim que possível, dentro do meu horário de trabalho. Este canal não oferece
+              atendimento de urgência.
+            </p>
+          </div>
+
+          <nav class="canais" aria-label="Outros canais de contato">
+            <a href={`tel:+${site.whatsapp}`}>
+              <span>Telefone</span>
+              <strong>{site.telefoneFormatado}</strong>
+              <small>O mesmo número do WhatsApp</small>
+            </a>
+            {site.email && (
+              <a href={`mailto:${site.email}`}>
+                <span>E-mail</span>
+                <strong>{site.email}</strong>
+              </a>
+            )}
+            <a href={instagramUrl} target="_blank" rel="noopener">
+              <span>Instagram</span>
+              <strong>@{site.instagram}</strong>
+            </a>
+            {site.doctoralia && (
+              <a href={site.doctoralia} target="_blank" rel="noopener">
+                <span>Doctoralia</span>
+                <strong>Ver perfil profissional</strong>
+              </a>
+            )}
+          </nav>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="wrap rodape-inner">
+        <div>
+          <p class="nome">{site.nome}</p>
+          <p class="crp">Psicóloga · {site.crp}</p>
+        </div>
+        <a href={url('/')}>Voltar para a página inicial <span aria-hidden="true">→</span></a>
+      </div>
+    </footer>
+
+    <style>
+      :root {
+        --papel: #fdfbf7;
+        --papel-fundo: #f7f3ec;
+        --tinta: #2e2a26;
+        --tinta-suave: #5c554d;
+        --linha: #e4ddd0;
+        --verde: #6b7f6e;
+        --verde-escuro: #55684f;
+        --terracota: #a6634b;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--papel-fundo);
+        color: var(--tinta);
+        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+        font-weight: 300;
+        font-size: 1.0625rem;
+        line-height: 1.75;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap { max-width: 68rem; margin: 0 auto; padding-inline: 1.5rem; }
+      .skip { position: absolute; left: -9999px; background: var(--tinta); color: var(--papel); padding: .75rem 1rem; }
+      .skip:focus { left: 1rem; top: 1rem; z-index: 10; }
+
+      .topo {
+        position: sticky;
+        top: 0;
+        z-index: 9;
+        background: color-mix(in srgb, var(--papel) 92%, transparent);
+        border-bottom: 1px solid var(--linha);
+        backdrop-filter: blur(12px);
+      }
+      .topo-inner { min-height: 4.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; max-width: 76rem; }
+      .marca { color: var(--tinta); text-decoration: none; line-height: 1.2; }
+      .marca span { display: block; font-family: Fraunces, serif; font-size: 1.125rem; }
+      .marca small { color: var(--tinta-suave); font-size: .6875rem; letter-spacing: .05em; }
+      .menu { display: flex; align-items: center; gap: 1.5rem; }
+      .menu a { color: var(--tinta-suave); text-decoration: none; font-size: .8125rem; }
+      .menu a:hover, .menu a.ativo { color: var(--verde-escuro); }
+      .menu a.ativo { text-decoration: underline; text-underline-offset: .35rem; }
+      .menu .menu-cta { padding: .55rem 1rem; border: 1px solid var(--verde); border-radius: 999px; color: var(--verde-escuro); text-decoration: none; }
+
+      .contato {
+        min-height: calc(100vh - 13rem);
+        display: grid;
+        align-items: center;
+        padding: clamp(3.5rem, 9vw, 7rem) 0;
+      }
+      .contato-grid {
+        display: grid;
+        grid-template-columns: 1.05fr .95fr;
+        gap: clamp(3rem, 8vw, 6rem);
+        align-items: center;
+      }
+      .eyebrow { margin: 0 0 1.5rem; color: var(--terracota); font-size: .8125rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; }
+      h1 { margin: 0 0 1.5rem; max-width: 12ch; font-family: Fraunces, ui-serif, Georgia, serif; font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 400; letter-spacing: -.015em; line-height: 1.12; }
+      .intro { margin: 0; max-width: 48ch; color: var(--tinta-suave); }
+      .acoes { display: flex; flex-wrap: wrap; gap: .875rem; margin-top: 2.25rem; }
+      a.btn { display: inline-flex; align-items: center; gap: .5rem; padding: .875rem 1.5rem; border: 1px solid var(--verde); border-radius: 999px; background: var(--verde); color: #fff; font-size: .9375rem; font-weight: 400; text-decoration: none; transition: .2s ease; }
+      a.btn:hover { background: var(--verde-escuro); border-color: var(--verde-escuro); }
+      a.btn.secundario { background: transparent; color: var(--verde-escuro); border-color: var(--linha); }
+      a.btn.secundario:hover { background: var(--papel); border-color: var(--verde); }
+      .retorno { margin: 1.5rem 0 0; max-width: 54ch; color: var(--tinta-suave); font-size: .78rem; line-height: 1.6; }
+
+      .canais { display: grid; border-top: 1px solid var(--linha); }
+      .canais a { display: grid; gap: .2rem; padding: 1.2rem .25rem; border-bottom: 1px solid var(--linha); color: var(--tinta); text-decoration: none; }
+      .canais a:hover strong { color: var(--verde-escuro); }
+      .canais span { color: var(--verde); font-size: .72rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; }
+      .canais strong { overflow-wrap: anywhere; font-family: Fraunces, serif; font-size: 1.12rem; font-weight: 400; transition: color .2s ease; }
+      .canais small { color: var(--tinta-suave); font-size: .75rem; }
+
+      .rodape { border-top: 1px solid var(--linha); background: var(--papel); }
+      .rodape-inner { min-height: 8rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+      .rodape p { margin: 0; }
+      .rodape .nome { font-family: Fraunces, serif; font-size: 1.125rem; }
+      .rodape .crp { color: var(--tinta-suave); font-size: .75rem; }
+      .rodape a { color: var(--verde-escuro); font-size: .875rem; text-underline-offset: .25rem; }
+
+      @media (max-width: 46rem) {
+        .menu a:not(.menu-cta) { display: none; }
+        .contato { align-items: start; min-height: 0; }
+        .contato-grid { grid-template-columns: 1fr; gap: 3rem; }
+        .acoes { align-items: stretch; flex-direction: column; }
+        a.btn { justify-content: center; }
+        .rodape-inner { align-items: flex-start; flex-direction: column; justify-content: center; gap: 1rem; }
+      }
+    </style>
+  </body>
+</html>
