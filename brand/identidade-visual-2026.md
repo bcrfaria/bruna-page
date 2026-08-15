@@ -206,6 +206,7 @@ Status iniciado:
 - cartao fisico-base criado em HTML;
 - cartao virtual criado em `/cartao/`.
 - PDF clicavel do cartao criado em `/pdf/cartao-virtual-bruna-faria.pdf`.
+- cartao de visita para impressao criado em `/pdf/cartao-visita-bruna-faria-impressao.pdf`.
 
 ## Regra Final
 
