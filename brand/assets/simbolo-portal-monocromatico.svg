@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Simbolo monocromatico da marca Bruna Faria</title>
+  <desc id="desc">Versao monocromatica da forma em portal com passagem sinuosa e circulo sobreposto.</desc>
+  <defs>
+    <clipPath id="portal-clip">
+      <path d="M108 431V212c0-96 62-162 148-162s148 66 148 162v219H108Z" />
+    </clipPath>
+  </defs>
+  <path fill="currentColor" d="M108 431V212c0-96 62-162 148-162s148 66 148 162v219H108Z" />
+  <path
+    clip-path="url(#portal-clip)"
+    fill="none"
+    stroke="#fff"
+    stroke-linecap="round"
+    stroke-width="50"
+    d="M245 456c-38-69-26-126 18-178 31-37 48-75 30-129-10-29-31-55-61-80"
+  />
+  <circle cx="357" cy="123" r="58" fill="currentColor" />
+</svg>

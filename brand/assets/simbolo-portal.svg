@@ -1,10 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Simbolo portal da marca Bruna Faria</title>
+  <desc id="desc">Forma em arco verde oliva com passagem sinuosa clara e circulo terracota sobreposto.</desc>
   <defs>
     <clipPath id="portal-clip">
       <path d="M108 431V212c0-96 62-162 148-162s148 66 148 162v219H108Z" />
     </clipPath>
   </defs>
-  <rect width="512" height="512" rx="96" fill="#fdfbf7" />
   <path fill="#5f745f" d="M108 431V212c0-96 62-162 148-162s148 66 148 162v219H108Z" />
   <path
     clip-path="url(#portal-clip)"

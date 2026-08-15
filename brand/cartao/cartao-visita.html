@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cartao de visita - Bruna Faria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --papel: #fdfbf7;
+        --aveia: #f7f3ec;
+        --tinta: #2e2a26;
+        --tinta-suave: #5c554d;
+        --linha: #e4ddd0;
+        --oliva: #6b7f6e;
+        --oliva-profundo: #55684f;
+        --terracota: #a6634b;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        gap: 28px;
+        place-content: center;
+        padding: 32px;
+        background: var(--aveia);
+        color: var(--tinta);
+        font-family: Inter, system-ui, sans-serif;
+      }
+
+      .folha {
+        display: grid;
+        gap: 18px;
+      }
+
+      .cartao {
+        width: 90mm;
+        height: 50mm;
+        overflow: hidden;
+        background: var(--papel);
+        border: 1px solid var(--linha);
+        box-shadow: 0 18px 45px rgba(46, 42, 38, .12);
+      }
+
+      .frente {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        padding: 11mm;
+      }
+
+      .simbolo {
+        width: 18mm;
+        height: 18mm;
+        color: var(--oliva-profundo);
+      }
+
+      .marca {
+        align-self: end;
+      }
+
+      .nome {
+        margin: 0;
+        font-family: Fraunces, Georgia, serif;
+        font-size: 18pt;
+        font-weight: 400;
+        line-height: 1;
+      }
+
+      .area {
+        margin: 4px 0 0;
+        color: var(--terracota);
+        font-size: 7.5pt;
+        font-weight: 500;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+      }
+
+      .verso {
+        display: grid;
+        grid-template-columns: 1fr 25mm;
+        gap: 8mm;
+        align-items: end;
+        padding: 9mm;
+      }
+
+      .dados {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .dados h2 {
+        margin: 0 0 2mm;
+        font-family: Fraunces, Georgia, serif;
+        font-size: 13pt;
+        font-weight: 400;
+        line-height: 1.05;
+      }
+
+      .dados p {
+        margin: 0;
+        color: var(--tinta-suave);
+        font-size: 7.4pt;
+        line-height: 1.45;
+      }
+
+      .contatos {
+        display: grid;
+        gap: 1.3mm;
+        margin-top: 6mm;
+        color: var(--tinta);
+        font-size: 7.2pt;
+        line-height: 1.35;
+      }
+
+      .qr-wrap {
+        display: grid;
+        gap: 2mm;
+        justify-items: center;
+        color: var(--tinta-suave);
+        font-size: 5.5pt;
+        line-height: 1.2;
+        text-align: center;
+      }
+
+      .qr {
+        width: 23mm;
+        height: 23mm;
+        padding: 1.8mm;
+        background: #fff;
+        border: 1px solid var(--linha);
+      }
+
+      .qr img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      @media print {
+        body {
+          display: block;
+          min-height: 0;
+          padding: 0;
+          background: white;
+        }
+
+        .folha {
+          gap: 10mm;
+          padding: 12mm;
+        }
+
+        .cartao {
+          box-shadow: none;
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="folha" aria-label="Cartao de visita Bruna Faria">
+      <section class="cartao frente" aria-label="Frente do cartao">
+        <svg class="simbolo" viewBox="0 0 512 512" aria-hidden="true">
+          <defs>
+            <clipPath id="portal-clip">
+              <path d="M108 431V212c0-96 62-162 148-162s148 66 148 162v219H108Z" />
+            </clipPath>
+          </defs>
+          <path fill="#5f745f" d="M108 431V212c0-96 62-162 148-162s148 66 148 162v219H108Z" />
+          <path clip-path="url(#portal-clip)" fill="none" stroke="#fdfbf7" stroke-linecap="round" stroke-width="50" d="M245 456c-38-69-26-126 18-178 31-37 48-75 30-129-10-29-31-55-61-80" />
+          <circle cx="357" cy="123" r="58" fill="#a6634b" />
+        </svg>
+        <div class="marca">
+          <h1 class="nome">Bruna Faria</h1>
+          <p class="area">Psicologia</p>
+        </div>
+      </section>
+
+      <section class="cartao verso" aria-label="Verso do cartao">
+        <div class="dados">
+          <div>
+            <h2>Bruna Faria</h2>
+            <p>Psicologa | CRP 08/34202</p>
+            <p>Psicoterapia online para adultos</p>
+          </div>
+          <div class="contatos">
+            <span>+55 (41) 99515-6609</span>
+            <span>brunafaria.com.br</span>
+            <span>@brunapsic</span>
+          </div>
+        </div>
+        <div class="qr-wrap">
+          <div class="qr">
+            <img src="./qr-contato.svg" alt="QR code para a pagina de contato" />
+          </div>
+          <span>Cartão virtual</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

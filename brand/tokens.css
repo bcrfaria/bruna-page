@@ -1,0 +1,23 @@
+:root {
+  /* Paleta principal */
+  --bruna-papel: #fdfbf7;
+  --bruna-aveia: #f7f3ec;
+  --bruna-linha: #e4ddd0;
+  --bruna-tinta: #2e2a26;
+  --bruna-tinta-suave: #5c554d;
+  --bruna-oliva: #6b7f6e;
+  --bruna-oliva-profundo: #55684f;
+  --bruna-oliva-claro: #dfe3d8;
+  --bruna-terracota: #a6634b;
+  --bruna-vinho: #744b4b;
+  --bruna-ocre: #c79355;
+
+  /* Tipografia */
+  --bruna-fonte-titulo: "Fraunces", Georgia, serif;
+  --bruna-fonte-texto: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Ritmo visual */
+  --bruna-raio-pequeno: 8px;
+  --bruna-raio-medio: 12px;
+  --bruna-linha-fina: 1px solid var(--bruna-linha);
+}

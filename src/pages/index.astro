@@ -59,8 +59,11 @@ const jsonLd = {
     <nav class="topo" aria-label="Navegação principal">
       <div class="wrap topo-inner">
         <a class="marca" href="#conteudo" aria-label="Página inicial de Bruna Faria">
-          <span>Bruna Faria</span>
-          <small>Psicóloga · {site.crp}</small>
+          <img class="marca-simbolo" src={url('/favicon.svg')} width="34" height="34" alt="" />
+          <span class="marca-texto">
+            <span>Bruna Faria</span>
+            <small>Psicóloga · {site.crp}</small>
+          </span>
         </a>
         <div class="menu">
           <a href="#sobre">Sobre</a>
@@ -82,6 +85,10 @@ const jsonLd = {
             espaço online, acolhedor e afirmativo — para compreender o que pesa, construir novas
             possibilidades e viver com mais coerência com quem você é.
           </p>
+          <div class="assinatura-visual" aria-hidden="true">
+            <img src={url('/favicon.svg')} width="42" height="42" alt="" />
+            <span></span>
+          </div>
           <ul class="selos" aria-label="Características do atendimento">
             <li>Atendimento online</li>
             <li>Adultos</li>
@@ -343,8 +350,13 @@ const jsonLd = {
 
     <footer class="rodape">
       <div class="wrap">
-        <p class="nome">{site.nome}</p>
-        <p class="crp">Psicóloga &middot; {site.crp}</p>
+        <div class="rodape-marca">
+          <img src={url('/favicon.svg')} width="42" height="42" alt="" />
+          <div>
+            <p class="nome">{site.nome}</p>
+            <p class="crp">Psicóloga &middot; {site.crp}</p>
+          </div>
+        </div>
         <nav class="links">
           <a href={whatsappUrl} target="_blank" rel="noopener">
             <Icone nome="whatsapp" /> WhatsApp
@@ -490,8 +502,10 @@ const jsonLd = {
         backdrop-filter: blur(12px);
       }
       .topo-inner { min-height: 4.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; max-width: 76rem; }
-      .marca { color: var(--tinta); text-decoration: none; line-height: 1.2; }
-      .marca span { display: block; font-family: Fraunces, serif; font-size: 1.125rem; }
+      .marca { display: inline-flex; align-items: center; gap: .7rem; color: var(--tinta); text-decoration: none; line-height: 1.2; }
+      .marca-simbolo { width: 2.125rem; height: 2.125rem; flex: none; }
+      .marca-texto { display: grid; gap: .12rem; }
+      .marca-texto span { display: block; font-family: Fraunces, serif; font-size: 1.125rem; }
       .marca small { color: var(--tinta-suave); font-size: 0.6875rem; letter-spacing: .05em; }
       .menu { display: flex; align-items: center; gap: 1.5rem; }
       .menu a { color: var(--tinta-suave); text-decoration: none; font-size: .8125rem; }
@@ -559,6 +573,25 @@ const jsonLd = {
         font-size: 1.125rem;
         color: var(--tinta-suave);
         max-width: 46ch;
+      }
+
+      .assinatura-visual {
+        display: flex;
+        align-items: center;
+        gap: .85rem;
+        margin-top: 1.65rem;
+        width: min(16rem, 100%);
+      }
+      .assinatura-visual img {
+        width: 2.625rem;
+        height: 2.625rem;
+        flex: none;
+      }
+      .assinatura-visual span {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(90deg, var(--terracota), transparent);
       }
 
       .selos {
@@ -820,13 +853,24 @@ const jsonLd = {
         padding: 3.5rem 0;
         margin-top: 2rem;
       }
+      .rodape-marca {
+        display: flex;
+        align-items: center;
+        gap: .85rem;
+        margin-bottom: 1.5rem;
+      }
+      .rodape-marca img {
+        width: 2.625rem;
+        height: 2.625rem;
+        flex: none;
+      }
       .rodape .nome {
         margin: 0;
         font-family: Fraunces, serif;
         font-size: 1.25rem;
       }
       .rodape .crp {
-        margin: 0.25rem 0 1.5rem;
+        margin: 0.25rem 0 0;
         font-size: 0.875rem;
         color: var(--tinta-suave);
       }

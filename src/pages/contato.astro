@@ -41,8 +41,11 @@ const canonical = `${site.url}/contato/`;
     <nav class="topo" aria-label="Navegação principal">
       <div class="wrap topo-inner">
         <a class="marca" href={url('/')} aria-label="Página inicial de Bruna Faria">
-          <span>Bruna Faria</span>
-          <small>Psicóloga · {site.crp}</small>
+          <img class="marca-simbolo" src={url('/favicon.svg')} width="34" height="34" alt="" />
+          <span class="marca-texto">
+            <span>Bruna Faria</span>
+            <small>Psicóloga · {site.crp}</small>
+          </span>
         </a>
         <div class="menu">
           <a href={url('/#sobre')}>Sobre</a>
@@ -109,9 +112,12 @@ const canonical = `${site.url}/contato/`;
 
     <footer class="rodape">
       <div class="wrap rodape-inner">
-        <div>
+        <div class="rodape-marca">
+          <img src={url('/favicon.svg')} width="38" height="38" alt="" />
+          <div>
           <p class="nome">{site.nome}</p>
           <p class="crp">Psicóloga · {site.crp}</p>
+          </div>
         </div>
         <a href={url('/')}>Voltar para a página inicial <span aria-hidden="true">→</span></a>
       </div>
@@ -154,8 +160,10 @@ const canonical = `${site.url}/contato/`;
         backdrop-filter: blur(12px);
       }
       .topo-inner { min-height: 4.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; max-width: 76rem; }
-      .marca { color: var(--tinta); text-decoration: none; line-height: 1.2; }
-      .marca span { display: block; font-family: Fraunces, serif; font-size: 1.125rem; }
+      .marca { display: inline-flex; align-items: center; gap: .7rem; color: var(--tinta); text-decoration: none; line-height: 1.2; }
+      .marca-simbolo { width: 2.125rem; height: 2.125rem; flex: none; }
+      .marca-texto { display: grid; gap: .12rem; }
+      .marca-texto span { display: block; font-family: Fraunces, serif; font-size: 1.125rem; }
       .marca small { color: var(--tinta-suave); font-size: .6875rem; letter-spacing: .05em; }
       .menu { display: flex; align-items: center; gap: 1.5rem; }
       .menu a { color: var(--tinta-suave); text-decoration: none; font-size: .8125rem; }
@@ -194,6 +202,8 @@ const canonical = `${site.url}/contato/`;
 
       .rodape { border-top: 1px solid var(--linha); background: var(--papel); }
       .rodape-inner { min-height: 8rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+      .rodape-marca { display: flex; align-items: center; gap: .8rem; }
+      .rodape-marca img { width: 2.375rem; height: 2.375rem; flex: none; }
       .rodape p { margin: 0; }
       .rodape .nome { font-family: Fraunces, serif; font-size: 1.125rem; }
       .rodape .crp { color: var(--tinta-suave); font-size: .75rem; }
