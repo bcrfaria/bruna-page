@@ -65,6 +65,7 @@ Fonte oficial aprovada:
 - `brand/assets/oficial-aprovado/03-variacoes-do-simbolo.png`
 - `brand/assets/oficial-aprovado/04-usos-horizontais.png`
 - `brand/assets/oficial-aprovado/05-paleta-e-valores.png`
+- `public/brand/simbolo-principal-bruna-faria-transparente.png` - versao tecnica para aplicacao digital e impressa, derivada do simbolo aprovado sem redesenho.
 
 O simbolo oficial aprovado e formado por:
 
@@ -236,9 +237,9 @@ Status iniciado:
 - favicon atualizado no site;
 - marca aplicada no topo e no rodape;
 - cartao fisico-base criado em HTML;
-- cartao virtual criado em `/cartao/`.
-- PDF clicavel do cartao criado em `/pdf/cartao-virtual-bruna-faria.pdf`.
-- cartao de visita para impressao criado em `/pdf/cartao-visita-bruna-faria-impressao.pdf`.
+- cartao virtual criado em `/cartao/` e atualizado com o simbolo oficial aprovado;
+- PDF clicavel do cartao criado em `/pdf/cartao-virtual-bruna-faria.pdf` e atualizado com o simbolo oficial aprovado;
+- cartao de visita para impressao criado em `/pdf/cartao-visita-bruna-faria-impressao.pdf` e atualizado com o simbolo oficial aprovado.
 
 ## Regra Final
 
