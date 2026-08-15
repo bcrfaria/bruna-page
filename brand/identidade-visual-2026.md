@@ -153,6 +153,27 @@ Elementos permitidos quando tiverem funcao:
 
 Regra especial: nao usar galhos/ramos secos soltos como decoracao.
 
+### Referencias Aprovadas De Direcao Visual
+
+Status: aprovadas pela Bruna como direcao visual, nao como substituicao do simbolo oficial.
+
+Arquivos:
+
+- `brand/assets/referencias-aprovadas/01-linguagem-de-colagem-referencia-aprovada.png`
+- `brand/assets/referencias-aprovadas/02-sistema-visual-referencia-aprovada.png`
+
+Usar estas pranchas como referencia para:
+
+- linguagem de colagem;
+- composicoes editoriais;
+- textura, papel, recortes e materiais;
+- aplicacoes em Instagram, site, papelaria e materiais educativos;
+- equilibrio entre estrutura calma e expressao artistica.
+
+Observacao tipografica: as pranchas usam `bruna faria` em minusculas, mas em materiais profissionais finais a escrita aprovada deve ser `Bruna Faria`, com iniciais maiusculas, salvo se uma versao inteiramente minuscula for aprovada explicitamente para uma aplicacao especifica.
+
+Regra: estas referencias nao autorizam redesenhar o simbolo, trocar o logo oficial ou criar novas variacoes estruturais da marca. O simbolo aprovado continua sendo o da pasta `brand/assets/oficial-aprovado/`.
+
 ## Checkpoint Gato
 
 Este e o checkpoint do cartao e da papelaria.
