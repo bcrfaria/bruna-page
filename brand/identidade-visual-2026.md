@@ -55,7 +55,18 @@ Evitar:
 
 ## Simbolo
 
-O simbolo atual e formado por:
+Status: aprovado pela Bruna em 15/08/2026.
+
+Fonte oficial aprovada:
+
+- `brand/assets/oficial-aprovado/00-referencia-oficial-identidade-bruna-faria.png`
+- `brand/assets/oficial-aprovado/01-logo-principal-vertical.png`
+- `brand/assets/oficial-aprovado/02-simbolo-principal.png`
+- `brand/assets/oficial-aprovado/03-variacoes-do-simbolo.png`
+- `brand/assets/oficial-aprovado/04-usos-horizontais.png`
+- `brand/assets/oficial-aprovado/05-paleta-e-valores.png`
+
+O simbolo oficial aprovado e formado por:
 
 - portal/arco em verde oliva;
 - passagem sinuosa em tom claro;
@@ -71,7 +82,7 @@ Leituras possiveis:
 - possibilidade;
 - transformacao sem promessa de equilibrio perfeito.
 
-Regra: nao alterar o simbolo sem motivo. Ajustes futuros devem ser tecnicos, nao conceituais.
+Regra: nao alterar, redesenhar ou reinterpretar o simbolo. Todas as pecas devem partir dos arquivos oficiais aprovados. Qualquer arquivo anterior com proporcao, fenda, circulo, textura ou desenho diferente deve ser tratado como provisório/historico, nao como marca final.
 
 ## Paleta
 
