@@ -1,19 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title id="title">Simbolo monocromatico da marca Bruna Faria</title>
-  <desc id="desc">Versao monocromatica da forma em portal com passagem sinuosa e circulo sobreposto.</desc>
-  <defs>
-    <clipPath id="portal-clip">
-      <path d="M108 431V212c0-96 62-162 148-162s148 66 148 162v219H108Z" />
-    </clipPath>
-  </defs>
-  <path fill="currentColor" d="M108 431V212c0-96 62-162 148-162s148 66 148 162v219H108Z" />
-  <path
-    clip-path="url(#portal-clip)"
-    fill="none"
-    stroke="#fff"
-    stroke-linecap="round"
-    stroke-width="50"
-    d="M245 456c-38-69-26-126 18-178 31-37 48-75 30-129-10-29-31-55-61-80"
-  />
-  <circle cx="357" cy="123" r="58" fill="currentColor" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 390" role="img" aria-labelledby="title desc">
+  <title id="title">Símbolo monocromático da marca Bruna Faria</title>
+  <desc id="desc">Versão em tinta do símbolo oficial aprovado, com geometria idêntica à versão colorida.</desc>
+  <image width="320" height="390" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAGGAgMAAAB3T7CQAAAABlBMVEVMaXEuKiYV6YMiAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAD6AAAA+gBtXtSawAABMNJREFUeJzt3EFW6zAMBVB54CV4P1qCBnr738o/QOG3TqLYkloMREMsLpGcpI5zKNEVV1xxxRW/JvAeksXVDw9AtocUsdx50AQQDyGPf4jnvfYIfhG3RnCkgfdFfzViVuy9T8Hb1bYFtTtwcc/w3SE+/JxiB/h+iA8/lwlwzwP6Ayf/FN8Oqfs5Bw8Quu1BYEp2exCZkt0e0FiMetDQlPhrbuMg51aMsSZOVAxNrhhDTZzxwIln9WgTZ1qIkSZOeUByxUByxTiflamTBgOzgmSwzIKa3ELg1WCbBtkGkQyWeVCSWwhJbiHs8warg8UBInlOgOQ5gXkipoNIBssaoCRPMl4JtmwQa4CaPMl4IViXB9vyIFYHy/JgXR5sfw/E6mDxgvJjwboMyK8C2zIgvQrEKqAuD8qPvZRL9nldlrmUKRnU5UHJvjfw8iCtvmKXQ9DngZcHKRnU5R+++dAr2RWX7IrLyO/X5E0l3TSaomAb388tA6D0WRwEubutKwXB/nOCLXDkI6W7xykFQe0uJ46C/ZxIFOznRKIgJYPaf+5oHEQqKP25qkGwn5OT11vn4Pajm0LgpoXRS2/Twii4bSEkBO6sfiQC7rQQIXCnhdAIuNNCmGCbvJDfg/yg7K5VyA/y7ocO+cH9JrMb3K8YfnC/YogbPDitxAvunzTwg3ywwFUveHQhqRM8qhhe8KhiwAker83IBerxvYhcoByPsgs8biFcoBrLW/aAYtzOxQOyMSge0HqwlGxQHaA1J/CA1pzAA1pzAuNSOfwl+2GfpkF9AlgMkKdByQbZXkexB7TuvTIN0hNAZIL6BLCkbnDK8iCfLOc1G8QsSE8A29KgDqy+vx/E0qCcgnKB6/VQL3C9HuICf3wPdWQTaz8u8DPO9z75m0F+AlhSQTkF5ZtBdX/stReBGNnvzXx4xDRo7mE4wZIK6hmok+DZ8y2mQc4G5XzTfHozzfX42GZfLPhByQZhz4rOg3y2rz+/MV5zQZhNVAfIZhNpHpSTVw+OFzRWE8kBmjWTAzRrJgdonjjkAM0ThzygdbGQD6y5oBg1kwfce+UfAq3bNrlA47ZNTpByQZl+WdhOwTK3Jm42aKwT2QUa60R2gzUV5MMmshukdLBlgvIMsGaDJRPUt6R0sC0P1kQQ1vdDrQPS+mBbGeS3rLo8WP4eSBcYvlL20vjvgfJbQf1I27ndyAVOrL7+GMjLg3SYJmuAujwoy4N8S0MWSKuDmg3KLatkgbw8SLeoSaBmg2JliQPkZFApGZSvLOSAnA3SZ5QcUL6SZv6Npo1UnAPqSZLMgpwM6l0SMkD+n1MyQLnLqRkgJYN8niMz4ONjF8KgPqSUOEjJII99NTqNgjo2bzIM9g/CCILaZZQoyF1GDYI60JQpcLOVgBiofUIJgtwn1CBIpz2ZA7dZiIHUR4mBOl4xhsCJijEETlSMEXBbcY2BclLANEibQAjUzWiJgbIZrTGQs0EyR+dB3Y4iBMpmsMRA3gzWGEjWoAPUbFC2gwiBvBkrMZBywGq0sGaDLQRKNsjbMawF0vPBEgI1GxTj4H8pyO793leB9AIQS4F6geEeShpYskE6fp0d+YJZPf5Th0FH8Va0ceyzB3jFFVe8LP4BhacMoaViU94AAAAASUVORK5CYII=" />
 </svg>

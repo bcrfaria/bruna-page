@@ -7,7 +7,9 @@ from reportlab.graphics.shapes import Drawing
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
+from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.pdfmetrics import stringWidth
+from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
 
 
@@ -16,6 +18,12 @@ SYMBOL_SOURCE = ROOT / "brand/assets/oficial-aprovado/02-simbolo-principal.png"
 SYMBOL = ROOT / "public/brand/simbolo-principal-bruna-faria-transparente.png"
 OUT = ROOT / "output/pdf"
 PUBLIC = ROOT / "public/pdf"
+FONT_DIR = ROOT / "brand/fonts"
+
+LORA_MEDIUM = "Lora-Medium"
+LORA_SEMIBOLD = "Lora-SemiBold"
+INTER_REGULAR = "Inter-Regular"
+INTER_MEDIUM = "Inter-Medium"
 
 NAME = "Bruna Faria"
 CRP = "CRP 08/34202"
@@ -42,6 +50,19 @@ def ensure_dirs():
     OUT.mkdir(parents=True, exist_ok=True)
     PUBLIC.mkdir(parents=True, exist_ok=True)
     SYMBOL.parent.mkdir(parents=True, exist_ok=True)
+
+
+def register_fonts():
+    fonts = {
+        LORA_MEDIUM: FONT_DIR / "Lora-Medium.ttf",
+        LORA_SEMIBOLD: FONT_DIR / "Lora-SemiBold.ttf",
+        INTER_REGULAR: FONT_DIR / "Inter-Regular.ttf",
+        INTER_MEDIUM: FONT_DIR / "Inter-Medium.ttf",
+    }
+    for name, path in fonts.items():
+        if not path.exists():
+            raise FileNotFoundError(f"Fonte obrigatoria nao encontrada: {path}")
+        pdfmetrics.registerFont(TTFont(name, str(path)))
 
 
 def build_transparent_symbol():
@@ -101,7 +122,7 @@ def rounded_link(c, x, y, w, h, label, url, primary=False):
     c.setFillColor(OLIVE if primary else PAPER)
     c.roundRect(x, y, w, h, h / 2, stroke=1, fill=1)
     c.setFillColor(colors.white if primary else OLIVE)
-    c.setFont("Helvetica", 10)
+    c.setFont(INTER_MEDIUM, 10)
     c.drawCentredString(x + w / 2, y + h / 2 - 3.5, label)
     c.linkURL(url, (x, y, x + w, y + h), relative=0)
 
@@ -130,11 +151,11 @@ def build_virtual_pdf(path):
 
     symbol_w = 74
     draw_symbol(c, w / 2 - symbol_w / 2, h - 170, symbol_w)
-    text_center(c, w / 2, h - 220, NAME, "Times-Roman", 34, INK)
-    text_center(c, w / 2, h - 245, "P S I C O L O G I A", "Helvetica", 10, OLIVE, tracking=3.5)
+    text_center(c, w / 2, h - 220, NAME, LORA_MEDIUM, 34, INK)
+    text_center(c, w / 2, h - 245, "P S I C O L O G I A", INTER_MEDIUM, 10, OLIVE, tracking=3.5)
 
     c.setFillColor(SOFT)
-    c.setFont("Helvetica", 10.8)
+    c.setFont(INTER_REGULAR, 10.8)
     copy = [
         "Psicoterapia online para adultos",
         "no Brasil e no exterior.",
@@ -160,7 +181,7 @@ def build_virtual_pdf(path):
     c.setStrokeColor(LINE)
     c.line(margin + 42, 120, w - margin - 42, 120)
     c.setFillColor(SOFT)
-    c.setFont("Helvetica", 8.5)
+    c.setFont(INTER_REGULAR, 8.5)
     c.drawCentredString(w / 2, 95, PHONE)
     c.linkURL(PHONE_LINK, (w / 2 - 70, 86, w / 2 + 70, 106), relative=0)
     c.drawCentredString(w / 2, 75, EMAIL)
@@ -188,10 +209,10 @@ def build_print_pdf(path):
     symbol_w = 15 * mm
     draw_symbol(c, 12 * mm, 22 * mm, symbol_w)
     c.setFillColor(INK)
-    c.setFont("Times-Roman", 24)
+    c.setFont(LORA_MEDIUM, 24)
     c.drawString(32 * mm, 27 * mm, NAME)
     c.setFillColor(OLIVE)
-    c.setFont("Helvetica", 8)
+    c.setFont(INTER_MEDIUM, 8)
     c.drawString(32.5 * mm, 21.6 * mm, "P S I C O L O G I A")
     c.setFillColor(TERRACOTTA)
     c.circle(45 * mm, 11 * mm, 1.1 * mm, stroke=0, fill=1)
@@ -203,15 +224,15 @@ def build_print_pdf(path):
     c.setStrokeColor(LINE)
     c.rect(3 * mm, 3 * mm, card_w - 6 * mm, card_h - 6 * mm, stroke=1, fill=0)
     c.setFillColor(INK)
-    c.setFont("Times-Roman", 15)
+    c.setFont(LORA_MEDIUM, 15)
     c.drawString(9 * mm, 34 * mm, NAME)
     c.setFillColor(SOFT)
-    c.setFont("Helvetica", 7.4)
+    c.setFont(INTER_REGULAR, 7.4)
     c.drawString(9 * mm, 29.6 * mm, f"Psicóloga | {CRP}")
     c.drawString(9 * mm, 25.7 * mm, "Psicoterapia online para adultos")
 
     c.setFillColor(INK)
-    c.setFont("Helvetica", 7.2)
+    c.setFont(INTER_REGULAR, 7.2)
     c.drawString(9 * mm, 17.2 * mm, PHONE)
     c.drawString(9 * mm, 13.5 * mm, "brunafaria.com.br")
     c.drawString(9 * mm, 9.8 * mm, "@brunapsic")
@@ -227,7 +248,7 @@ def build_print_pdf(path):
     c.rect(qr_x - 2 * mm, qr_y - 2 * mm, qr_size + 4 * mm, qr_size + 4 * mm, stroke=1, fill=1)
     draw_qr(c, CONTACT, qr_x, qr_y, qr_size)
     c.setFillColor(SOFT)
-    c.setFont("Helvetica", 5.6)
+    c.setFont(INTER_MEDIUM, 5.6)
     c.drawCentredString(qr_x + qr_size / 2, 10.5 * mm, "Cartao virtual")
     c.linkURL(CONTACT, (qr_x - 2 * mm, qr_y - 2 * mm, qr_x + qr_size + 2 * mm, qr_y + qr_size + 2 * mm), relative=0)
 
@@ -237,6 +258,7 @@ def build_print_pdf(path):
 
 def main():
     ensure_dirs()
+    register_fonts()
     build_transparent_symbol()
     virtual = OUT / "cartao-virtual-bruna-faria.pdf"
     printed = OUT / "cartao-visita-bruna-faria-impressao.pdf"

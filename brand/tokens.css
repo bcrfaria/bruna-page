@@ -13,8 +13,12 @@
   --bruna-ocre: #c79355;
 
   /* Tipografia */
-  --bruna-fonte-titulo: "Fraunces", Georgia, serif;
+  --bruna-fonte-titulo: "Lora", Georgia, serif;
+  --bruna-peso-titulo: 500;
+  --bruna-peso-titulo-pequeno: 600;
   --bruna-fonte-texto: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --bruna-peso-texto: 400;
+  --bruna-peso-rotulo: 500;
 
   /* Ritmo visual */
   --bruna-raio-pequeno: 8px;
