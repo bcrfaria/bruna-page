@@ -34,7 +34,7 @@ const jsonLd = {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{site.titulo}</title>
     <meta name="description" content={site.descricao} />
-    <link rel="icon" href={url('/favicon.svg')} type="image/svg+xml" />
+    <link rel="icon" href={url('/brand/simbolo-principal-bruna-faria-transparente.png')} type="image/png" />
     <link rel="canonical" href={site.url} />
 
     <meta property="og:type" content="website" />
@@ -46,7 +46,7 @@ const jsonLd = {
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lora:wght@500;600&display=swap"
       rel="stylesheet"
     />
 
@@ -59,7 +59,7 @@ const jsonLd = {
     <nav class="topo" aria-label="Navegação principal">
       <div class="wrap topo-inner">
         <a class="marca" href="#conteudo" aria-label="Página inicial de Bruna Faria">
-          <img class="marca-simbolo" src={url('/favicon.svg')} width="34" height="34" alt="" />
+          <img class="marca-simbolo" src={url('/brand/simbolo-principal-bruna-faria-transparente.png')} width="28" height="34" alt="" />
           <span class="marca-texto">
             <span>Bruna Faria</span>
             <small>Psicóloga · {site.crp}</small>
@@ -86,7 +86,7 @@ const jsonLd = {
             possibilidades e viver com mais coerência com quem você é.
           </p>
           <div class="assinatura-visual" aria-hidden="true">
-            <img src={url('/favicon.svg')} width="42" height="42" alt="" />
+            <img src={url('/brand/simbolo-principal-bruna-faria-transparente.png')} width="34" height="42" alt="" />
             <span></span>
           </div>
           <ul class="selos" aria-label="Características do atendimento">
@@ -351,7 +351,7 @@ const jsonLd = {
     <footer class="rodape">
       <div class="wrap">
         <div class="rodape-marca">
-          <img src={url('/favicon.svg')} width="42" height="42" alt="" />
+          <img src={url('/brand/simbolo-principal-bruna-faria-transparente.png')} width="34" height="42" alt="" />
           <div>
             <p class="nome">{site.nome}</p>
             <p class="crp">Psicóloga &middot; {site.crp}</p>
@@ -462,7 +462,7 @@ const jsonLd = {
         background: var(--papel);
         color: var(--tinta);
         font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 1.0625rem;
         line-height: 1.75;
         -webkit-font-smoothing: antialiased;
@@ -485,8 +485,8 @@ const jsonLd = {
       .skip:focus { left: 1rem; top: 1rem; z-index: 10; }
 
       h1, h2, h3 {
-        font-family: Fraunces, ui-serif, Georgia, serif;
-        font-weight: 400;
+        font-family: Lora, ui-serif, Georgia, serif;
+        font-weight: 500;
         letter-spacing: -0.015em;
         line-height: 1.2;
         color: var(--tinta);
@@ -503,9 +503,9 @@ const jsonLd = {
       }
       .topo-inner { min-height: 4.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; max-width: 76rem; }
       .marca { display: inline-flex; align-items: center; gap: .7rem; color: var(--tinta); text-decoration: none; line-height: 1.2; }
-      .marca-simbolo { width: 2.125rem; height: 2.125rem; flex: none; }
+      .marca-simbolo { width: 1.75rem; height: 2.125rem; object-fit: contain; flex: none; }
       .marca-texto { display: grid; gap: .12rem; }
-      .marca-texto span { display: block; font-family: Fraunces, serif; font-size: 1.125rem; }
+      .marca-texto span { display: block; font-family: Lora, serif; font-size: 1.125rem; font-weight: 500; }
       .marca small { color: var(--tinta-suave); font-size: 0.6875rem; letter-spacing: .05em; }
       .menu { display: flex; align-items: center; gap: 1.5rem; }
       .menu a { color: var(--tinta-suave); text-decoration: none; font-size: .8125rem; }
@@ -647,13 +647,13 @@ const jsonLd = {
       .secao { padding: clamp(3rem, 8vw, 4.5rem) 1.5rem; scroll-margin-top: 5rem; }
       .frase-destaque { background: var(--vinho); color: #fffaf3; }
       .frase-destaque .wrap { max-width: 58rem; padding-top: 2.25rem; padding-bottom: 2.25rem; display: flex; gap: 1rem; align-items: flex-start; }
-      .frase-destaque p { margin: 0; font-family: Fraunces, serif; font-size: clamp(1.25rem, 3vw, 1.7rem); line-height: 1.4; }
+      .frase-destaque p { margin: 0; font-family: Lora, serif; font-size: clamp(1.25rem, 3vw, 1.7rem); font-weight: 500; line-height: 1.4; }
       .asterisco { color: #edc7a8; font-size: 1.1rem; padding-top: .25rem; }
 
       .processo { background: var(--papel-fundo); border-block: 1px solid var(--linha); }
       .passos { list-style: none; margin: 0 0 2rem; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; counter-reset: passos; }
       .passos li { background: var(--papel); border: 1px solid var(--linha); border-radius: 14px; padding: 1.5rem; }
-      .passos li > span { color: var(--terracota); font-family: Fraunces, serif; font-size: .875rem; }
+      .passos li > span { color: var(--terracota); font-family: Lora, serif; font-size: .875rem; font-weight: 600; }
       .passos h3 { margin: .75rem 0 .5rem; font-size: 1.15rem; }
       .passos p { margin: 0; color: var(--tinta-suave); font-size: .9rem; line-height: 1.65; }
       .texto-link { color: var(--verde-escuro); text-underline-offset: .25rem; font-weight: 400; }
@@ -673,7 +673,7 @@ const jsonLd = {
       .oferece h3 { font-size: 1.35rem; margin: 0 0 1.25rem; }
       .oferece ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; }
       .oferece li { padding: 1.25rem; background: #fff; border: 1px solid var(--linha); border-radius: 12px; overflow: hidden; }
-      .oferece strong { display: block; font-family: Fraunces, serif; font-weight: 500; color: var(--tinta); margin-bottom: .35rem; }
+      .oferece strong { display: block; font-family: Lora, serif; font-weight: 600; color: var(--tinta); margin-bottom: .35rem; }
       .oferece span { display: block; color: var(--tinta-suave); font-size: .9rem; line-height: 1.6; }
       .chamada-secao { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--linha); display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
       .chamada-secao p { margin: 0; color: var(--tinta-suave); max-width: 44ch; }
@@ -866,8 +866,9 @@ const jsonLd = {
       }
       .rodape .nome {
         margin: 0;
-        font-family: Fraunces, serif;
+        font-family: Lora, serif;
         font-size: 1.25rem;
+        font-weight: 500;
       }
       .rodape .crp {
         margin: 0.25rem 0 0;

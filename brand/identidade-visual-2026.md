@@ -117,15 +117,12 @@ Uso recomendado:
 
 Direcao aprovada:
 
-- titulos: serifa editorial, discreta e legivel;
-- textos: sans-serif limpa, contemporanea e facil de ler.
+- titulos, nome da marca e citacoes: Lora Medium (500);
+- titulos pequenos e materiais compactos: Lora SemiBold (600);
+- textos corridos: Inter Regular (400);
+- rotulos e informacao profissional: Inter Medium (500).
 
-No site atual:
-
-- titulos: Fraunces;
-- texto: Inter.
-
-Observacao: Fraunces funcionou no site, mas deve ser usada com cuidado. Para materiais pequenos, cartoes e informacao profissional, priorizar pesos mais simples e tamanhos confortaveis. Manuscritas e caligraficas continuam descartadas.
+Fraunces foi descartada por ter menor legibilidade e aparencia fina demais para a identidade. Manuscritas e caligraficas continuam descartadas.
 
 ## Linguagem De Colagem
 
