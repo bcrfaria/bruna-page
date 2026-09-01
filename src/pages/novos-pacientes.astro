@@ -49,13 +49,7 @@ const embeddedFormUrl = `${formUrl}?embedded=true`;
         </div>
       </section>
 
-      <section class="form-section" id="formulario" aria-labelledby="form-title">
-        <div class="form-heading">
-          <p class="eyebrow">Abertura de prontuário · 2026</p>
-          <h2 id="form-title">Preencha seu cadastro</h2>
-          <p>O formulário aparece nesta mesma página. Esta página não guarda uma cópia das respostas.</p>
-        </div>
-
+      <section class="form-section" id="formulario" aria-label="Formulário de abertura de prontuário">
         <div class="form-frame">
           <iframe
             src={embeddedFormUrl}
@@ -181,18 +175,11 @@ const embeddedFormUrl = `${formUrl}?embedded=true`;
   .form-section {
     width: min(100%, 820px);
     margin: 0 auto;
-    padding: 34px 30px 28px;
-    border: 1px solid var(--line);
-    border-top: 6px solid var(--petrol);
-    border-radius: 16px;
-    background: var(--surface);
-    box-shadow: 0 18px 44px rgba(44, 57, 49, .1);
+    padding: 0;
   }
 
-  .form-heading { padding: 2px 4px 24px; border-bottom: 1px solid var(--line); }
-  .form-heading > p:last-child { margin: 12px 0 0; color: var(--muted); font-size: .85rem; line-height: 1.6; }
-  .form-frame { width: 100%; overflow: hidden; background: #f3f6fb; }
-  .form-frame iframe { display: block; width: 100%; height: 4200px; border: 0; background: #f3f6fb; }
+  .form-frame { width: 100%; overflow: hidden; border-radius: 12px; background: var(--paper); }
+  .form-frame iframe { display: block; width: 100%; height: 4200px; border: 0; background: var(--paper); }
   .form-fallback { margin: 18px 0 0; color: var(--muted); font-size: .8rem; line-height: 1.55; text-align: center; }
   .form-fallback a { color: var(--petrol); font-weight: 500; text-underline-offset: 3px; }
 
@@ -202,14 +189,14 @@ const embeddedFormUrl = `${formUrl}?embedded=true`;
   @media (max-width: 720px) {
     .site-header, .site-footer { padding: 16px 18px; }
     .confidential-note { display: none; }
-    main { padding: 0 12px 42px; }
-    .page-intro { display: block; padding: 34px 6px 30px; }
+    main { padding: 0 0 42px; }
+    .page-intro { display: block; padding: 34px 18px 26px; }
     .intro-art { min-height: 190px; margin-bottom: 30px; border-radius: 8px 68px 8px 8px; }
     .intro-art img { min-height: 190px; }
     h1 { font-size: clamp(2.15rem, 11vw, 3.2rem); }
-    .form-section { padding: 24px 10px 22px; border-radius: 12px; }
-    .form-heading { padding-inline: 8px; }
+    .form-frame { border-radius: 0; }
     .form-frame iframe { height: 4800px; }
+    .form-fallback { padding-inline: 18px; }
     .site-footer { flex-direction: column; gap: 8px; }
   }
 
