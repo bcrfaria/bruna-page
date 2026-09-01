@@ -7,6 +7,7 @@ export default defineConfig({
   site: 'https://brunafaria.com.br',
   integrations: [
     sitemap({
+      filter: (page) => page !== 'https://brunafaria.com.br/novos-pacientes/',
       namespaces: {
         news: false,
         video: false,
