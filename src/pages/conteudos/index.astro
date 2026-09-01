@@ -1,0 +1,63 @@
+---
+import { getCollection } from 'astro:content';
+import PublicLayout from '../../layouts/PublicLayout.astro';
+
+const artigos = (await getCollection('artigos', ({ data }) => !data.draft && data.publishedDate <= new Date()))
+  .sort((a, b) => b.data.publishedDate.valueOf() - a.data.publishedDate.valueOf());
+
+const title = 'Conteúdos sobre psicoterapia, neurodivergência e pertencimento | Bruna Faria';
+const description = 'Textos de Bruna Faria sobre neurodivergência, vida LGBTQIA+, autocrítica, relações e formas mais possíveis de compreender a própria experiência.';
+
+const formatarData = (data: Date) => new Intl.DateTimeFormat('pt-BR', {
+  day: '2-digit', month: 'long', year: 'numeric', timeZone: 'UTC',
+}).format(data);
+---
+
+<PublicLayout title={title} description={description} canonicalPath="/conteudos/">
+  <header class="hero-editorial">
+    <div class="wrap">
+      <p class="eyebrow">Textos para retomar sem pressa</p>
+      <h1>Compreender-se também pode começar por uma boa pergunta.</h1>
+      <p class="lead">
+        Reflexões e psicoeducação acessível sobre neurodivergência, pertencimento, autocrítica,
+        relações e formas de construir uma vida que faça sentido para você.
+      </p>
+    </div>
+  </header>
+
+  <section class="secao">
+    <div class="wrap">
+      <p class="eyebrow">Publicações</p>
+      {artigos.length > 0 ? (
+        <ol class="artigos">
+          {artigos.map((artigo) => (
+            <li class="artigo-card">
+              <div>
+                <ul class="trilha"><li>{artigo.data.tema}</li></ul>
+                <h2><a href={`/conteudos/${artigo.id}/`}>{artigo.data.title}</a></h2>
+                <p>{artigo.data.description}</p>
+              </div>
+              <time datetime={artigo.data.publishedDate.toISOString()}>{formatarData(artigo.data.publishedDate)}</time>
+            </li>
+          ))}
+        </ol>
+      ) : (
+        <p class="lead">O primeiro texto está sendo preparado com cuidado.</p>
+      )}
+    </div>
+  </section>
+
+  <section class="convite">
+    <div class="wrap convite-grid">
+      <div>
+        <p class="eyebrow">Psicoterapia online</p>
+        <h2>Se algum texto tocar em algo que você está vivendo, podemos conversar.</h2>
+        <p>Conheça o trabalho com adultos neurodivergentes e pessoas LGBTQIA+ ou veja como funciona o primeiro contato.</p>
+      </div>
+      <div class="acoes">
+        <a class="btn" href="/psicoterapia-online-neurodivergentes/">Neurodivergências</a>
+        <a class="btn secundario" href="/terapia-afirmativa-lgbtqia/">Cuidado LGBTQIA+</a>
+      </div>
+    </div>
+  </section>
+</PublicLayout>

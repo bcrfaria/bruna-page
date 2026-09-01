@@ -3,6 +3,7 @@ import { site, whatsappUrl, queixas, formacao, faq } from '../config';
 import Icone from '../components/Icone.astro';
 
 const instagramUrl = `https://instagram.com/${site.instagram}`;
+const socialImage = `${site.url}/img/og-bruna-faria.png`;
 
 // BASE_URL respeita o `base` do astro.config (e vira '/' sem ele), então os
 // caminhos continuam certos com ou sem subdiretório.
@@ -34,14 +35,25 @@ const jsonLd = {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{site.titulo}</title>
     <meta name="description" content={site.descricao} />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="icon" href={url('/brand/simbolo-principal-bruna-faria-transparente.png')} type="image/png" />
     <link rel="canonical" href={site.url} />
+    <link rel="sitemap" href={url('/sitemap-index.xml')} />
 
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={`${site.nome} · Psicologia`} />
     <meta property="og:title" content={site.titulo} />
     <meta property="og:description" content={site.descricao} />
+    <meta property="og:url" content={site.url} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Bruna Faria · Psicologia" />
     <meta property="og:locale" content="pt_BR" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={site.titulo} />
+    <meta name="twitter:description" content={site.descricao} />
+    <meta name="twitter:image" content={socialImage} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,6 +80,7 @@ const jsonLd = {
         <div class="menu">
           <a href="#sobre">Sobre</a>
           <a href="#como-comecar">Como começar</a>
+          <a href={url('/conteudos/')}>Conteúdos</a>
           <a href="#faq">Dúvidas</a>
           <a href={url('/contato/')}>Contato</a>
           <a class="menu-cta" href={site.agendamento} target="_blank" rel="noopener">Agendar</a>
@@ -79,11 +92,10 @@ const jsonLd = {
       <div class="wrap hero-grid">
         <div>
           <p class="eyebrow">Psicóloga &middot; {site.crp}</p>
-          <h1>Se entender e se aceitar é <em>revolucionário</em>.</h1>
+          <h1>Um espaço para se compreender e construir uma vida que <em>faça sentido para você.</em></h1>
           <p class="lead">
-            Sou {site.nome}, psicóloga clínica. Acompanho adultos no Brasil e no exterior em um
-            espaço online, acolhedor e afirmativo — para compreender o que pesa, construir novas
-            possibilidades e viver com mais coerência com quem você é.
+            {site.apoio} Acompanho adultos no Brasil e no exterior, especialmente pessoas
+            neurodivergentes e LGBTQIA+, com cuidado atento à singularidade de cada história.
           </p>
           <div class="assinatura-visual" aria-hidden="true">
             <img src={url('/brand/simbolo-principal-bruna-faria-transparente.png')} width="34" height="42" alt="" />
@@ -188,6 +200,27 @@ const jsonLd = {
             </p>
           </div>
         </div>
+      </section>
+
+      <section class="wrap secao publica-prioritaria" aria-labelledby="cuidado-afirmativo">
+        <div>
+          <p class="eyebrow">Cuidado afirmativo e contextualizado</p>
+          <h2 id="cuidado-afirmativo">Você não precisa deixar partes de si do lado de fora da terapia.</h2>
+          <p>
+            O atendimento considera como neurodivergência, gênero, sexualidade, corpo, relações e
+            condições de vida podem se atravessar — sem reduzir você a uma categoria.
+          </p>
+        </div>
+        <nav class="publica-links" aria-label="Conheça as áreas prioritárias de atendimento">
+          <a href={url('/psicoterapia-online-neurodivergentes/')}>
+            <span>Adultos neurodivergentes</span>
+            <small>Autismo, TDAH, mascaramento, rotina e compreensão do próprio funcionamento.</small>
+          </a>
+          <a href={url('/terapia-afirmativa-lgbtqia/')}>
+            <span>Psicoterapia afirmativa LGBTQIA+</span>
+            <small>Identidade, vínculos e pertencimento com escuta sem patologização.</small>
+          </a>
+        </nav>
       </section>
 
       <section class="wrap secao larga">
@@ -326,13 +359,16 @@ const jsonLd = {
 
       <section class="wrap secao instagram-bloco">
         <div>
-          <p class="eyebrow">Psicologia também no cotidiano</p>
-          <h2>Textos para pensar e sentir sem pressa.</h2>
-          <p>No Instagram, compartilho reflexões sobre emoções, autocobrança, relações, corpo, comida e formas mais gentis de existir.</p>
+          <p class="eyebrow">Conteúdos</p>
+          <h2>Textos para retomar sem pressa.</h2>
+          <p>Reflexões sobre neurodivergência, pertencimento, autocrítica, relações e formas mais possíveis de compreender a própria experiência.</p>
         </div>
-        <a class="btn secundario" href={instagramUrl} target="_blank" rel="noopener">
-          <Icone nome="instagram" /> Acompanhar @{site.instagram}
-        </a>
+        <div class="acoes">
+          <a class="btn" href={url('/conteudos/')}>Ler os conteúdos</a>
+          <a class="btn secundario" href={instagramUrl} target="_blank" rel="noopener">
+            <Icone nome="instagram" /> Instagram
+          </a>
+        </div>
       </section>
 
     </main>
@@ -511,7 +547,12 @@ const jsonLd = {
       .menu a { color: var(--tinta-suave); text-decoration: none; font-size: .8125rem; }
       .menu a:hover { color: var(--verde-escuro); }
       .menu .menu-cta { padding: .55rem 1rem; border: 1px solid var(--verde); border-radius: 999px; color: var(--verde-escuro); }
-      @media (max-width: 40rem) { .menu a:not(.menu-cta) { display: none; } }
+      @media (max-width: 52rem) { .menu a:not(.menu-cta):not([href$="/conteudos/"]) { display: none; } }
+      @media (max-width: 27rem) {
+        .topo-inner { gap: .75rem; }
+        .menu { gap: .75rem; }
+        .menu .menu-cta { display: none; }
+      }
 
       /* Hero */
       .hero {
@@ -702,9 +743,16 @@ const jsonLd = {
       .atendimento { background: var(--papel-fundo); }
       .atendimento-grid { grid-template-columns: .9fr 1.1fr; }
       .atendimento-grid > div > p { color: var(--tinta-suave); }
+      .publica-prioritaria { max-width: 68rem; display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(2rem, 7vw, 5rem); align-items: start; }
+      .publica-prioritaria > div > p:not(.eyebrow) { color: var(--tinta-suave); max-width: 50ch; }
+      .publica-links { display: grid; gap: 1rem; }
+      .publica-links a { display: grid; gap: .35rem; padding: 1.35rem 1.5rem; border: 1px solid var(--linha); border-radius: 14px; background: var(--papel-fundo); color: var(--tinta); text-decoration: none; }
+      .publica-links a:hover { border-color: var(--verde); background: #fff; }
+      .publica-links span { font-family: Lora, serif; font-size: 1.15rem; font-weight: 600; }
+      .publica-links small { color: var(--tinta-suave); font-size: .82rem; line-height: 1.6; }
       @media (max-width: 64rem) { .oferece ul { grid-template-columns: repeat(2, 1fr); } }
       @media (max-width: 46rem) {
-        .terapia-grid, .abordagem-grid, .etica-grid, .atendimento-grid, .formacao-grid { grid-template-columns: 1fr; }
+        .terapia-grid, .abordagem-grid, .etica-grid, .atendimento-grid, .formacao-grid, .publica-prioritaria { grid-template-columns: 1fr; }
         .terapia-grid .imagem-editorial { order: -1; }
         .oferece ul { grid-template-columns: 1fr; }
         .chamada-secao { align-items: flex-start; flex-direction: column; }
@@ -713,7 +761,7 @@ const jsonLd = {
       .instagram-bloco { max-width: 64rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; border-top: 1px solid var(--linha); }
       .instagram-bloco h2 { margin-bottom: .75rem; }
       .instagram-bloco p:not(.eyebrow) { margin: 0; color: var(--tinta-suave); max-width: 48ch; }
-      .instagram-bloco .btn { flex-shrink: 0; }
+      .instagram-bloco .acoes { flex-shrink: 0; margin-top: 0; }
       @media (max-width: 40rem) { .instagram-bloco { align-items: flex-start; flex-direction: column; } }
 
       h2 {

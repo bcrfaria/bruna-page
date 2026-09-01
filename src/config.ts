@@ -2,11 +2,12 @@
 export const site = {
   nome: 'Bruna Faria',
   crp: 'CRP 08/34202',
-  titulo: 'Bruna Faria | Psicóloga | Terapia online',
-  // Frase da bio do Instagram dela.
-  tagline: 'Se entender e se aceitar é revolucionário.',
+  titulo: 'Bruna Faria | Psicóloga online afirmativa',
+  tagline: 'Um espaço para se compreender e construir uma vida que faça sentido para você.',
+  apoio:
+    'Uma psicoterapia afirmativa, com menos cobrança para se encaixar e mais espaço para viver com autenticidade.',
   descricao:
-    'Psicóloga (CRP 08/34202) com atendimento clínico online para adultos no Brasil e no exterior. Psicoterapia em Terapia Cognitivo-Comportamental, com escuta acolhedora e espaço afirmativo para pessoas LGBTQIA+, gordas e neurodivergentes.',
+    'Psicoterapia online para adultos, especialmente pessoas neurodivergentes e LGBTQIA+. Um espaço afirmativo para se compreender e construir uma vida que faça sentido para você.',
   foto: '/img/bruna-colagem.webp',
 
   // Endereço público atual.
@@ -29,6 +30,12 @@ export const site = {
 export const whatsappUrl = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(
   'Olá, Bruna! Vim pelo seu site e gostaria de saber mais sobre as sessões.',
 )}`;
+
+export function whatsappComOrigem(origem: string, objetivo = 'saber mais sobre as sessões') {
+  return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(
+    `Olá, Bruna! Vim ${origem} e gostaria de ${objetivo}.`,
+  )}`;
+}
 
 // `esp` é a colagem que ilustra cada tema (fotomontagem surrealista).
 export const queixas = [

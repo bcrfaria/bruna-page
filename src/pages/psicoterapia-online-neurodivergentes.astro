@@ -1,0 +1,98 @@
+---
+import PublicLayout from '../layouts/PublicLayout.astro';
+import Icone from '../components/Icone.astro';
+import { whatsappComOrigem } from '../config';
+
+const title = 'Psicoterapia online para adultos neurodivergentes | Bruna Faria';
+const description = 'Psicoterapia online afirmativa para adultos autistas, com TDAH e outras neurodivergências, com atenção ao contexto, à acessibilidade e ao seu jeito de funcionar.';
+const whatsappUrl = whatsappComOrigem('pela página sobre psicoterapia para pessoas neurodivergentes');
+---
+
+<PublicLayout title={title} description={description} canonicalPath="/psicoterapia-online-neurodivergentes/">
+  <header class="hero-editorial">
+    <div class="wrap">
+      <p class="eyebrow">Psicoterapia online · adultos</p>
+      <h1>Seu jeito de funcionar pode ser compreendido sem virar uma lista de defeitos.</h1>
+      <p class="lead">
+        Um espaço para pessoas autistas, com TDAH ou outras neurodivergências compreenderem o que vivem,
+        diminuírem a cobrança para se encaixar e construírem formas mais possíveis de cuidar de si.
+      </p>
+      <div class="acoes">
+        <a class="btn" href={whatsappUrl} target="_blank" rel="noopener"><Icone nome="whatsapp" /> Conversar sobre terapia</a>
+        <a class="btn secundario" href="/conteudos/">Ler os conteúdos</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="secao">
+    <div class="wrap grade-dois">
+      <div>
+        <p class="eyebrow">Quando procurar</p>
+        <h2>Talvez você esteja cansada de precisar se adaptar o tempo todo.</h2>
+      </div>
+      <ul class="lista-calma">
+        <li>Você passa muito tempo tentando parecer bem, organizada ou confortável, mesmo quando não está.</li>
+        <li>Rotina, transições, demandas sensoriais ou sociais consomem uma energia difícil de explicar.</li>
+        <li>Há culpa por não conseguir manter o mesmo ritmo das outras pessoas.</li>
+        <li>Um diagnóstico, uma suspeita ou uma nova compreensão sobre si reorganizou partes da sua história.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="wrap">
+      <p class="eyebrow">O que muda na prática</p>
+      <h2>Acessibilidade também faz parte do cuidado.</h2>
+      <ul class="cartoes">
+        <li class="cartao">
+          <h3>Comunicação clara</h3>
+          <p>Perguntas, objetivos e combinados podem ser explicados de maneira direta, sem exigir respostas rápidas ou perfeitamente organizadas.</p>
+        </li>
+        <li class="cartao">
+          <h3>Contexto antes de julgamento</h3>
+          <p>Em vez de reduzir dificuldades a falta de esforço, investigamos demandas, ambiente, história, recursos e limites reais.</p>
+        </li>
+        <li class="cartao">
+          <h3>Estratégias possíveis</h3>
+          <p>Construímos recursos aplicáveis ao cotidiano, sem transformar adaptação em mais uma obrigação de desempenho.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="wrap grade-dois">
+      <div>
+        <p class="eyebrow">Como eu trabalho</p>
+        <h2>Uma terapia ativa e colaborativa, sem fórmulas prontas.</h2>
+      </div>
+      <div class="prosa">
+        <p>
+          Meu trabalho parte da Terapia Cognitivo-Comportamental e de uma prática afirmativa. Observamos juntas
+          relações entre pensamentos, emoções, comportamentos, corpo e contexto — respeitando sua história e o seu ritmo.
+        </p>
+        <p>
+          A psicoterapia não serve para apagar características neurodivergentes ou ensinar alguém a parecer neurotípica.
+          Ela pode ajudar a reconhecer necessidades, compreender padrões e construir escolhas mais sustentáveis.
+        </p>
+        <div class="nota">
+          A psicoterapia não substitui avaliação diagnóstica ou acompanhamento médico quando eles forem necessários.
+          Se essa for a sua demanda, podemos conversar sobre os limites do processo e possíveis encaminhamentos.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="convite">
+    <div class="wrap convite-grid">
+      <div>
+        <p class="eyebrow">Primeiro contato</p>
+        <h2>Você não precisa organizar tudo antes de começar.</h2>
+        <p>Na primeira conversa, você pode contar apenas o que for possível. Também explico meu modo de trabalhar, disponibilidade, valor e frequência.</p>
+      </div>
+      <div class="acoes">
+        <a class="btn" href={whatsappUrl} target="_blank" rel="noopener"><Icone nome="whatsapp" /> Falar com a Bruna</a>
+      </div>
+    </div>
+  </section>
+</PublicLayout>

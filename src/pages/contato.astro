@@ -18,15 +18,38 @@ const canonical = `${site.url}/contato/`;
       name="description"
       content="Entre em contato com Bruna Faria para saber mais sobre psicoterapia online ou agendar uma conversa."
     />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="icon" href={url('/brand/simbolo-principal-bruna-faria-transparente.png')} type="image/png" />
     <link rel="canonical" href={canonical} />
+    <link rel="sitemap" href={url('/sitemap-index.xml')} />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={`${site.nome} · Psicologia`} />
     <meta property="og:title" content={`Contato | ${site.nome}`} />
     <meta
       property="og:description"
       content="Escolha a forma de contato mais confortável para você."
     />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={`${site.url}/img/og-bruna-faria.png`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Bruna Faria · Psicologia" />
     <meta property="og:locale" content="pt_BR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={`Contato | ${site.nome}`} />
+    <meta name="twitter:description" content="Escolha a forma de contato mais confortável para você." />
+    <meta name="twitter:image" content={`${site.url}/img/og-bruna-faria.png`} />
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ContactPage',
+        name: `Contato | ${site.nome}`,
+        description: 'Entre em contato com Bruna Faria para saber mais sobre psicoterapia online ou agendar uma conversa.',
+        url: canonical,
+        isPartOf: { '@type': 'WebSite', name: `${site.nome} · Psicologia`, url: site.url },
+      })}
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -50,9 +73,10 @@ const canonical = `${site.url}/contato/`;
         <div class="menu">
           <a href={url('/#sobre')}>Sobre</a>
           <a href={url('/#como-comecar')}>Como começar</a>
+          <a href={url('/conteudos/')}>Conteúdos</a>
           <a href={url('/#faq')}>Dúvidas</a>
           <a class="ativo" href={url('/contato/')} aria-current="page">Contato</a>
-          <a class="menu-cta" href={site.agendamento} target="_blank" rel="noopener">Agendar</a>
+          <a class="menu-cta" href={site.agendamento} target="_blank" rel="noopener" data-whatsapp-link>Agendar</a>
         </div>
       </div>
     </nav>
@@ -69,10 +93,10 @@ const canonical = `${site.url}/contato/`;
             </p>
 
             <div class="acoes">
-              <a class="btn" href={whatsappUrl} target="_blank" rel="noopener">
+              <a class="btn" href={whatsappUrl} target="_blank" rel="noopener" data-whatsapp-link>
                 <Icone nome="whatsapp" /> Falar no WhatsApp
               </a>
-              <a class="btn secundario" href={site.agendamento} target="_blank" rel="noopener">
+              <a class="btn secundario" href={site.agendamento} target="_blank" rel="noopener" data-whatsapp-link>
                 <Icone nome="calendario" /> Agendar uma conversa
               </a>
             </div>
@@ -122,6 +146,22 @@ const canonical = `${site.url}/contato/`;
         <a href={url('/')}>Voltar para a página inicial <span aria-hidden="true">→</span></a>
       </div>
     </footer>
+
+    <script is:inline define:vars={{ telefone: site.whatsapp }}>
+      const origens = {
+        instagram: 'pelo Instagram',
+        doctoralia: 'pelo Doctoralia',
+        cartao: 'pelo cartão profissional',
+        conteudo: 'pelos conteúdos do site',
+      };
+      const chave = new URLSearchParams(window.location.search).get('origem');
+      const origem = origens[chave];
+      if (origem) {
+        const mensagem = `Olá, Bruna! Vim ${origem} e gostaria de saber mais sobre as sessões.`;
+        const destino = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+        document.querySelectorAll('[data-whatsapp-link]').forEach((link) => link.href = destino);
+      }
+    </script>
 
     <style>
       :root {
@@ -210,12 +250,17 @@ const canonical = `${site.url}/contato/`;
       .rodape a { color: var(--verde-escuro); font-size: .875rem; text-underline-offset: .25rem; }
 
       @media (max-width: 46rem) {
-        .menu a:not(.menu-cta) { display: none; }
+        .menu a:not(.menu-cta):not([href$="/conteudos/"]) { display: none; }
         .contato { align-items: start; min-height: 0; }
         .contato-grid { grid-template-columns: 1fr; gap: 3rem; }
         .acoes { align-items: stretch; flex-direction: column; }
         a.btn { justify-content: center; }
         .rodape-inner { align-items: flex-start; flex-direction: column; justify-content: center; gap: 1rem; }
+      }
+      @media (max-width: 27rem) {
+        .topo-inner { gap: .75rem; }
+        .menu { gap: .75rem; }
+        .menu .menu-cta { display: none; }
       }
     </style>
   </body>

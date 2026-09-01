@@ -1,0 +1,99 @@
+---
+import PublicLayout from '../layouts/PublicLayout.astro';
+import Icone from '../components/Icone.astro';
+import { whatsappComOrigem } from '../config';
+
+const title = 'Psicoterapia afirmativa LGBTQIA+ online | Bruna Faria';
+const description = 'Psicoterapia online afirmativa para adultos LGBTQIA+, com escuta sem patologização, atenção ao contexto e respeito à identidade, aos vínculos e às formas de existir.';
+const whatsappUrl = whatsappComOrigem('pela página sobre psicoterapia afirmativa LGBTQIA+');
+---
+
+<PublicLayout title={title} description={description} canonicalPath="/terapia-afirmativa-lgbtqia/">
+  <header class="hero-editorial">
+    <div class="wrap">
+      <p class="eyebrow">Psicoterapia afirmativa · online</p>
+      <h1>Um espaço em que sua identidade não precisa ser explicada ou defendida o tempo todo.</h1>
+      <p class="lead">
+        Psicoterapia para pessoas LGBTQIA+ compreenderem o que vivem, cuidarem do que pesa e construírem
+        uma vida que faça sentido — sem patologização e sem fórmulas sobre como deveriam existir.
+      </p>
+      <div class="acoes">
+        <a class="btn" href={whatsappUrl} target="_blank" rel="noopener"><Icone nome="whatsapp" /> Conversar sobre terapia</a>
+        <a class="btn secundario" href="/conteudos/">Ler os conteúdos</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="secao">
+    <div class="wrap grade-dois">
+      <div>
+        <p class="eyebrow">Um cuidado contextualizado</p>
+        <h2>Nem todo sofrimento começa dentro da pessoa.</h2>
+      </div>
+      <div class="prosa">
+        <p>
+          Preconceito, rejeição, insegurança, cobrança para se encaixar e falta de reconhecimento atravessam a saúde mental.
+          Uma prática afirmativa não trata identidades LGBTQIA+ como problema e também não ignora o peso que o contexto pode ter.
+        </p>
+        <p>
+          A terapia pode acolher questões ligadas à identidade, orientação, vínculos, família e pertencimento — e também ansiedade,
+          autocrítica, trabalho, alimentação ou qualquer outro tema que faça parte da sua vida.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="wrap">
+      <p class="eyebrow">Na prática</p>
+      <h2>O que você pode esperar deste espaço.</h2>
+      <ul class="cartoes">
+        <li class="cartao">
+          <h3>Autodeterminação</h3>
+          <p>Seu nome, seus pronomes, sua identidade e sua forma de construir vínculos são tratados com respeito, sem pressupostos.</p>
+        </li>
+        <li class="cartao">
+          <h3>Escuta sem patologização</h3>
+          <p>Identidade de gênero e orientação sexual não são tratadas como sintomas, desvios ou algo a ser corrigido.</p>
+        </li>
+        <li class="cartao">
+          <h3>Singularidade</h3>
+          <p>Não existe uma experiência LGBTQIA+ universal. Investigamos sua história, seus contextos, vínculos e necessidades.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="wrap grade-dois">
+      <div>
+        <p class="eyebrow">Interseções</p>
+        <h2>Você não precisa escolher uma parte de si para trazer à terapia.</h2>
+      </div>
+      <div class="prosa">
+        <p>
+          Gênero, sexualidade, neurodivergência, corpo, alimentação, relações e condições de vida podem se atravessar.
+          O cuidado considera essas relações sem reduzir você a uma categoria.
+        </p>
+        <p>
+          Meu trabalho é orientado pela Terapia Cognitivo-Comportamental, pela formação contínua em saúde LGBTQIA+
+          e pelo compromisso ético com uma Psicologia que não reproduza práticas discriminatórias.
+        </p>
+        <a href="/psicoterapia-online-neurodivergentes/">Conheça também o trabalho com adultos neurodivergentes →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="convite">
+    <div class="wrap convite-grid">
+      <div>
+        <p class="eyebrow">Primeiro contato</p>
+        <h2>Você pode começar de onde der.</h2>
+        <p>No primeiro contato, explico disponibilidade, valor, frequência e como funciona a terapia online. Não é preciso contar sua história inteira por mensagem.</p>
+      </div>
+      <div class="acoes">
+        <a class="btn" href={whatsappUrl} target="_blank" rel="noopener"><Icone nome="whatsapp" /> Falar com a Bruna</a>
+      </div>
+    </div>
+  </section>
+</PublicLayout>
