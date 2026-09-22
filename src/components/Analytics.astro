@@ -1,0 +1,105 @@
+---
+import { analyticsMeasurementId } from '../config';
+---
+
+<script is:inline define:vars={{ analyticsMeasurementId }}>
+  (() => {
+  const analyticsConsentKey = 'bruna-analytics-consent';
+  const loadAnalytics = () => {
+    if (window.__brunaAnalyticsLoaded || !analyticsMeasurementId) return;
+    window.__brunaAnalyticsLoaded = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', analyticsMeasurementId, {
+      allow_google_signals: false,
+      allow_ad_personalization_signals: false,
+      page_location: window.location.origin + window.location.pathname,
+      page_referrer: document.referrer ? new URL(document.referrer).origin : '',
+    });
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${analyticsMeasurementId}`;
+    document.head.appendChild(script);
+  };
+
+  const track = (name, params = {}) => {
+    if (window.__brunaAnalyticsLoaded && window.gtag) window.gtag('event', name, params);
+  };
+
+  if (window.localStorage.getItem(analyticsConsentKey) === 'accepted') loadAnalytics();
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('a[href*="wa.me"], a[href^="mailto:"]').forEach((link) => {
+      link.addEventListener('click', () => track('contact_click', {
+        method: link.href.startsWith('mailto:') ? 'email' : 'whatsapp',
+        page_path: window.location.pathname,
+      }));
+    });
+    document.querySelectorAll('a[href="/contato/"]').forEach((link) => {
+      link.addEventListener('click', () => track('navigation_to_contact', {
+        destination: link.getAttribute('href'),
+        page_path: window.location.pathname,
+      }));
+    });
+  });
+  })();
+</script>
+
+<aside class="analytics-consent" data-analytics-consent hidden aria-label="Medição de audiência">
+  <p>Este site pode usar uma medição de audiência pelo Google Analytics para entender quais páginas ajudam as pessoas a encontrar informações. Você decide se quer permitir essa medição.</p>
+  <div class="analytics-consent-actions">
+    <button type="button" data-analytics-accept>Permitir medição</button>
+    <button type="button" data-analytics-reject>Continuar sem medição</button>
+  </div>
+</aside>
+
+<script is:inline>
+  (() => {
+  const analyticsConsentKey = 'bruna-analytics-consent';
+  const consentBanner = document.querySelector('[data-analytics-consent]');
+  const savedConsent = window.localStorage.getItem(analyticsConsentKey);
+  if (!savedConsent && consentBanner) consentBanner.hidden = false;
+
+  document.querySelector('[data-analytics-accept]')?.addEventListener('click', () => {
+    window.localStorage.setItem(analyticsConsentKey, 'accepted');
+    consentBanner.hidden = true;
+    window.location.reload();
+  });
+  document.querySelector('[data-analytics-reject]')?.addEventListener('click', () => {
+    window.localStorage.setItem(analyticsConsentKey, 'rejected');
+    consentBanner.hidden = true;
+  });
+  })();
+</script>
+
+<style is:global>
+.analytics-consent {
+  position: fixed;
+  z-index: 30;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  max-width: 42rem;
+  margin-inline: auto;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--linha, #dedbd3);
+  border-radius: 1rem;
+  background: var(--papel, #fdfbf7);
+  box-shadow: 0 1rem 3rem rgb(34 42 37 / 14%);
+}
+
+.analytics-consent p { margin: 0; color: var(--tinta, #2e2a26); font-size: .88rem; line-height: 1.5; }
+.analytics-consent-actions { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: .8rem; }
+.analytics-consent-actions button {
+  padding: .55rem .8rem;
+  border: 1px solid var(--verde-escuro, #34463b);
+  border-radius: 999px;
+  color: var(--verde-escuro, #34463b);
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+.analytics-consent-actions button:first-child { color: #fff; background: var(--verde-escuro, #34463b); }
+
+</style>

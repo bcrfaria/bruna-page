@@ -1,5 +1,6 @@
 ---
 import Icone from '../components/Icone.astro';
+import Analytics from '../components/Analytics.astro';
 import { site, whatsappComOrigem } from '../config';
 import '../styles/public.css';
 
@@ -106,6 +107,7 @@ const jsonLd = type === 'article'
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
   <body>
+    <Analytics />
     <a href="#conteudo" class="skip">Pular para o conteúdo</a>
 
     <nav class="topo" aria-label="Navegação principal">

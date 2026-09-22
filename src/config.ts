@@ -27,6 +27,9 @@ export const site = {
   )}`,
 };
 
+// Measurement is opt-in and only starts after the visitor accepts audience measurement.
+export const analyticsMeasurementId = 'G-PSREFFFBR9';
+
 export const whatsappUrl = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(
   'Olá, Bruna! Vim pelo seu site e gostaria de saber mais sobre as sessões.',
 )}`;
