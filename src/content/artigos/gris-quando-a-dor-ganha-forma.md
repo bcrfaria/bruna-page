@@ -103,9 +103,33 @@ A própria ideia de “acolher a dor” pode virar uma cobrança quando é apres
 
 Dar espaço ao que sentimos inclui reconhecer limites. Inclui perceber quando precisamos de companhia, quando uma experiência pede cuidado profissional e quando precisamos de um intervalo. Inclui poder dizer: consigo olhar para uma parte disso hoje; para outra, ainda não.
 
-Também penso que ouvir uma emoção não exige aceitar como verdade todas as conclusões que aparecem junto dela. Podemos reconhecer o medo e examinar a ideia de que estaremos sempre sozinhos. Podemos reconhecer a culpa e perguntar se somos responsáveis por tudo aquilo que estamos atribuindo a nós.
+## Quando a dor vem acompanhada de uma cobrança
 
-Uma emoção pode ter espaço enquanto procuramos compreender o que ela significa naquela situação.
+Essa imagem me faz pensar também no que dizemos a nós mesmos quando a dor aparece. A terapia cognitivo-comportamental, a TCC, ajuda a investigar esses pensamentos e sua relação com o que sentimos e fazemos. Uma orientação clínica do Beck Institute sobre perdas discute esse trabalho, incluindo o reconhecimento das emoções e a avaliação de pensamentos que dificultam o enfrentamento. [Beck Institute, 2024](https://beckinstitute.org/blog/coping-with-loss/).
+
+Volto à imagem da presença escura. Imagino alguém que passou alguns dias se sentindo melhor e, ao encontrar uma lembrança, volta a chorar. Junto da tristeza, surge uma conclusão: “Voltei à estaca zero”.
+
+Essa frase me chama a atenção porque transforma um momento doloroso em uma avaliação de todo o percurso. Onde ficam a conversa que fez bem, a ajuda que foi possível pedir, o dia em que houve algum descanso?
+
+Talvez a experiência possa ser descrita com mais precisão: “Essa lembrança ainda me afeta. Hoje está difícil”. Há espaço para reconhecer o que dói e também o que mudou.
+
+Esse é um exemplo que proponho para pensar a cena. A presença escura continua sendo, na minha leitura, uma imagem da dor; eu não a reduziria a um pensamento que precisa ser corrigido.
+
+## O espaço que ainda conseguimos habitar
+
+Também podemos olhar para as tentativas de nos proteger. Na TCC, a evitação pode ser investigada quando passa a limitar persistentemente a vida. Um estudo de caso publicado em espanhol descreve uma intervenção que trabalhou pensamentos relacionados à perda e comportamentos de evitação. É uma ilustração clínica, com os limites de um estudo com uma única participante e voltado ao luto complicado por morte. [Fabila e Montaño, 2022](https://doi.org/10.5093/cc2022a8).
+
+Penso, por exemplo, em alguém que deixa de encontrar uma amiga porque teme chorar durante a conversa. Adiar o encontro pode trazer alívio naquele dia. Mas, se todos os encontros vão sendo adiados, como fica a possibilidade de ter companhia?
+
+Eu gostaria de poder perguntar com essa pessoa: esse afastamento está oferecendo um descanso necessário? Há alguma forma de encontrar a amiga que pareça possível agora? Talvez por menos tempo, em outro lugar, com liberdade para ir embora.
+
+São perguntas sobre uma situação concreta. Para respondê-las, precisamos conhecer a relação, os limites e as condições de vida de quem está sofrendo.
+
+Quando aproximo essas ideias de GRIS, penso no espaço que vai se tornando possível habitar. Que movimentos conseguimos fazer? Que ajuda podemos aceitar? O que ainda precisa esperar?
+
+Essas perguntas me fazem voltar à história de quem sofre. O que aquele futuro significava? O que a pessoa passou a pensar sobre si depois da perda? Como têm sido seus dias? Há muito a conhecer antes de supor o que poderia ajudá-la.
+
+Para mim, ouvir a dor inclui essa curiosidade. Posso reconhecer o que sinto e, aos poucos, compreender melhor as histórias que conto a mim mesma quando esse sentimento aparece.
 
 Na minha leitura de *GRIS*, a presença escura torna essa dificuldade visível. Ela assusta, interfere no caminho e desperta a vontade de escapar. Ainda assim, eu a percebo como parte da personagem. Isso me faz pensar na delicadeza necessária para nos aproximarmos de algo em nós que preferiríamos não sentir.
 
@@ -131,6 +155,9 @@ Quis deixar essa leitura aqui porque ela diz um pouco do que chama minha atenç�
 ## Referências citadas
 
 ### Psicologia e fenomenologia
+
+- Beck Institute (15 de maio de 2024). [Helping Clients Cope with Loss](https://beckinstitute.org/blog/coping-with-loss/). Texto de orientação clínica sobre a TCC diante de diferentes perdas; não é um estudo experimental.
+- Fabila, L. J.; Montaño, A. H. (2022). [Intervención cognitivo-conductual en el duelo complicado: un estudio de caso](https://doi.org/10.5093/cc2022a8). *Clínica Contemporánea*, 13(2), e10. Estudo de caso único, em espanhol, utilizado como ilustração clínica.
 
 - Avis, K. A.; Stroebe, M.; Schut, H. (2021). [Stages of Grief Portrayed on the Internet: A Systematic Analysis and Critical Appraisal](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.772696/full). *Frontiers in Psychology*, 12, 772696. DOI: [10.3389/fpsyg.2021.772696](https://doi.org/10.3389/fpsyg.2021.772696).
 - Ratcliffe, M.; Richardson, L. (2023). [Grief over Non-death Losses: A Phenomenological Perspective](https://eprints.whiterose.ac.uk/id/eprint/193069/). *Passion: Journal of the European Philosophical Society for the Study of Emotions*. Referência filosófica para a discussão sobre perdas de possibilidades.
