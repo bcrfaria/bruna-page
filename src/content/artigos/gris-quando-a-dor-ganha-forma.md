@@ -14,7 +14,7 @@ A surpresa foi perceber, aos poucos, a profundidade daquele jogo. Eu tinha chega
 
 Quis escrever sobre esse encontro porque ele reúne algumas coisas que me interessam: a arte, as formas de comunicar o que sentimos e as perguntas que uma experiência pode abrir sobre a própria vida.
 
-Se você ainda não conhece, *GRIS* é um jogo da Nomada Studio que acompanha uma jovem atravessando uma experiência dolorosa. As cores, a música e as possibilidades de movimento participam da narrativa. Conforme o percurso avança, novas habilidades permitem que a personagem se relacione de outras maneiras com aquele mundo. [Apresentação oficial do jogo](https://nomada.studio/gris-game/).
+Se você ainda não conhece, *GRIS* é um jogo da Nomada Studio que acompanha uma jovem atravessando uma experiência dolorosa. As cores, a música e as possibilidades de movimento participam da narrativa. Conforme o percurso avança, novas habilidades permitem que a personagem se relacione de outras maneiras com aquele mundo ([Nomada Studio, 2018](https://nomada.studio/gris-game/)).
 
 Vou comentar algumas imagens e temas, preservando o desfecho.
 
@@ -31,7 +31,7 @@ Ela aparece de repente, às vezes desaparece, depois volta. Está presente ao lo
 
 Mas o que mais me interessa é uma ambivalência: aquela presença assusta e, ao mesmo tempo, parece fazer parte da própria personagem. Algo que também merece ser ouvido.
 
-Essa é a minha leitura. Gosto que o jogo deixe espaço para ela e para outras interpretações. Conrad Roset, diretor criativo de *GRIS*, falou sobre a intenção de construir uma história emocional mantendo espaço para o jogador encontrar seus próprios sentidos. [Entrevista com Conrad Roset, em espanhol](https://www.gamereactor.es/video/450553/Gris%2B-%2BEntrevista%2Ba%2BConrad%2BRoset/).
+Essa é a minha leitura. Gosto que o jogo deixe espaço para outras interpretações. Em entrevista à *Gamereactor*, Conrad Roset, diretor criativo de *GRIS*, contou que a equipe queria construir uma história emocional sem explicar tudo ao jogador ([Gamereactor, 2019](https://www.gamereactor.es/video/450553/Gris%2B-%2BEntrevista%2Ba%2BConrad%2BRoset/)).
 
 Às vezes, uma imagem nos alcança antes que tenhamos palavras para explicar por quê.
 
@@ -45,7 +45,7 @@ O luto é uma das referências do jogo. E, quando uso essa palavra, estou pensan
 
 Podemos viver um luto pela morte de um animal com quem compartilhávamos a vida, pelo fim de uma relação, por um projeto que se tornou inviável ou por uma forma de viver que deixou de ser possível. Uma ideia muito importante sobre como nossa vida seria também pode precisar de uma despedida.
 
-Uma perspectiva fenomenológica ajuda a compreender essa dimensão. Matthew Ratcliffe e Louise Richardson propõem pensar o luto a partir da perda de possibilidades significativas: caminhos que faziam parte da maneira como nos orientávamos na vida e deixaram de estar disponíveis. Essa abordagem permite discutir também perdas que não envolvem uma morte. [Ratcliffe e Richardson, 2023](https://eprints.whiterose.ac.uk/id/eprint/193069/).
+Uma perspectiva fenomenológica ajuda a pensar essa dimensão. [Ratcliffe e Richardson (2023)](https://doi.org/10.59123/passion.v1i1.12287) propõem entender o luto também pela perda de possibilidades significativas: caminhos que faziam parte da vida imaginada e deixaram de estar disponíveis. É uma proposta filosófica, que inclui perdas sem morte.
 
 Penso, por exemplo, no fim de uma relação. Há a ausência daquela pessoa no cotidiano, mas também pode haver a perda da casa que seria compartilhada, das viagens imaginadas, da velhice que parecia ter companhia.
 
@@ -66,15 +66,19 @@ Talvez alguém de fora veja apenas um plano que não deu certo. Para quem o vive
 
 É também por isso que a presença escura de *GRIS* me parece uma imagem tão aberta. Na minha leitura, ela pode dar forma à dor por aquilo que existiu e também por aquilo que deixou de poder acontecer.
 
-Ao mesmo tempo, o jogo faz referências às conhecidas cinco fases do luto. Aqui, acho importante demorar um pouco.
+E a dor não vem sempre sozinha. Pode vir com saudade, raiva, alívio ou culpa. Às vezes, até estar bem por um momento parece errado, como se rir ou aproveitar um dia bom diminuísse a importância de quem ou do que perdemos. Também pode assustar a ideia de que a dor vá diminuir: será que, quando ela deixar de ser tão intensa, alguma coisa daquela história vai se perder junto?
 
-Negação, raiva, barganha, depressão e aceitação se tornaram palavras muito conhecidas. Podem ajudar alguém a reconhecer aspectos da própria experiência, mas não descrevem uma sequência obrigatória. A literatura crítica sobre esse modelo aponta o risco de transformá-lo em uma expectativa sobre como as pessoas deveriam viver uma perda. [Análise crítica publicada em 2021](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.772696/full).
+Isso me lembra *50 Receitas*, na voz de Leoni. A canção, composta por ele e Frejat, fala do fim de uma relação e traz esse medo em poucas palavras: “o pior é pensar que isso um dia vai cicatrizar” ([Leoni & Frejat, 2005](https://www.youtube.com/watch?v=8S-YzsFylhg)). Escuto nesse verso uma contradição possível: desejar que a dor alivie e, ao mesmo tempo, temer que o alívio se pareça com esquecer.
+
+O jogo também evoca as conhecidas cinco fases do luto. Vale olhar para essa ideia com cuidado.
+
+Negação, raiva, barganha, depressão e aceitação são palavras conhecidas. Podem ajudar alguém a nomear aspectos da própria experiência, mas não descrevem uma sequência obrigatória. [Avis et al. (2021)](https://doi.org/10.3389/fpsyg.2021.772696) mostram como a divulgação desse modelo na internet muitas vezes deixa de apresentar suas limitações. Isso pode criar a expectativa de que todos deveriam viver uma perda do mesmo jeito.
 
 Essa expectativa pode aparecer como cobrança: “Eu já não deveria estar melhor?”. Ou como dúvida: “Se voltou a doer, será que tudo o que mudou até aqui deixou de valer?”.
 
-Uma perspectiva que ajuda a compreender um movimento mais variável é o **Modelo do Processo Dual do Luto**, proposto por Margaret Stroebe e Henk Schut em 1999. É uma referência anterior às demais pesquisas citadas aqui, importante por sua contribuição teórica.
+Prefiro pensar no luto como um movimento menos previsível. O **Modelo do Processo Dual do Luto**, proposto por [Stroebe e Schut (1999)](https://doi.org/10.1080/074811899201046), me ajuda nisso.
 
-Desenvolvido no contexto do luto por morte, o modelo descreve uma oscilação entre lidar com a perda e lidar com a reorganização da vida. Em alguns momentos, a atenção se volta para a ausência e as lembranças. Em outros, para as tarefas, relações e mudanças do cotidiano. Também reconhece a necessidade de intervalos dessas demandas. [Artigo original de Stroebe e Schut](https://pubmed.ncbi.nlm.nih.gov/10848151/).
+Desenvolvido para pensar o luto por morte, o modelo descreve uma oscilação: em alguns momentos, lidamos com a ausência e as lembranças; em outros, com as tarefas, relações e mudanças do cotidiano. Há também momentos de descanso dessas duas exigências. É uma proposta teórica sobre esse tipo de perda, não uma regra para todas as experiências de luto.
 
 Essa perspectiva ajuda a compreender como uma conversa boa, uma atividade interessante e a saudade podem fazer parte da mesma vida. A dor que reaparece não torna falso o momento anterior.
 
@@ -91,49 +95,23 @@ Penso em começar reconhecendo que alguma coisa ainda nos afeta. Em poder pergun
 
 Nem sempre haverá uma resposta organizada. Pode haver sentimentos contraditórios, silêncio ou uma dificuldade de explicar. Escutar também pode envolver suportar, por algum tempo, o fato de ainda não compreender.
 
-Na pesquisa brasileira de Ivânia Jann Luna sobre perdas familiares, as histórias contadas pelas pessoas e os sentidos construídos em suas relações ocupam um lugar central. O estudo ajuda a olhar para o luto como uma experiência situada na vida de alguém, compartilhada e compreendida em determinados contextos. [Luna, 2020, *Psicologia USP*](https://www.scielo.br/j/pusp/a/pGmVXrYbKJWDGFFxsrg5mmk/?format=pdf).
+Em uma pesquisa brasileira com doze pessoas que perderam familiares, [Luna (2020)](https://doi.org/10.1590/0103-6564e200058) ouviu as histórias que elas construíram sobre essas perdas. O estudo mostra como os sentidos do luto se formam nas relações e nos contextos de vida.
 
 Para mim, isso também convida a ter cuidado com a pressa de oferecer respostas.
 
 A possibilidade de construir outros caminhos pode surgir. Mas não precisa ser apresentada como solução imediata para aquilo que acabou. Antes de procurar uma alternativa, às vezes precisamos conseguir dizer o quanto aquela possibilidade importava.
 
-Essa aproximação também precisa respeitar o que conseguimos sustentar. Ninguém tem que estar disponível o tempo inteiro para entrar em contato com uma experiência dolorosa. Há momentos em que precisamos descansar, fazer o almoço, trabalhar, conversar sobre outro assunto.
+Também há dias em que não queremos falar da perda. Precisamos descansar, fazer o almoço ou conversar sobre outro assunto. Não há nada de errado em precisar desse intervalo.
 
-A própria ideia de “acolher a dor” pode virar uma cobrança quando é apresentada como algo que deveríamos conseguir fazer a qualquer hora.
+Volto à imagem da presença escura. Imagino alguém que passou alguns dias se sentindo melhor e, ao encontrar uma lembrança, volta a chorar. Junto da tristeza, surge uma pergunta: “Será que será sempre assim?”
 
-Dar espaço ao que sentimos inclui reconhecer limites. Inclui perceber quando precisamos de companhia, quando uma experiência pede cuidado profissional e quando precisamos de um intervalo. Inclui poder dizer: consigo olhar para uma parte disso hoje; para outra, ainda não.
+Entendo o medo nessa pergunta. Quando a dor volta, pode ser difícil lembrar da conversa que fez bem, da ajuda que foi possível pedir ou do dia em que houve algum descanso.
 
-## Quando a dor vem acompanhada de uma cobrança
+Talvez, naquele momento, só dê para dizer: “Essa lembrança ainda me afeta. Hoje está difícil”. Isso não apaga os outros dias.
 
-Essa imagem me faz pensar também no que dizemos a nós mesmos quando a dor aparece. A terapia cognitivo-comportamental, a TCC, ajuda a investigar esses pensamentos e sua relação com o que sentimos e fazemos. Uma orientação clínica do Beck Institute sobre perdas discute esse trabalho, incluindo o reconhecimento das emoções e a avaliação de pensamentos que dificultam o enfrentamento. [Beck Institute, 2024](https://beckinstitute.org/blog/coping-with-loss/).
+Não sei se a presença escura de *GRIS* fala exatamente disso. Mas ela me lembra que a dor pode reaparecer mesmo quando a vida já abriu espaço para outras coisas. Ela assusta e interfere no caminho; ainda assim, na minha leitura, não é apenas uma ameaça de fora. Parece ligada à própria personagem, a uma parte da história que não desaparece porque o cenário mudou.
 
-Volto à imagem da presença escura. Imagino alguém que passou alguns dias se sentindo melhor e, ao encontrar uma lembrança, volta a chorar. Junto da tristeza, surge uma conclusão: “Voltei à estaca zero”.
-
-Essa frase me chama a atenção porque transforma um momento doloroso em uma avaliação de todo o percurso. Onde ficam a conversa que fez bem, a ajuda que foi possível pedir, o dia em que houve algum descanso?
-
-Talvez a experiência possa ser descrita com mais precisão: “Essa lembrança ainda me afeta. Hoje está difícil”. Há espaço para reconhecer o que dói e também o que mudou.
-
-Esse é um exemplo que proponho para pensar a cena. A presença escura continua sendo, na minha leitura, uma imagem da dor; eu não a reduziria a um pensamento que precisa ser corrigido.
-
-## O espaço que ainda conseguimos habitar
-
-Também podemos olhar para as tentativas de nos proteger. Na TCC, a evitação pode ser investigada quando passa a limitar persistentemente a vida. Um estudo de caso publicado em espanhol descreve uma intervenção que trabalhou pensamentos relacionados à perda e comportamentos de evitação. É uma ilustração clínica, com os limites de um estudo com uma única participante e voltado ao luto complicado por morte. [Fabila e Montaño, 2022](https://doi.org/10.5093/cc2022a8).
-
-Penso, por exemplo, em alguém que deixa de encontrar uma amiga porque teme chorar durante a conversa. Adiar o encontro pode trazer alívio naquele dia. Mas, se todos os encontros vão sendo adiados, como fica a possibilidade de ter companhia?
-
-Eu gostaria de poder perguntar com essa pessoa: esse afastamento está oferecendo um descanso necessário? Há alguma forma de encontrar a amiga que pareça possível agora? Talvez por menos tempo, em outro lugar, com liberdade para ir embora.
-
-São perguntas sobre uma situação concreta. Para respondê-las, precisamos conhecer a relação, os limites e as condições de vida de quem está sofrendo.
-
-Quando aproximo essas ideias de GRIS, penso no espaço que vai se tornando possível habitar. Que movimentos conseguimos fazer? Que ajuda podemos aceitar? O que ainda precisa esperar?
-
-Essas perguntas me fazem voltar à história de quem sofre. O que aquele futuro significava? O que a pessoa passou a pensar sobre si depois da perda? Como têm sido seus dias? Há muito a conhecer antes de supor o que poderia ajudá-la.
-
-Para mim, ouvir a dor inclui essa curiosidade. Posso reconhecer o que sinto e, aos poucos, compreender melhor as histórias que conto a mim mesma quando esse sentimento aparece.
-
-Na minha leitura de *GRIS*, a presença escura torna essa dificuldade visível. Ela assusta, interfere no caminho e desperta a vontade de escapar. Ainda assim, eu a percebo como parte da personagem. Isso me faz pensar na delicadeza necessária para nos aproximarmos de algo em nós que preferiríamos não sentir.
-
-Existe, inclusive, uma pesquisa que utilizou o próprio jogo para investigar reflexões sobre perdas. Em 2024, Colin LeFevre e Chia-Fang Chung acompanharam onze pessoas enlutadas por meio de entrevistas e diários sobre a experiência de jogar *GRIS*. Investigaram como elas relacionavam o jogo às próprias histórias. É um estudo qualitativo pequeno, que explora possibilidades de construção de sentidos; não demonstra que o jogo funcione como tratamento. [LeFevre e Chung, 2024](https://people.ucsc.edu/~cfchung/assets/papers/chi2024-grief-reflection.pdf).
+Há uma pesquisa sobre o próprio jogo. [LeFevre e Chung (2024)](https://doi.org/10.1145/3613904.3641968) entrevistaram onze pessoas enlutadas e acompanharam, por meio de diários, a experiência delas ao jogar *GRIS*. O estudo qualitativo explora como essas pessoas relacionaram o jogo às próprias perdas. Ele não diz que jogar terá o mesmo efeito para todo mundo.
 
 Uma obra pode nos oferecer imagens para acompanhar certas perguntas. Podemos reconhecer alguma coisa nossa em uma cena e encontrar uma maneira de começar a falar. Também podemos apenas gostar da música, das cores ou da experiência de jogar. Não precisamos transformar tudo o que nos toca em uma tarefa de autoconhecimento.
 
@@ -142,33 +120,30 @@ Uma obra pode nos oferecer imagens para acompanhar certas perguntas. Podemos rec
   <figcaption style="margin-top: .65rem; font-size: .85rem; line-height: 1.6;">Imagem de divulgação de GRIS — Nomada Studio / Devolver Digital. <a href="https://nomada.studio/gris-game/">Fonte: galeria oficial.</a></figcaption>
 </figure>
 
-Aproximar arte e psicologia, para mim, pede essa abertura. Se eu decidir antecipadamente o significado de cada imagem, posso perder a oportunidade de descobrir o que outra pessoa encontrou nela.
+Acho bonito que uma imagem do jogo possa abrir conversas tão diferentes. Se eu decidir antecipadamente o que ela significa, posso perder a oportunidade de descobrir o que outra pessoa encontrou nela.
 
-Esse cuidado também faz parte da maneira como penso a escuta. Os conceitos ajudam, mas ainda precisamos conhecer a pessoa, suas relações e as condições concretas da sua vida. Uma mesma palavra pode reunir histórias muito diferentes.
+Talvez valha o mesmo para as histórias fora do jogo. Uma palavra como “dor” pode reunir experiências muito diferentes. Antes de tentar explicá-las, prefiro ouvir de onde vêm e como aparecem na vida de alguém.
 
 Eu comecei *GRIS* procurando um jogo bonito que coubesse nas minhas habilidades. Encontrei uma experiência que me fez pensar sobre perdas, futuros e a maneira como nos relacionamos com aquilo que dói.
 
 Foi especialmente aquela presença escura que ficou comigo: algo que assusta, aparece quando não esperamos e, ainda assim, merece ser ouvido.
 
-Quis deixar essa leitura aqui porque ela diz um pouco do que chama minha atenção e do que considero importante quando penso sobre cuidado. A possibilidade de nos aproximarmos, com tempo e curiosidade, daquilo que ainda é difícil compreender.
+Escrevi sobre essa leitura porque ela mostra algo que valorizo na escuta: poder nos aproximar, com tempo e curiosidade, do que ainda é difícil compreender.
 
-## Referências citadas
+## Referências
 
-### Psicologia e fenomenologia
+Avis, K. A., Stroebe, M., & Schut, H. (2021). Stages of grief portrayed on the internet: A systematic analysis and critical appraisal. *Frontiers in Psychology, 12*, 772696. https://doi.org/10.3389/fpsyg.2021.772696
 
-- Beck Institute (15 de maio de 2024). [Helping Clients Cope with Loss](https://beckinstitute.org/blog/coping-with-loss/). Texto de orientação clínica sobre a TCC diante de diferentes perdas; não é um estudo experimental.
-- Fabila, L. J.; Montaño, A. H. (2022). [Intervención cognitivo-conductual en el duelo complicado: un estudio de caso](https://doi.org/10.5093/cc2022a8). *Clínica Contemporánea*, 13(2), e10. Estudo de caso único, em espanhol, utilizado como ilustração clínica.
+Gamereactor. (2019, 28 de junho). *Gris - Entrevista a Conrad Roset* [Vídeo]. https://www.gamereactor.es/video/450553/Gris%2B-%2BEntrevista%2Ba%2BConrad%2BRoset/
 
-- Avis, K. A.; Stroebe, M.; Schut, H. (2021). [Stages of Grief Portrayed on the Internet: A Systematic Analysis and Critical Appraisal](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.772696/full). *Frontiers in Psychology*, 12, 772696. DOI: [10.3389/fpsyg.2021.772696](https://doi.org/10.3389/fpsyg.2021.772696).
-- Ratcliffe, M.; Richardson, L. (2023). [Grief over Non-death Losses: A Phenomenological Perspective](https://eprints.whiterose.ac.uk/id/eprint/193069/). *Passion: Journal of the European Philosophical Society for the Study of Emotions*. Referência filosófica para a discussão sobre perdas de possibilidades.
-- Stroebe, M.; Schut, H. (1999). [The dual process model of coping with bereavement: rationale and description](https://pubmed.ncbi.nlm.nih.gov/10848151/). *Death Studies*, 23(3), 197–224. DOI: [10.1080/074811899201046](https://doi.org/10.1080/074811899201046). Trabalho fundador do modelo, incluído por sua importância teórica.
-- Luna, I. J. (2020). [Construindo histórias e sentidos sobre uma perda familiar na vida adulta](https://www.scielo.br/j/pusp/a/pGmVXrYbKJWDGFFxsrg5mmk/?format=pdf). *Psicologia USP*, 31, e200058. DOI: [10.1590/0103-6564e200058](https://doi.org/10.1590/0103-6564e200058).
-- LeFevre, C.; Chung, C.-F. (2024). [New Understandings of Loss: Examining the Role of Reflective Technology Within Bereavement and Meaning-Making](https://people.ucsc.edu/~cfchung/assets/papers/chi2024-grief-reflection.pdf). *Proceedings of the CHI Conference on Human Factors in Computing Systems (CHI ’24)*. ACM. DOI: [10.1145/3613904.3641968](https://doi.org/10.1145/3613904.3641968).
+LeFevre, C., & Chung, C.-F. (2024). New understandings of loss: Examining the role of reflective technology within bereavement and meaning-making. In *Proceedings of the CHI Conference on Human Factors in Computing Systems* (Artigo 810). Association for Computing Machinery. https://doi.org/10.1145/3613904.3641968
 
-### Jogo, imagens e entrevistas
+Leoni, & Frejat. (2005). 50 receitas [Canção]. Em *Leoni ao vivo*. Som Livre. https://www.youtube.com/watch?v=8S-YzsFylhg
 
-- Nomada Studio (2018). [GRIS](https://nomada.studio/gris-game/). Jogo publicado pela Devolver Digital. Referência artística e fonte das quatro imagens de divulgação reproduzidas neste artigo.
-- Gamereactor (28 de junho de 2019). [Gris — Entrevista a Conrad Roset](https://www.gamereactor.es/video/450553/Gris%2B-%2BEntrevista%2Ba%2BConrad%2BRoset/). Entrevista sobre as escolhas criativas do jogo, disponível em espanhol.
-- Delacroix, J. (26 de janeiro de 2019). [Interview: GRIS’ Creative Director, Conrad Roset](https://thatgamersasylum.wordpress.com/2019/01/26/gris-creative-director-conrad-roset-interview/). *That Gamers Asylum*. Entrevista sobre o luto, as referências às cinco fases e a abertura à interpretação de quem joga.
+Luna, I. J. (2020). Construindo histórias e sentidos sobre uma perda familiar na vida adulta. *Psicologia USP, 31*, e200058. https://doi.org/10.1590/0103-6564e200058
 
-As interpretações das imagens de GRIS apresentadas ao longo do texto são uma leitura pessoal da obra. As pesquisas e referências filosóficas ajudam a desenvolver a conversa, sem estabelecer um significado único para o jogo.
+Nomada Studio. (2018). *GRIS* [Jogo digital]. Devolver Digital. https://nomada.studio/gris-game/
+
+Ratcliffe, M., & Richardson, L. (2023). Grief over non-death losses: A phenomenological perspective. *Passion: Journal of the European Philosophical Society for the Study of Emotions, 1*(1), 50–67. https://doi.org/10.59123/passion.v1i1.12287
+
+Stroebe, M., & Schut, H. (1999). The dual process model of coping with bereavement: Rationale and description. *Death Studies, 23*(3), 197–224. https://doi.org/10.1080/074811899201046
