@@ -131,6 +131,10 @@ p { margin-top: 0; }
   .menu .menu-cta { display: none; }
 }
 
+.artigo-corpo .artigo-respiro { margin: clamp(2.5rem, 7vw, 4rem) 0; }
+.artigo-corpo .artigo-respiro img { display: block; width: 100%; height: auto; border-radius: 1.25rem; }
+.artigo-corpo .artigo-respiro figcaption { margin-top: .75rem; color: var(--tinta-suave); font-size: .875rem; line-height: 1.55; text-align: center; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     scroll-behavior: auto !important;
