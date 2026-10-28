@@ -72,6 +72,8 @@ Também é importante diferenciar psicoterapia de avaliação diagnóstica. Um t
 
 Talvez a questão mais útil não seja descobrir imediatamente qual comportamento é “autêntico”. Talvez seja começar observando onde existe escolha — e onde a necessidade de se encaixar tomou espaço demais.
 
+[Conheça meu atendimento online a adultos neurodivergentes.](/psicoterapia-online-neurodivergentes/)
+
 ## Referências para aprofundar
 
 - Hull L. et al. (2017). [“Putting on My Best Normal”: Social Camouflaging in Adults with Autism Spectrum Conditions](https://pubmed.ncbi.nlm.nih.gov/28527095/).

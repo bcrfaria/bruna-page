@@ -99,6 +99,8 @@ A psicoterapia afirmativa não exige que você saiba exatamente quem é, que que
 
 O compromisso é que você possa procurar cuidado pelo que está vivendo, com espaço para dúvidas, dificuldades e mudanças — e com respeito por quem você é.
 
+[Conheça meu atendimento em psicoterapia afirmativa LGBTQIA+.](/terapia-afirmativa-lgbtqia/)
+
 ## Uma referência cultural para continuar a reflexão
 
 O romance gráfico *Arlindo*, de Ilustralu (2021), acompanha experiências de adolescência, afetos e busca de pertencimento. Proponho essa leitura como uma maneira de ampliar a reflexão sobre poder existir e encontrar acolhimento. É uma referência cultural, não uma evidência científica sobre psicoterapia.
