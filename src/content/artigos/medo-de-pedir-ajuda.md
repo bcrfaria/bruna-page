@@ -7,7 +7,7 @@ draft: false
 ogImage: "/img/artigos/pedir-ajuda/13-crianca-objetos-flores.png"
 ---
 
-<figure class="artigo-respiro"><img src="/img/artigos/pedir-ajuda/13-crianca-objetos-flores.png" width="1536" height="1024" alt="Colagem de uma criança sentada amarrando o tênis, cercada por recortes de mochila, lápis, papel pautado, flores e montanhas."></figure>
+<figure class="artigo-respiro"><img src="/img/artigos/pedir-ajuda/13-crianca-objetos-flores.webp" width="1536" height="1024" alt="Colagem de uma criança sentada amarrando o tênis, cercada por recortes de mochila, lápis, papel pautado, flores e montanhas."></figure>
 <p>Você abre a conversa, escreve uma mensagem e apaga. Pensa em pedir companhia, dividir uma tarefa ou contar que não está bem. Mas, antes de enviar, aparecem outras perguntas: vou incomodar? Vão achar que estou exagerando? Será que isso vai ser cobrado depois?</p>
 <p>Visto de fora, pode parecer simples: se precisa, é só pedir. Mas essa frase deixa de fora uma parte importante da história. Pedir ajuda envolve precisar de alguma coisa e se expor à resposta de outra pessoa.</p>
 <p>Por isso, antes de perguntar por que alguém não pede ajuda, considero importante perguntar: o que essa pessoa teme que aconteça quando pedir?</p>
@@ -21,7 +21,7 @@ ogImage: "/img/artigos/pedir-ajuda/13-crianca-objetos-flores.png"
 <p>Em outras situações, o medo não está na possibilidade de receber um “não”. Está no que pode acompanhar o “sim”.</p>
 <p>Alguém oferece ajuda, mas depois passa a exigir disponibilidade, concordância ou silêncio. O favor reaparece numa discussão. Uma escolha pessoal é questionada com o argumento de que, depois de tudo que fizeram por você, seria ingratidão discordar.</p>
 <p>A pergunta deixa de ser apenas “será que vão me ajudar?” e passa a ser “o que vão esperar de mim depois?”.</p>
-<figure class="artigo-respiro"><img src="/img/artigos/pedir-ajuda/10-presente-com-conta-portugues.png" width="1536" height="1024" loading="lazy" alt="Colagem de uma caixa de presente aberta de onde sai um recibo longo. O recibo atribui valores simbólicos a pequenas alegrias, tempo, gentileza, paciência e outras experiências, sobre papéis rasgados e uma folha contábil."></figure>
+<figure class="artigo-respiro"><img src="/img/artigos/pedir-ajuda/10-presente-com-conta-portugues.webp" width="1536" height="1024" loading="lazy" alt="Colagem de uma caixa de presente aberta de onde sai um recibo longo. O recibo atribui valores simbólicos a pequenas alegrias, tempo, gentileza, paciência e outras experiências, sobre papéis rasgados e uma folha contábil."></figure>
 <p>Pesquisas sobre a sensação de estar em dívida mostram que receber um favor pode envolver tanto reconhecimento do cuidado quanto pressão para retribuir. A interpretação das intenções de quem ajuda participa dessa experiência: perceber uma expectativa de retorno faz diferença (<a href="https://doi.org/10.1038/s41467-023-44286-9">Gao et al., 2024</a>). Esses estudos investigam mecanismos em situações delimitadas; não permitem concluir, só pelo desconforto de quem recebe, que houve manipulação.</p>
 <p>Ainda assim, é importante dar nome à possibilidade de uma cobrança real. Nem todo receio é um mal-entendido. Às vezes, existem condições que precisam ser esclarecidas — ou uma oferta que você prefere não aceitar.</p>
 <h2>Gratidão não é uma dívida sem fim</h2>
@@ -43,7 +43,7 @@ ogImage: "/img/artigos/pedir-ajuda/13-crianca-objetos-flores.png"
 <p>E vale observar o que acontece na relação: há espaço para você dizer não? Seus limites continuam sendo respeitados depois que recebe ajuda? O que conta em confiança permanece reservado?</p>
 <p>Essas perguntas não garantem que você nunca vá se decepcionar. Podem, porém, ajudar a distinguir relações e situações, sem exigir uma entrega maior do que você deseja.</p>
 <p>Se hoje não existe alguém disponível, isso também não deve virar mais uma acusação contra você. Falta de rede não se resolve apenas com disposição para pedir.</p>
-<figure class="artigo-respiro"><img src="/img/artigos/pedir-ajuda/11-conseguir-pedir-ajuda-v2.png" width="1536" height="1024" loading="lazy" alt="Colagem de uma mulher negra de cabelos crespos falando ao telefone e gesticulando com a mão aberta. Uma tira de papel se estende do aparelho, diante de camadas em terracota e verde-petróleo."></figure>
+<figure class="artigo-respiro"><img src="/img/artigos/pedir-ajuda/11-conseguir-pedir-ajuda-v2.webp" width="1536" height="1024" loading="lazy" alt="Colagem de uma mulher negra de cabelos crespos falando ao telefone e gesticulando com a mão aberta. Uma tira de papel se estende do aparelho, diante de camadas em terracota e verde-petróleo."></figure>
 <h2>Como a psicoterapia pode ajudar nessa conversa</h2>
 <p>Na psicoterapia, o próprio receio de pedir ajuda pode ser assunto. Você não precisa chegar sabendo explicar tudo: “preciso conversar, mas tenho medo de ser julgada” já pode ser um começo.</p>
 <p>O papel da psicóloga não é convencer você a confiar em qualquer pessoa. É construir, junto com você, uma compreensão do que torna difícil pedir ou receber ajuda: experiências anteriores, cobranças nas relações, vergonha de precisar ou dificuldade de reconhecer e comunicar seus limites.</p>
