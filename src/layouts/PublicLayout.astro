@@ -2,6 +2,7 @@
 import Icone from '../components/Icone.astro';
 import Analytics from '../components/Analytics.astro';
 import { site, whatsappComOrigem } from '../config';
+import { createPageSchema } from '../structured-data';
 import '../styles/public.css';
 
 interface Props {
@@ -29,39 +30,14 @@ const canonical = new URL(canonicalPath, site.url).href;
 const socialImage = new URL(ogImage, site.url).href;
 const whatsappUrl = whatsappComOrigem(`pela página “${title.replace(/ \|.*$/, '')}”`);
 
-const jsonLd = type === 'article'
-  ? {
-      '@context': 'https://schema.org',
-      '@type': 'Article',
-      headline: title.replace(/ \|.*$/, ''),
-      description,
-      image: socialImage,
-      datePublished: publishedDate?.toISOString(),
-      dateModified: (updatedDate ?? publishedDate)?.toISOString(),
-      author: {
-        '@type': 'Person',
-        name: site.nome,
-        url: site.url,
-      },
-      publisher: {
-        '@type': 'Person',
-        name: site.nome,
-        url: site.url,
-      },
-      mainEntityOfPage: canonical,
-    }
-  : {
-      '@context': 'https://schema.org',
-      '@type': 'WebPage',
-      name: title,
-      description,
-      url: canonical,
-      isPartOf: {
-        '@type': 'WebSite',
-        name: `${site.nome} · Psicologia`,
-        url: site.url,
-      },
-    };
+const jsonLd = createPageSchema({
+  canonical,
+  title,
+  description,
+  article: type === 'article'
+    ? { image: socialImage, publishedDate, updatedDate }
+    : undefined,
+});
 ---
 
 <!doctype html>

@@ -1,4 +1,5 @@
 ---
+import { createPageSchema } from '../structured-data';
 import { site, whatsappUrl } from '../config';
 import Icone from '../components/Icone.astro';
 import Analytics from '../components/Analytics.astro';
@@ -42,14 +43,13 @@ const canonical = `${site.url}/contato/`;
     <meta name="twitter:image" content={`${site.url}/img/og-bruna-faria.png`} />
     <script
       type="application/ld+json"
-      set:html={JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'ContactPage',
-        name: `Contato | ${site.nome}`,
+      set:html={JSON.stringify(createPageSchema({
+        canonical,
+        title: `Contato | ${site.nome}`,
         description: 'Entre em contato com Bruna Faria para saber mais sobre psicoterapia online ou agendar uma conversa.',
-        url: canonical,
-        isPartOf: { '@type': 'WebSite', name: `${site.nome} · Psicologia`, url: site.url },
-      })}
+        pageType: 'ContactPage',
+        mainEntityIsPerson: true,
+      }))}
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

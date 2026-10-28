@@ -1,6 +1,7 @@
 ---
 import { site, whatsappUrl } from '../config';
 import Icone from '../components/Icone.astro';
+import { createPageSchema } from '../structured-data';
 
 const instagramUrl = `https://instagram.com/${site.instagram}`;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -41,16 +42,12 @@ const canonical = `${site.url}/cartao/`;
     <meta name="twitter:image" content={`${site.url}/img/og-bruna-faria.png`} />
     <script
       type="application/ld+json"
-      set:html={JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'Person',
-        name: site.nome,
-        jobTitle: `Psicóloga · ${site.crp}`,
-        url: canonical,
-        email: site.email,
-        telephone: `+${site.whatsapp}`,
-        sameAs: [instagramUrl, site.doctoralia].filter(Boolean),
-      })}
+      set:html={JSON.stringify(createPageSchema({
+        canonical,
+        title: `Cartão virtual | ${site.nome}`,
+        description: 'Cartão virtual de Bruna Faria, psicóloga com atendimento online para adultos.',
+        mainEntityIsPerson: true,
+      }))}
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
