@@ -3,6 +3,7 @@ import { createPageSchema } from '../structured-data';
 import { site, whatsappUrl, queixas, formacao, faq } from '../config';
 import Icone from '../components/Icone.astro';
 import Analytics from '../components/Analytics.astro';
+import PrivacyLinks from '../components/PrivacyLinks.astro';
 
 const instagramUrl = `https://instagram.com/${site.instagram}`;
 const socialImage = `${site.url}/img/og-bruna-faria.png`;
@@ -401,6 +402,7 @@ const jsonLd = createPageSchema({
           {site.email && <a href={`mailto:${site.email}`}>E-mail</a>}
         </nav>
         <p class="aviso-crise">Este site não oferece atendimento de urgência. Em situação de crise ou risco imediato, procure um serviço de emergência da sua região.</p>
+        <PrivacyLinks />
       </div>
     </footer>
 

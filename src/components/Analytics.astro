@@ -5,6 +5,12 @@ import { analyticsMeasurementId } from '../config';
 <script is:inline define:vars={{ analyticsMeasurementId }}>
   (() => {
   const analyticsConsentKey = 'bruna-analytics-consent';
+  const disableKey = `ga-disable-${analyticsMeasurementId}`;
+  const readConsent = () => {
+    try { return window.localStorage.getItem(analyticsConsentKey); }
+    catch { return null; }
+  };
+  window[disableKey] = readConsent() !== 'accepted';
   const loadAnalytics = () => {
     if (window.__brunaAnalyticsLoaded || !analyticsMeasurementId) return;
     window.__brunaAnalyticsLoaded = true;
@@ -24,10 +30,10 @@ import { analyticsMeasurementId } from '../config';
   };
 
   const track = (name, params = {}) => {
-    if (window.__brunaAnalyticsLoaded && window.gtag) window.gtag('event', name, params);
+    if (window.__brunaAnalyticsLoaded && !window[disableKey] && window.gtag) window.gtag('event', name, params);
   };
 
-  if (window.localStorage.getItem(analyticsConsentKey) === 'accepted') loadAnalytics();
+  if (readConsent() === 'accepted') loadAnalytics();
 
   document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href*="wa.me"], a[href^="mailto:"]').forEach((link) => {
@@ -54,28 +60,87 @@ import { analyticsMeasurementId } from '../config';
   <div class="analytics-consent-actions">
     <button type="button" data-analytics-accept>Aceitar</button>
     <button type="button" data-analytics-reject>Não aceitar</button>
+    <button type="button" data-analytics-close hidden>Fechar</button>
   </div>
+  <p class="analytics-consent-status" data-analytics-status role="status" hidden></p>
   <details class="analytics-consent-details">
     <summary>Saiba mais sobre privacidade</summary>
     <p>Se você aceitar, o Google Analytics poderá registrar páginas visitadas e interações no site usando cookies. Se não aceitar, essa medição não será ativada. A escolha fica salva neste navegador.</p>
+    <p><a href="/privacidade/">Leia a política de privacidade</a> e use “Preferências de privacidade” no rodapé para mudar sua escolha.</p>
   </details>
 </aside>
 
-<script is:inline>
+<script is:inline define:vars={{ analyticsMeasurementId }}>
   (() => {
   const analyticsConsentKey = 'bruna-analytics-consent';
   const consentBanner = document.querySelector('[data-analytics-consent]');
-  const savedConsent = window.localStorage.getItem(analyticsConsentKey);
+  const status = document.querySelector('[data-analytics-status]');
+  const closeButton = document.querySelector('[data-analytics-close]');
+  const disableKey = `ga-disable-${analyticsMeasurementId}`;
+  let savedConsent;
+  let returnFocus;
+  try { savedConsent = window.localStorage.getItem(analyticsConsentKey); } catch {}
   if (!savedConsent && consentBanner) consentBanner.hidden = false;
 
-  document.querySelector('[data-analytics-accept]')?.addEventListener('click', () => {
-    window.localStorage.setItem(analyticsConsentKey, 'accepted');
+  const clearAnalyticsCookies = () => {
+    const host = window.location.hostname;
+    const domains = ['', host, `.${host}`];
+    const parts = host.split('.');
+    for (let i = 1; i < parts.length - 1; i++) domains.push(`.${parts.slice(i).join('.')}`);
+    document.cookie.split(';').forEach((cookie) => {
+      const name = cookie.split('=')[0].trim();
+      if (!/^(_ga(?:_|$)|_gid$|_gat(?:_|$))/.test(name)) return;
+      domains.forEach((domain) => {
+        document.cookie = `${name}=; Max-Age=0; path=/${domain ? `; domain=${domain}` : ''}`;
+      });
+    });
+  };
+  const choose = (choice) => {
+    if (choice === 'rejected') {
+      window[disableKey] = true;
+      clearAnalyticsCookies();
+    }
+    try { window.localStorage.setItem(analyticsConsentKey, choice); }
+    catch {
+      // Without persistent storage, keep measurement disabled instead of inferring consent.
+      window[disableKey] = true;
+      clearAnalyticsCookies();
+      status.textContent = 'Não foi possível salvar sua escolha neste navegador. A medição permanece desativada.';
+      status.hidden = false;
+      return;
+    }
     consentBanner.hidden = true;
     window.location.reload();
+  };
+  document.querySelector('[data-analytics-accept]')?.addEventListener('click', () => choose('accepted'));
+  document.querySelector('[data-analytics-reject]')?.addEventListener('click', () => choose('rejected'));
+  document.addEventListener('click', (event) => {
+    const trigger = event.target.closest?.('[data-analytics-manage]');
+    if (!trigger) return;
+    event.preventDefault();
+    returnFocus = trigger;
+    consentBanner.hidden = false;
+    closeButton.hidden = false;
+    status.textContent = savedConsent === 'accepted' ? 'Sua escolha atual: medição permitida.' : savedConsent === 'rejected' ? 'Sua escolha atual: medição não permitida.' : 'Você ainda não escolheu se permite a medição.';
+    status.hidden = false;
+    document.querySelector('[data-analytics-accept]')?.focus();
   });
-  document.querySelector('[data-analytics-reject]')?.addEventListener('click', () => {
-    window.localStorage.setItem(analyticsConsentKey, 'rejected');
+  const closePreferences = () => {
+    if (closeButton.hidden) return;
     consentBanner.hidden = true;
+    returnFocus?.focus();
+  };
+  closeButton?.addEventListener('click', closePreferences);
+  consentBanner?.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closePreferences();
+  });
+  window.addEventListener('storage', (event) => {
+    if (event.key !== analyticsConsentKey && event.key !== null) return;
+    if (event.newValue !== 'accepted') {
+      window[disableKey] = true;
+      clearAnalyticsCookies();
+    }
+    window.location.reload();
   });
   })();
 </script>
@@ -101,6 +166,7 @@ import { analyticsMeasurementId } from '../config';
 }
 
 .analytics-consent[hidden] { display: none; }
+.analytics-consent [hidden] { display: none; }
 .analytics-consent p { margin: 0; color: var(--tinta, #2e2a26); font-size: .88rem; line-height: 1.5; }
 .analytics-consent .analytics-consent-title { margin-bottom: .2rem; font-size: .95rem; font-weight: 600; }
 .analytics-consent-actions { display: flex; align-items: center; flex-wrap: wrap; gap: .65rem; }
@@ -121,6 +187,7 @@ import { analyticsMeasurementId } from '../config';
   outline-offset: 3px;
 }
 .analytics-consent-details { grid-column: 1 / -1; }
+.analytics-consent-status { grid-column: 1 / -1; }
 .analytics-consent-details summary { width: fit-content; color: var(--tinta, #2e2a26); font-size: .8rem; text-decoration: underline; text-underline-offset: .2em; cursor: pointer; }
 .analytics-consent-details p { margin-top: .65rem; }
 

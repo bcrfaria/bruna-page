@@ -1,0 +1,15 @@
+---
+interface Props { preferences?: boolean; }
+const { preferences = true } = Astro.props;
+---
+
+<nav class="privacy-links" aria-label="Privacidade">
+  <a href="/privacidade/">Política de privacidade</a>
+  {preferences && <a href="/privacidade/#suas-escolhas" data-analytics-manage>Preferências de privacidade</a>}
+</nav>
+
+<style>
+  .privacy-links { display: flex; flex-wrap: wrap; gap: .65rem 1.25rem; margin-top: 1.25rem; grid-column: 1 / -1; }
+  .privacy-links a { color: inherit; font-size: .8rem; line-height: 1.5; text-decoration: underline; text-underline-offset: .2em; }
+  .privacy-links a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+</style>

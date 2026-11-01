@@ -1,6 +1,7 @@
 ---
 import Icone from '../components/Icone.astro';
 import Analytics from '../components/Analytics.astro';
+import PrivacyLinks from '../components/PrivacyLinks.astro';
 import { site, whatsappComOrigem } from '../config';
 import { createPageSchema } from '../structured-data';
 import '../styles/public.css';
@@ -124,6 +125,7 @@ const jsonLd = createPageSchema({
           <a href="/contato/">Contato</a>
         </nav>
         <p class="aviso-crise">Este site não oferece atendimento de urgência. Em situação de crise ou risco imediato, procure um serviço de emergência da sua região.</p>
+        <PrivacyLinks />
       </div>
     </footer>
   </body>

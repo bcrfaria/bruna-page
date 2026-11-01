@@ -3,6 +3,7 @@ import { createPageSchema } from '../structured-data';
 import { site, whatsappUrl } from '../config';
 import Icone from '../components/Icone.astro';
 import Analytics from '../components/Analytics.astro';
+import PrivacyLinks from '../components/PrivacyLinks.astro';
 
 const instagramUrl = `https://instagram.com/${site.instagram}`;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -147,6 +148,7 @@ const canonical = `${site.url}/contato/`;
         </div>
         <a href={url('/')}>Voltar para a página inicial <span aria-hidden="true">→</span></a>
       </div>
+      <div class="wrap"><PrivacyLinks /></div>
     </footer>
 
     <script is:inline define:vars={{ telefone: site.whatsapp }}>

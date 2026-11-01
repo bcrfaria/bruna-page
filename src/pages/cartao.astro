@@ -1,6 +1,7 @@
 ---
 import { site, whatsappUrl } from '../config';
 import Icone from '../components/Icone.astro';
+import PrivacyLinks from '../components/PrivacyLinks.astro';
 import { createPageSchema } from '../structured-data';
 
 const instagramUrl = `https://instagram.com/${site.instagram}`;
@@ -97,6 +98,7 @@ const canonical = `${site.url}/cartao/`;
           {site.email && <a href={`mailto:${site.email}`}>{site.email}</a>}
           <span>brunafaria.com.br</span>
         </div>
+        <PrivacyLinks preferences={false} />
       </section>
     </main>
 

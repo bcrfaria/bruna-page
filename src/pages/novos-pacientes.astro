@@ -1,5 +1,6 @@
 ---
 import { site } from '../config';
+import PrivacyLinks from '../components/PrivacyLinks.astro';
 
 const formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSccnVX61qv0qA2jZGOGJV7p3Hq9XR490hgGi0OlxKBqF1TQaw/viewform';
 const embeddedFormUrl = `${formUrl}?embedded=true`;
@@ -66,6 +67,7 @@ const embeddedFormUrl = `${formUrl}?embedded=true`;
     <footer class="site-footer">
       <span>Psic. Bruna Caroline Rodrigues Faria · {site.crp}</span>
       <a href={`mailto:${site.email}`}>{site.email}</a>
+      <PrivacyLinks preferences={false} />
     </footer>
   </body>
 </html>
@@ -125,6 +127,7 @@ const embeddedFormUrl = `${formUrl}?embedded=true`;
   .site-header,
   .site-footer {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 24px;

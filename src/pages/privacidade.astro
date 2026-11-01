@@ -1,0 +1,76 @@
+---
+import PublicLayout from '../layouts/PublicLayout.astro';
+import { site } from '../config';
+
+const title = 'Política de privacidade | Bruna Faria';
+const description = 'Entenda como o site brunafaria.com.br utiliza dados de navegação, cookies e serviços externos, e como alterar suas preferências de medição.';
+---
+
+<PublicLayout title={title} description={description} canonicalPath="/privacidade/">
+  <header class="hero-editorial">
+    <div class="wrap">
+      <p class="eyebrow">Suas informações e suas escolhas</p>
+      <h1>Política de privacidade</h1>
+      <p class="lead">Você pode conhecer o site e entrar em contato sem aceitar os cookies do Google Analytics.</p>
+      <p>Atualizada em <time datetime="2026-11-01">1º de novembro de 2026</time>.</p>
+    </div>
+  </header>
+
+  <article class="secao">
+    <div class="wrap privacy-content prosa">
+      <section aria-labelledby="responsavel">
+        <h2 id="responsavel">Quem é responsável por este site</h2>
+        <p>O site brunafaria.com.br é de responsabilidade de Bruna Caroline Rodrigues Faria, psicóloga, {site.crp}. Para assuntos relacionados aos seus dados pessoais, escreva para <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
+        <p>Esta política explica a navegação no site, a medição de visitas e os serviços externos utilizados. As informações fornecidas para atendimento psicológico têm finalidade própria e estão sujeitas ao sigilo profissional e às obrigações aplicáveis ao atendimento e ao prontuário.</p>
+      </section>
+
+      <section aria-labelledby="suas-escolhas">
+        <h2 id="suas-escolhas">Você pode mudar sua escolha</h2>
+        <p>Os cookies do Google Analytics só são ativados neste site depois de você escolher “Aceitar”. Se escolher “Não aceitar”, essa medição permanece desativada. Sua decisão não impede a leitura dos conteúdos nem o acesso aos contatos.</p>
+        <p><a class="btn secundario" href="#suas-escolhas" data-analytics-manage>Alterar minhas preferências de privacidade</a></p>
+        <p>Você também encontra “Preferências de privacidade” no rodapé. Para retirar um aceite anterior, abra esse controle e escolha “Não aceitar”. O site interrompe a medição do Analytics, tenta remover os cookies de medição acessíveis neste domínio e recarrega a página. Outras abas deste site recebem a atualização quando estão abertas no mesmo navegador.</p>
+        <p>A mudança vale para a coleta futura neste navegador; não apaga automaticamente os dados já enviados ao Google. Para solicitar informações ou avaliar um pedido de eliminação, use o e-mail indicado nesta página.</p>
+        <p>A escolha é guardada no armazenamento local do navegador, separadamente dos cookies de medição, até que você a altere ou apague os dados do site. Outro navegador, outro dispositivo ou uma janela privada pode exigir uma nova escolha. Se o navegador impedir o armazenamento da escolha, o site mantém o Analytics desativado.</p>
+      </section>
+
+      <section aria-labelledby="medicao">
+        <h2 id="medicao">O que o Google Analytics pode registrar</h2>
+        <p>Com seu consentimento, o Google Analytics 4 é utilizado para entender as visitas e o uso do site. A medição pode incluir páginas e títulos acessados, horários, origem da visita, informações do navegador e dispositivo, localização aproximada e interações, como rolagens e cliques em links.</p>
+        <p>Os cookies <code>_ga</code> e <code>_ga_…</code> ajudam a distinguir visitas e sessões. O prazo padrão informado pelo Google é de até dois anos, sujeito às configurações e aos limites do navegador. A base utilizada pelo site para essa medição é seu consentimento.</p>
+        <p>Os eventos de contato definidos no site informam o meio escolhido, como WhatsApp ou e-mail, e a página de origem. A medição automática de cliques de saída também pode registrar o endereço do link, incluindo uma mensagem que já esteja preenchida nesse endereço. O código do site não lê o texto que você digita no WhatsApp, no e-mail ou dentro do Google Forms.</p>
+        <p>Na configuração do site, a localização da página enviada pelo código próprio não inclui os parâmetros após “?”; a referência de origem é reduzida ao domínio. Os sinais do Google e os sinais de personalização de anúncios estão desativados pelo código da tag.</p>
+        <p>A retenção configurada é de dois meses para dados de eventos e de 14 meses para dados de usuários. O prazo dos dados de usuários pode ser renovado com uma nova atividade. Relatórios agregados podem permanecer disponíveis por mais tempo; a duração dos cookies no navegador e a retenção nos servidores são controles diferentes.</p>
+        <p>Consulte também as informações do Google sobre <a href="https://support.google.com/analytics/answer/11397207?hl=pt-BR" rel="noreferrer">cookies do Analytics</a>, <a href="https://support.google.com/analytics/answer/7667196?hl=pt-BR" rel="noreferrer">retenção de dados</a> e <a href="https://policies.google.com/technologies/partner-sites?hl=pt-BR" rel="noreferrer">uso de dados de sites que utilizam seus serviços</a>.</p>
+      </section>
+
+      <section aria-labelledby="servicos">
+        <h2 id="servicos">Hospedagem, proteção e serviços externos</h2>
+        <p>A escolha sobre o Analytics controla essa ferramenta de medição. Ela não desativa os serviços necessários para entregar e proteger o site nem os serviços externos descritos abaixo.</p>
+        <ul>
+          <li><strong>GitHub Pages e Cloudflare:</strong> hospedam, entregam e protegem o site. O atendimento das requisições envolve informações técnicas, como endereço IP, URL solicitada, horário e informações do navegador, para operação e segurança. Essas atividades atendem ao interesse legítimo de manter o site disponível e protegido.</li>
+          <li><strong>Métricas técnicas do Cloudflare:</strong> o site também utiliza um script para medir desempenho e visitas. Segundo a documentação do Cloudflare, esse mecanismo não utiliza cookies nem armazenamento local. Ele funciona independentemente da escolha sobre o Analytics. Isso é diferente dos registros técnicos de hospedagem e segurança.</li>
+          <li><strong>Google Fonts:</strong> as fontes visuais são carregadas dos servidores do Google. Essa conexão acontece ao abrir a página, independentemente do aceite do Analytics, e envolve informações técnicas da requisição.</li>
+          <li><strong>Google Forms:</strong> a página de novos pacientes incorpora um formulário do Google, que é carregado quando você abre essa página. O serviço pode receber informações técnicas e utilizar cookies conforme suas próprias políticas. Os dados que você decide enviar no formulário têm a finalidade informada no cadastro: organizar seu atendimento psicológico. O código de medição do Analytics não é incluído nessa página de cadastro.</li>
+          <li><strong>WhatsApp, e-mail e perfis profissionais:</strong> ao acessar um link de contato ou perfil externo, você passa a utilizar o serviço escolhido. Alguns links do WhatsApp já contêm uma mensagem editável indicando de qual página você veio. Abrir o link não envia a mensagem à profissional; o envio depende de sua ação no aplicativo.</li>
+        </ul>
+        <p>Esses fornecedores podem tratar informações em servidores fora do Brasil. Os registros técnicos, os prazos de retenção e as condições de tratamento de cada serviço seguem suas configurações, contratos e políticas. Consulte as políticas de <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer">GitHub</a>, <a href="https://www.cloudflare.com/privacypolicy/" rel="noreferrer">Cloudflare</a>, <a href="https://policies.google.com/privacy?hl=pt-BR" rel="noreferrer">Google</a> e <a href="https://www.whatsapp.com/legal/privacy-policy" rel="noreferrer">WhatsApp</a>.</p>
+      </section>
+
+      <section aria-labelledby="direitos">
+        <h2 id="direitos">Informações, correções e outros pedidos</h2>
+        <p>Você pode solicitar confirmação de tratamento, acesso e correção de dados, informações sobre compartilhamento e, nas hipóteses aplicáveis, anonimização, bloqueio, eliminação ou portabilidade. Também pode revogar o consentimento e apresentar oposição ao tratamento nos termos da LGPD.</p>
+        <p>Para fazer um pedido, escreva para <a href={`mailto:${site.email}`}>{site.email}</a>, indicando qual informação ou situação você quer esclarecer. Não é necessário enviar detalhes clínicos nesse primeiro contato. Se uma confirmação de identidade for necessária para proteger seus dados, ela será solicitada de forma proporcional ao pedido.</p>
+        <p>A eliminação pode ter limites quando existir obrigação legal de conservação, como no caso de determinados registros profissionais. Você também pode consultar as orientações e os canais da <a href="https://www.gov.br/anpd/pt-br" rel="noreferrer">Autoridade Nacional de Proteção de Dados — ANPD</a>.</p>
+      </section>
+    </div>
+  </article>
+</PublicLayout>
+
+<style>
+  .privacy-content { max-width: 52rem; }
+  .privacy-content section + section { margin-top: 3rem; }
+  .privacy-content h2 { margin-bottom: 1rem; scroll-margin-top: 7rem; }
+  .privacy-content li + li { margin-top: 1rem; }
+  .privacy-content a { text-decoration: underline; text-underline-offset: .2em; }
+  .privacy-content code { overflow-wrap: anywhere; }
+</style>
